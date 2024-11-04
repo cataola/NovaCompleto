@@ -1,0 +1,1378 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Asegura que el padding y el border no afecten el ancho total */
+}
+/*Banner*/
+.container{
+    
+    position: center;
+}
+
+#bannerAgricola{
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 100vw;
+    background-color: #ffffff;
+    overflow: hidden; 
+}
+
+#bannerAgricola img {
+    width: 100vw;
+    height: auto;
+}
+
+#bannerAgricola-title h3{
+    position: relative;
+    top: 50%; /* Posiciona verticalmente al centro */
+    left: 50%; /* Posiciona horizontalmente al centro */
+    transform: translate(-50%, -50%); /*Ajusta el texto para que esté centrado en relación a su propio tamaño */
+    padding: 10px 20px;
+    font-size: 3rem;
+    width: 700px;
+    height: auto;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center; /*Centra el texto dentro del contenedor */
+    z-index: 2;
+}
+#bannerAgricola-title h1{
+    position: relative;
+    top: 100%; /* Posiciona verticalmente al centro */
+    left: 0%; /* Posiciona horizontalmente al centro */
+    padding: 10px 20px;
+    font-size: 3rem;
+    width: 700px;
+    height: auto;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center; /*Centra el texto dentro del contenedor */
+    z-index: 2;
+}
+
+
+@media (min-width: 2560px) {
+    #bannerAgricola-title h3 {
+        font-size: 8rem;
+        width: 900px;
+    }
+
+    #bannerAgricola-title h1 {
+        font-size: 6rem;
+        width: 900px;
+    }
+  
+}
+
+@media (min-width: 1920px) {
+    .container{
+    
+        position: center;
+    }
+    
+    #bannerAgricola{
+        position: relative;
+        display: block;
+        width: 100vw;
+        background-color: #ffffff;
+        overflow: hidden; 
+    }
+    
+    #bannerAgricola img {
+        width: 100vw;
+        height: auto;
+        max-width: 100vw;
+    }
+    
+    #bannerAgricola-title h3{
+        position: relative;
+        top: 50%; /* Posiciona verticalmente al centro */
+        left: 50%; /* Posiciona horizontalmente al centro */
+        transform: translate(-50%, -50%); /*Ajusta el texto para que esté centrado en relación a su propio tamaño */
+        padding: 10px 20px;
+        font-size: 3rem;
+        width: 700px;
+        height: auto;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center; /*Centra el texto dentro del contenedor */
+        z-index: 2;
+    }
+    #bannerAgricola-title h1{
+        position: relative;
+        top: 100%; /* Posiciona verticalmente al centro */
+        left: 0%; /* Posiciona horizontalmente al centro */
+        padding: 10px 20px;
+        font-size: 3rem;
+        width: 700px;
+        height: auto;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center; /*Centra el texto dentro del contenedor */
+        z-index: 2;
+    }
+  
+}
+
+
+@media (max-width: 1440px) {
+
+    #bannerAgricola-title h3 {
+        font-size: 35px;
+        width: 800px;
+    }
+
+    #bannerAgricola-title h1 {
+        font-size: 25px;
+        width: 800px;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    #bannerAgricola-title h3 {
+        font-size: 35px;
+        width: 700px;
+    }
+
+    #bannerAgricola-title h1 {
+        font-size: 25px;
+        width: 700px;
+    }
+}
+
+@media (max-width: 1118px) {
+    #bannerAgricola-title h3 {
+        font-size: 35px;
+        width: 700px;
+    }
+    #bannerAgricola-title h1 {
+        font-size: 25px;
+        width: 700px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #bannerAgricola-title h3 {
+        font-size: 30px;
+        width: 600px;
+    }
+    #bannerAgricola-title h1 {
+        font-size: 25px;
+        width: 600px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #bannerAgricola{
+        align-content: center;
+    }
+    #bannerAgricola-title h3 {
+        font-size: 25px;
+        top:45%;
+    }
+    #bannerAgricola-title h1 {
+        font-size: 22px;
+   
+    }
+    
+}
+
+@media (max-width: 576px) {
+    #bannerAgricola {
+        align-content: center;
+    }
+    #bannerAgricola-title h3 {
+        font-size: 20px; /* Ajusta el tamaño del título */
+        top: 30px;
+    }
+    #bannerAgricola-title h1 {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    #bannerAgricola-title h3 {
+        font-size: 20px; /* Ajusta el tamaño del título */
+        width: 350px;
+    }
+    #bannerAgricola-title h1 {
+        font-size: 18px;
+        width: 350px;
+        margin-top: -20px;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    #bannerAgricola-title h3 {
+        margin-top: 30px;
+        font-size: 18px; /* Ajusta el tamaño del título */
+        width: 320px;
+    }
+    #bannerAgricola-title h1 {
+        font-size: 16px;
+        width: 320px;
+        margin-top: -20px;
+
+
+    }
+}
+
+@media (max-width: 320px) {
+    #bannerAggricola{
+        height: 300px;
+        width: 100vw;
+    }
+
+    #bannerAgricola-title h3 {
+        text-align: center;
+        font-size: 16px; /* Ajusta el tamaño del título */
+        width: 300px;
+    }
+    #bannerAgricola-title h1 {
+        text-align: center;
+        font-size: 14px;
+        width: 300px;
+    }
+}
+
+
+
+/* Estilo del contenedor de texto */
+
+#campo-container {
+    background-image: url('../NovaPag/imgs/fondos/campoBlanco.png');
+    background-size: cover;
+    background-position:center;
+    color: rgb(8, 0, 0);
+    padding: 20px;
+    text-align: justify !important;
+
+
+}
+#campo-container p{
+    color:#000;
+}
+
+#banner-logo img{ 
+    width: 50%;
+    height: auto;
+    
+}
+
+@media (min-width: 2560px) {
+    #banner-logo img {
+        width: 40%; /* Ajusta el tamaño del logo para pantallas grandes */
+        height: auto;
+    }
+    #campo-conteiner{
+        width: auto;
+    }
+}
+
+@media (max-width: 1440px) {
+    #banner-logo img {
+        width: 40%; /* Ajusta el tamaño del logo */
+        
+    }
+}
+
+@media (max-width: 1024px) {
+    #banner-logo img {
+        width: 50%; /* Mantiene el tamaño del logo */
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    #banner-logo img {
+        width: 60%; /* Aumenta el tamaño del logo */
+    }
+}
+
+@media (max-width: 568px) {
+    #banner-logo img {
+        width: 65%; /* Aumenta el tamaño del logo */
+    }
+}
+
+@media (max-width: 425px) {
+    #banner-logo img {
+        width: 70%; /* Aumenta el tamaño del logo */
+    }
+}
+
+@media (max-width: 375px) {
+    #banner-logo img {
+        width: 80%; 
+    }
+}
+
+@media (max-width: 320px) {
+    #banner-logo img {
+        width: 80%; 
+    }
+}
+
+#seccionequipos {
+    
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    max-width: 100vw;
+}
+
+.seccionconectados h1 {
+    text-align: center;
+    font-size: 1.5rem; /* Ajuste proporcional */
+    color: #F9AF23;
+    font-weight: bold;
+}
+
+.seccionconectados p {
+    text-align: center;
+    font-size: 1.25rem; /* Ajuste proporcional */
+    color: #0e3241;
+    font-weight: bold;
+}
+
+.seccionconectados a {
+    text-align: center;
+    font-size: 1rem;
+    color: gray;
+    text-decoration: none; /* Eliminar subrayado */
+    
+}
+#carruselEquipo{
+    width: 60%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Estilos para el carrusel */
+.carousel-item {
+    padding: 20px; /* Espaciado dentro de cada item del carrusel */
+}
+
+.carousel-inner{
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilos para las imágenes del carrusel */
+.carousel-item img {
+    border:none;
+    border-radius: 60%;
+}
+
+/* Cambios solicitados */
+.carousel-item h5 {
+    font-size: 1.2rem; /* Tamaño de fuente para los nombres */
+    margin-top: 15px; /* Espaciado superior */
+    font-weight: bold; /* Negrita para los nombres */
+    color: black; /* Color negro para el título */
+}
+
+.carousel-item p {
+    font-size: 1rem; /* Tamaño de fuente para los cargos */
+    font-weight: bold; /* Negrita para los cargos */
+    color: #37862d; /* Color verde para los cargos */
+}
+
+#carruselEquipo .carousel-control-prev-icon,
+#carruselEquipo .carousel-control-next-icon {
+    background-color: #007bff; /* Color de fondo para los iconos */
+    border-radius: 50%; /* Bordes redondeados para los botones */
+}
+
+#carruselEquipo .carousel-control-prev-icon:hover,
+#carruselEquipo .carousel-control-next-icon:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el cursor */
+}
+
+
+@media (max-width: 2560px) {
+
+    #seccionequipos {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .seccionconectados h1 {
+        text-align: center;
+        font-size: 3rem;
+        color: #F9AF23;
+        font-weight: bold;
+    }
+
+    .seccionconectados p {
+        text-align: center;
+        font-size: 2rem;
+        color: #0e3241;
+        font-weight: bold;
+    }
+
+    .seccionconectados a {
+        text-align: center;
+        font-size: 1.5rem;
+        color: gray;
+        text-decoration: none;
+    }
+
+    #carruselEquipo {
+        width: 70%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .carousel-item {
+        padding: 40px;
+    }
+
+    .carousel-inner {
+        margin-top: 30px;
+    }
+
+    .carousel-item img {
+        border: none;
+        border-radius: 60%;
+    }
+
+    .carousel-item h5 {
+        font-size: 2rem;
+        margin-top: 20px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .carousel-item p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #37862d;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon,
+    #carruselEquipo .carousel-control-next-icon {
+        background-color: #007bff;
+        border-radius: 50%;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon:hover,
+    #carruselEquipo .carousel-control-next-icon:hover {
+        background-color: #0056b3;
+    }
+}
+
+@media (max-width: 1920px) {
+
+    #seccionequipos {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .seccionconectados h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #F9AF23;
+        font-weight: bold;
+    }
+
+    .seccionconectados p {
+        text-align: center;
+        font-size: 1.25rem;
+        color: #0e3241;
+        font-weight: bold;
+    }
+
+    .seccionconectados a {
+        text-align: center;
+        font-size: 1rem;
+        color: gray;
+        text-decoration: none;
+    }
+
+    #carruselEquipo {
+        width: 60%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .carousel-item {
+        padding: 20px;
+    }
+
+    .carousel-inner {
+        margin-top: 20px;
+    }
+
+    .carousel-item img {
+        border: none;
+        border-radius: 60%;
+    }
+
+    .carousel-item h5 {
+        font-size: 1.2rem;
+        margin-top: 15px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .carousel-item p {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #37862d;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon,
+    #carruselEquipo .carousel-control-next-icon {
+        background-color: #007bff;
+        border-radius: 50%;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon:hover,
+    #carruselEquipo .carousel-control-next-icon:hover {
+        background-color: #0056b3;
+    }
+}
+
+
+
+@media (max-width: 1440px) {
+
+    #seccionequipos {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .seccionconectados h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #F9AF23;
+        font-weight: bold;
+    }
+
+    .seccionconectados p {
+        text-align: center;
+        font-size: 1.25rem;
+        color: #0e3241;
+        font-weight: bold;
+    }
+
+    .seccionconectados a {
+        text-align: center;
+        font-size: 1rem;
+        color: gray;
+        text-decoration: none;
+    }
+
+    #carruselEquipo {
+        width: 60%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .carousel-item {
+        padding: 20px;
+    }
+
+    .carousel-inner {
+        margin-top: 20px;
+    }
+
+    .carousel-item img {
+        border: none;
+        border-radius: 60%;
+    }
+
+    .carousel-item h5 {
+        font-size: 1.2rem;
+        margin-top: 15px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .carousel-item p {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #37862d;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon,
+    #carruselEquipo .carousel-control-next-icon {
+        background-color: #007bff;
+        border-radius: 50%;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon:hover,
+    #carruselEquipo .carousel-control-next-icon:hover {
+        background-color: #0056b3;
+    }
+}
+
+
+@media (max-width: 1280px) {
+
+    #seccionequipos {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .seccionconectados h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #F9AF23;
+        font-weight: bold;
+    }
+
+    .seccionconectados p {
+        text-align: center;
+        font-size: 1.25rem;
+        color: #0e3241;
+        font-weight: bold;
+    }
+
+    .seccionconectados a {
+        text-align: center;
+        font-size: 1rem;
+        color: gray;
+        text-decoration: none;
+    }
+
+    #carruselEquipo {
+        width: 60%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .carousel-item {
+        padding: 20px;
+    }
+
+    .carousel-inner {
+        margin-top: 20px;
+    }
+
+    .carousel-item img {
+        border: none;
+        border-radius: 60%;
+    }
+
+    .carousel-item h5 {
+        font-size: 1.2rem;
+        margin-top: 15px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .carousel-item p {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #37862d;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon,
+    #carruselEquipo .carousel-control-next-icon {
+        background-color: #007bff;
+        border-radius: 50%;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon:hover,
+    #carruselEquipo .carousel-control-next-icon:hover {
+        background-color: #0056b3;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    #seccionequipos {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .seccionconectados h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #F9AF23;
+        font-weight: bold;
+    }
+
+    .seccionconectados p {
+        text-align: center;
+        font-size: 1.25rem;
+        color: #0e3241;
+        font-weight: bold;
+    }
+
+    .seccionconectados a {
+        text-align: center;
+        font-size: 1rem;
+        color: gray;
+        text-decoration: none;
+    }
+
+    #carruselEquipo {
+        width: 60%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .carousel-item {
+        padding: 20px;
+    }
+
+    .carousel-inner {
+        margin-top: 20px;
+    }
+
+    .carousel-item img {
+        border: none;
+        border-radius: 60%;
+    }
+
+    .carousel-item h5 {
+        font-size: 1.2rem;
+        margin-top: 15px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .carousel-item p {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #37862d;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon,
+    #carruselEquipo .carousel-control-next-icon {
+        background-color: #007bff;
+        border-radius: 50%;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon:hover,
+    #carruselEquipo .carousel-control-next-icon:hover {
+        background-color: #0056b3;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #seccionequipos {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .seccionconectados h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #F9AF23;
+        font-weight: bold;
+    }
+
+    .seccionconectados p {
+        text-align: center;
+        font-size: 1.25rem;
+        color: #0e3241;
+        font-weight: bold;
+    }
+
+    .seccionconectados a {
+        text-align: center;
+        font-size: 1rem;
+        color: gray;
+        text-decoration: none;
+    }
+
+    #carruselEquipo {
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .carousel-item {
+        padding: 15px;
+    }
+
+    .carousel-inner {
+        margin-top: 15px;
+    }
+
+    .carousel-item img {
+        border: none;
+        border-radius: 60%;
+    }
+
+    .carousel-item h5 {
+        font-size: 1.2rem;
+        margin-top: 15px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .carousel-item p {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #37862d;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon,
+    #carruselEquipo .carousel-control-next-icon {
+        background-color: #007bff;
+        border-radius: 50%;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon:hover,
+    #carruselEquipo .carousel-control-next-icon:hover {
+        background-color: #0056b3;
+    }
+}
+
+@media (max-width: 576px) {
+
+    #seccionequipos {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .seccionconectados h1 {
+        text-align: center;
+        font-size: 1.25rem;
+        color: #F9AF23;
+        font-weight: bold;
+    }
+
+    .seccionconectados p {
+        text-align: center;
+        font-size: 1rem;
+        color: #0e3241;
+        font-weight: bold;
+    }
+
+    .seccionconectados a {
+        text-align: center;
+        font-size: 0.9rem;
+        color: gray;
+        text-decoration: none;
+    }
+
+    #carruselEquipo {
+        width: 100%; /* Aumentar el ancho del carrusel al 100% */
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .carousel-item {
+        padding: 10px;
+    }
+
+    .carousel-inner {
+        margin-top: 10px;
+    }
+
+    .carousel-item img {
+        border: none;
+        border-radius: 45%;
+        width: 40%; /* Ajustar el ancho de las imágenes */
+        height: auto; /* Mantener la proporción */
+    }
+
+    .carousel-item h5 {
+        font-size: 1rem;
+        margin-top: 10px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .carousel-item p {
+        font-size: 0.85rem;
+        font-weight: bold;
+        color: #37862d;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon,
+    #carruselEquipo .carousel-control-next-icon {
+        background-color: #007bff;
+        border-radius: 50%;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon:hover,
+    #carruselEquipo .carousel-control-next-icon:hover {
+        background-color: #0056b3;
+    }
+}
+
+@media (max-width: 425px) {
+
+    #seccionequipos {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .seccionconectados h1 {
+        text-align: center;
+        font-size: 1.1rem; /* Ajustado para pantallas más pequeñas */
+        color: #F9AF23;
+        font-weight: bold;
+    }
+
+    .seccionconectados p {
+        text-align: center;
+        font-size: 0.9rem; /* Ajustado para pantallas más pequeñas */
+        color: #0e3241;
+        font-weight: bold;
+    }
+
+    .seccionconectados a {
+        text-align: center;
+        font-size: 0.8rem; /* Ajustado para pantallas más pequeñas */
+        color: gray;
+        text-decoration: none;
+    }
+
+    #carruselEquipo {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .carousel-item {
+        padding: 5px; /* Reducción de espaciado */
+    }
+
+    .carousel-inner {
+        margin-top: 5px; /* Reducción de margen */
+    }
+
+    .carousel-item img {
+        border: none;
+        border-radius: 45%;
+        width: 60%; /* Ajustar el ancho de las imágenes */
+        height: auto; /* Mantener la proporción */
+    }
+
+    .carousel-item h5 {
+        font-size: 0.9rem; /* Ajustado para pantallas más pequeñas */
+        margin-top: 5px; /* Reducción de margen */
+        font-weight: bold;
+        color: black;
+    }
+
+    .carousel-item p {
+        font-size: 0.75rem; /* Ajustado para pantallas más pequeñas */
+        font-weight: bold;
+        color: #37862d;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon,
+    #carruselEquipo .carousel-control-next-icon {
+        background-color: #007bff;
+        border-radius: 50%;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon:hover,
+    #carruselEquipo .carousel-control-next-icon:hover {
+        background-color: #0056b3;
+    }
+}
+
+@media (max-width: 375px) {
+
+    #seccionequipos {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .seccionconectados h1 {
+        text-align: center;
+        font-size: 1rem; /* Ajustado para pantallas más pequeñas */
+        color: #F9AF23;
+        font-weight: bold;
+    }
+
+    .seccionconectados p {
+        text-align: center;
+        font-size: 0.8rem; /* Ajustado para pantallas más pequeñas */
+        color: #0e3241;
+        font-weight: bold;
+    }
+
+    .seccionconectados a {
+        text-align: center;
+        font-size: 0.7rem; /* Ajustado para pantallas más pequeñas */
+        color: gray;
+        text-decoration: none;
+    }
+
+    #carruselEquipo {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .carousel-item {
+        padding: 5px; /* Espaciado reducido */
+    }
+
+    .carousel-inner {
+        margin-top: 5px; /* Margen reducido */
+    }
+
+    .carousel-item img {
+        border: none;
+        border-radius: 60%;
+        width: 90%; /* Ajustar el ancho de las imágenes */
+        height: auto; /* Mantener la proporción */
+    }
+
+    .carousel-item h5 {
+        font-size: 0.85rem; /* Ajustado para pantallas más pequeñas */
+        margin-top: 5px; /* Reducción de margen */
+        font-weight: bold;
+        color: black;
+    }
+
+    .carousel-item p {
+        font-size: 0.7rem; /* Ajustado para pantallas más pequeñas */
+        font-weight: bold;
+        color: #37862d;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon,
+    #carruselEquipo .carousel-control-next-icon {
+        background-color: #007bff;
+        border-radius: 50%;
+    }
+
+    #carruselEquipo .carousel-control-prev-icon:hover,
+    #carruselEquipo .carousel-control-next-icon:hover {
+        background-color: #0056b3;
+    }
+}
+
+
+
+#termometro-cartas {
+    
+    height: 70vh;
+    width: 100%;
+    max-width: 100vw;
+    background-image: url('../NovaPag/imgs/banners/bannerTermolisto.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.carta, .carta2 {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 800px;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.btn-ojo, .btn-verduras {
+    background-color: #28a745;
+    border-radius: 50% 0% 50% 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.icono-container-me-3 {
+    width: 40px;
+    height: 40px;
+}
+
+.carta h2, .carta2 h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #0B2733;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.carta p, .carta2 p {
+    font-size: 1.2rem;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+@media (min-width: 2560px) {
+    #termometro-cartas {
+        height: 70vh;
+    }
+    .carta, .carta2 {
+        width: 100%;
+    }
+    .carta h2, .carta2 h2{
+        font-size: 1.6rem;
+    }
+    .carta p, .carta2 p{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    #termometro-cartas {
+        height: 70vh;
+    }
+    .carta, .carta2 {
+        width: 80%;
+    }
+    .carta h2, .carta2 h2{
+        font-size: 1.2rem;
+    }
+    .carta p, .carta2 p{
+        font-size: 1.0rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    #termometro-cartas {
+        height: 70vh;
+    }
+    .carta, .carta2 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    #termometro-cartas {
+        height: 542px;
+    }
+    .carta, .carta2 {
+        width: 100%;
+    }
+    .carta h2, .carta2 h2{
+        font-size: 1.0rem;
+    }
+    .carta p, .carta2 p{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 425px) {
+    #termometro-cartas {
+        height: auto;
+    }
+
+    .carta, .carta2 {
+        width: 100%;
+    }
+    .carta h2, .carta2 h2{
+        font-size: 1.0rem;
+    }
+    .carta p, .carta2 p{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 375px) {
+    #termometro-cartas {
+        height: auto;
+        width: 100vw;
+        padding: 10px;
+        margin-top: 15px;
+        display: block;
+    }
+
+    .carta, .carta2 {
+        width: 100%;
+        max-width: 350px;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-ojo, .btn-verduras {
+        width: 40px;
+        height: 40px;
+        border-radius: 50% 25% 50% 50%;
+    }
+
+    .carta h2, .carta2 h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .carta p, .carta2 p {
+        font-size: 0.8rem;
+        text-align: justify;
+    }
+
+    .icono-container-me-3 {
+        width: 35px;
+        height: 35px;
+    }
+
+    .carta .icono-container, .carta2 .icono-container {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    #termometro-cartas {
+        height: auto;
+        width: 100vw;
+        padding: 10px;
+        margin-top: 15px;
+        display: block;
+    }
+
+    .carta, .carta2 {
+        width: 100%;
+        max-width: 300px;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-ojo, .btn-verduras {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+
+    .carta h2, .carta2 h2 {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .carta p, .carta2 p {
+        font-size: 0.7rem;
+        text-align: justify;
+    }
+
+    .icono-container-me-3 {
+        width: 30px;
+        height: 30px;
+    }
+
+    .carta .icono-container, .carta2 .icono-container {
+        margin-right: 8px;
+    }
+}
+
+/* Ajuste de la sección del banner */
+#banner-contacto {
+    margin:0;
+    padding: 0;
+    
+}
+
+#banner-conectarses {
+    width: 100%;
+    max-width: 100vw;
+    padding-top: 20px; 
+    margin-top: -100px;
+    margin-bottom: -50px;
+    height: 700px;
+    background-image: url('../NovaPag/imgs/banners/bannerconectadoss.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+}
+
+/* Estilos de los encabezados */
+#banner-conectarses h1 {
+    color: white;
+    font-size: 3rem;
+    margin:1em 0;
+}
+
+#banner-conectarses h2 {
+    color: #ffffff;
+    font-size: 1.75rem;
+    margin-top: -10px;
+    text-align: center;
+}
+
+/* Estilos del botón personalizado */
+.btn-conectar {
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn-conectar:hover {
+    background-color: #022d5c;
+    color: white;
+}
+@media ( max-width: 375px){
+    #banner-conectarses{
+        height: auto;
+    }
+    #banner-conectarses h1 {
+        font-size: 30px;
+    }
+    #banner-conectarses h2{
+        font-size: 20px;
+        align-content: justify;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

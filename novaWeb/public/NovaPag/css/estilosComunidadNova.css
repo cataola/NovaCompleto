@@ -1,0 +1,767 @@
+/* Estilos para el body y gradiente de fondo */
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Asegura que el padding y el border no afecten el ancho total */
+}
+
+/*FORMULARIO*/
+/* Sección del formulario */
+#formulario-seccion {
+    width: 100%;
+    height: 900px;
+    background-image: url('../NovaPag/imgs/fondos/imgFormulario.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+
+.txtSeccion {
+    position: relative; 
+    margin-top: 110px;
+    margin-left: 370px; 
+}
+
+.txtSeccion h1 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.txtSeccion h5 {
+    color: #ec9d09;
+    font-size: 30px;
+    margin-top: -35px;
+    
+}
+
+.txtSeccion p {
+    margin-top: 20px;
+    text-align: justify;
+}
+#container-encuentranos{
+    margin-left: 330px;
+    margin-top: -40px;
+}
+/* Sección de contacto */
+.contacto {
+    position: relative; /* Mantener posición relativa por defecto */
+    margin-top: 50px;
+    margin-left: 50px; /* Cambiado para que esté alineado a la izquierda */
+    width: 250px;
+}
+
+.contacto h4 {
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.contacto img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#txtCorreo,
+#txtTelefono {
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+/* Sección de contacto2 */
+.contacto2 {
+    position: relative; /* Mantener posición relativa por defecto */
+    margin-top: 50px;
+    margin-left: 50px; /* Cambiado para que esté alineado a la izquierda */
+    width: 250px;
+}
+
+.contacto2 h4 {
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    margin-top: -2px;
+}
+
+.contacto2 a {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contacto2 img {
+    width: 20px;
+    height: 20px;
+    margin-top: -1px;
+    margin-right: 10px;
+}
+
+.contacto2 a span {
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+.contacto2 a:hover span {
+    color: #ec9d09;
+}
+#contenedor-formulario{
+    height: 800px;
+    margin-top: 80px;
+}
+/* Sección del formulario */
+.contenedorCotiza {
+    position: relative; /* Mantener posición relativa por defecto */
+    margin-right: 220px; /* Ajustado para centrar mejor */
+    width: 450px;
+    padding: 20px;
+    background-color: rgba(34, 34, 34, 0.514);
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.contenedorCotiza h1 {
+    margin-top: 0px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contenedorCotiza h5 {
+    margin-top: -40px;
+    color: #ec9d09;
+    height: 15px;
+    font-size: 25px;
+}
+
+/* Estilo para inputs y textarea */
+input,
+textarea {
+    background-color: rgba(110, 110, 110, 0.582);
+    font-weight: bold;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Preferencias de contacto */
+#prefContacto {
+    margin-top: 30px;
+}
+
+.preferencia .form-check {
+    margin-right: 40px;
+}
+
+/* Icono del botón */
+#iconoMensaje {
+    width: 19px;
+    height: 19px;
+}
+
+/* Estilo del botón */
+button {
+    margin-top: 30px;
+    background-color: #ec9d09 !important;
+    border: none !important;
+    border-radius: 50px;
+    height: 40px;
+    font-weight: bold;
+}
+button:hover {
+    background: linear-gradient(to right, #83bef5, #2b69aa, #0a4c92);
+}
+
+
+@media (max-width:2560px){
+    .textos{
+        margin: 0 auto; /* Centra horizontalmente */
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .txtSeccion {
+        margin-left: 540px;
+    }
+    #container-encuentranos{
+        margin-left: 500px;
+    }
+    #txtTelefono,
+    #txtCorreo {
+        margin-left: 2px;
+        margin-top: -5px;
+    }
+}
+@media (max-width: 1440px) {
+
+    #formulario-seccion {
+        height: 800px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 15px; /* Reduce el padding */
+    }
+
+    .txtSeccion {
+        margin-top: 80px; /* Ajusta la posición vertical del texto */
+        margin-left: 250px; /* Ajusta la posición horizontal del texto */
+    }
+
+    .txtSeccion h1 {
+        font-size: 40px; /* Reduce el tamaño del título */
+    }
+
+    .txtSeccion h5 {
+        font-size: 25px; /* Ajusta el tamaño del subtítulo */
+    }
+
+    .txtSeccion p {
+        font-size: 16px; /* Ajusta el tamaño del párrafo */
+    }
+
+    #container-encuentranos {
+        margin-left: 230px; /* Ajusta la posición de la sección */
+    }
+
+    .contacto,
+    .contacto2 {
+        margin-left: 30px; /* Reduce el margen izquierdo para adaptarse a la pantalla */
+        width: 220px; /* Ajusta el ancho de la sección de contacto */
+    }
+    #txtTelefono,
+    #txtCorreo {
+        margin-left: 2px;
+        margin-top: -5px;
+    }
+    .contacto h4, 
+    .contacto2 h4 {
+        font-size: 13px; /* Reduce el tamaño del título de contacto */
+    }
+
+    .contacto img, 
+    .contacto2 img {
+        width: 18px; /* Ajusta el tamaño del icono */
+        height: 18px;
+    }
+
+    .contenedorCotiza {
+        width: 400px; /* Ajusta el ancho del formulario */
+        margin-right: 180px; /* Ajusta la posición horizontal del formulario */
+        padding: 15px; /* Reduce el padding interno */
+    }
+
+    .contenedorCotiza h1 {
+        font-size: 25px; /* Ajusta el tamaño del título */
+        margin-bottom: 20px;
+    }
+
+    .contenedorCotiza h5 {
+        font-size: 22px; /* Ajusta el tamaño del subtítulo */
+    }
+
+    input,
+    textarea {
+        font-size: 14px; /* Ajusta el tamaño del texto en los inputs y textarea */
+    }
+
+    button {
+        font-size: 14px; /* Ajusta el tamaño del texto del botón */
+        height: 35px; /* Reduce la altura del botón */
+        margin-top: 20px; /* Ajusta el margen superior del botón */
+    }
+
+}
+@media (max-width: 1024px) {
+    #formulario-seccion {
+        height: 700px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 10px; /* Reduce el padding */
+    }
+
+    .txtSeccion {
+        margin-top: 50px; /* Ajusta la posición vertical del texto */
+        margin-left: 100px; /* Ajusta la posición horizontal del texto */
+    }
+
+    .txtSeccion h1 {
+        font-size: 35px; /* Reduce el tamaño del título */
+    }
+
+    .txtSeccion h5 {
+        font-size: 20px; /* Ajusta el tamaño del subtítulo */
+    }
+
+    .txtSeccion p {
+        font-size: 14px; /* Ajusta el tamaño del párrafo */
+    }
+
+    #container-encuentranos {
+        margin-left: 80px; /* Ajusta la posición de la sección */
+        margin-top: -50px;
+    }
+    .contacto, .contacto2 {
+        margin-left: 20px; /* Reduce el margen izquierdo */
+        width: 200px; /* Ajusta el ancho de la sección de contacto */
+    }
+    .contacto2{
+        margin-left: 50px;
+    }
+    #txtCorreo, 
+    #txtTelefono {
+        margin-left: 2px;
+        margin-top: -5px;
+    }
+    .contacto h4, .contacto2 h4 {
+        font-size: 12px; /* Reduce el tamaño del título de contacto */
+    }
+
+    .contacto img, .contacto2 img {
+        width: 16px; /* Ajusta el tamaño del icono */
+        height: 16px;
+    }
+
+    .contenedorCotiza {
+        width: 80%; /* Ajusta el ancho del formulario */
+        height: auto;
+        margin-right: 50px; /* Ajusta la posición horizontal del formulario */
+        padding: 10px; /* Reduce el padding interno */
+        margin-top: -30px;
+        
+    }
+
+    .contenedorCotiza h1 {
+        font-size: 25px; /* Ajusta el tamaño del título */
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .contenedorCotiza h5 {
+        font-size: 20px; /* Ajusta el tamaño del subtítulo */
+        margin-left: 20px;
+        padding-top: 5px;
+    }
+    #contactForm input,
+    #contactForm textarea{
+        font-size: 12px;
+    }
+    #prefContacto {
+        font-size: 12px;
+    }
+    
+    .preferencia .form-check {
+        font-size: 12px;
+    }
+    button {
+        font-size: 12px; /* Ajusta el tamaño del texto del botón */
+        height: 30px; /* Reduce la altura del botón */
+        margin-top: 15px; /* Ajusta el margen superior del botón */
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 768px) {
+    #formulario-seccion {
+        height: 600px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 8px; /* Reduce el padding */
+    }
+
+    .txtSeccion {
+        margin-top: 30px; /* Ajusta la posición vertical del texto */
+        margin-left: 70px; /* Ajusta la posición horizontal del texto */
+    }
+
+    .txtSeccion h1 {
+        font-size: 30px; /* Reduce el tamaño del título */
+    }
+
+    .txtSeccion h5 {
+        font-size: 18px; /* Ajusta el tamaño del subtítulo */
+        margin-top: -20px;
+    }
+
+    .txtSeccion p {
+        font-size: 12px; /* Ajusta el tamaño del párrafo */
+    }
+
+    #container-encuentranos {
+        margin-left: 60px; /* Ajusta la posición de la sección */
+        margin-top: -40px;
+    }
+    #txtCorreo,
+    #txtTelefono {
+        margin-left: 0px;
+        margin-top: -2px;
+    
+    }
+    .contacto, .contacto2 {
+        margin-left: 10px; /* Reduce el margen izquierdo */
+        width: 180px; /* Ajusta el ancho de la sección de contacto */
+    }
+    .contacto2 {
+        margin-left: -180px;
+        margin-top: 180px;
+    }
+    .contacto h4, .contacto2 h4 {
+        font-size: 10px; /* Reduce el tamaño del título de contacto */
+    }
+
+    .contacto img, .contacto2 img {
+        width: 14px; /* Ajusta el tamaño del icono */
+        height: 14px;
+    }
+    #contactForm input,
+    #contactForm textarea{
+        font-size: 10px;
+    }
+    .contenedorCotiza {
+        width: 75%; /* Ajusta el ancho del formulario */
+        height: auto;
+        margin-right: 40px; /* Ajusta la posición horizontal del formulario */
+        padding: 8px; /* Reduce el padding interno */
+        margin-top: -50px;
+    }
+
+    .contenedorCotiza h1 {
+        font-size: 22px; /* Ajusta el tamaño del título */
+        margin-bottom: 13px;
+        margin-left: 15px;
+    }
+
+    .contenedorCotiza h5 {
+        font-size: 18px; /* Ajusta el tamaño del subtítulo */
+        margin-left: 15px;
+        padding-top: 10px;
+    }
+
+    #prefContacto {
+        font-size: 10px;
+    }
+    
+    .preferencia .form-check {
+        font-size: 10px;
+    }
+    
+    button {
+        font-size: 10px; /* Ajusta el tamaño del texto del botón */
+        height: 25px; /* Reduce la altura del botón */
+        margin-top: 10px; /* Ajusta el margen superior del botón */
+        margin-bottom: 8px;
+    }
+}
+
+
+/* Pantallas de hasta 576px */
+@media (max-width: 425px) {
+    #formulario-seccion {
+        width: 100vw;
+        height: 1400px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 5px; /* Reduce el padding */
+    }
+
+    .txtSeccion {
+        margin-top: 40px; /* Ajusta la posición vertical del texto */
+        margin-left: 30px; /* Ajusta la posición horizontal del texto */
+    }
+
+    .txtSeccion h1 {
+        font-size: 25px; /* Reduce el tamaño del título */
+    }
+
+    .txtSeccion h5 {
+        font-size: 16px; /* Ajusta el tamaño del subtítulo */
+        margin-top: -10px;
+    }
+
+    .txtSeccion p {
+        font-size: 10px; /* Ajusta el tamaño del párrafo */
+    }
+
+    #container-encuentranos {
+        margin-left: 30px; /* Ajusta la posición de la sección */
+        margin-top: -70px;
+    }
+
+    #txtCorreo,
+    #txtTelefono {
+        margin-left: 0px;
+        margin-top: -2px;
+    }
+
+    .contacto, .contacto2 {
+        margin-left: 5px; /* Reduce el margen izquierdo */
+        width: 150px; /* Ajusta el ancho de la sección de contacto */
+    }
+
+    .contacto2 {
+        margin-left: -150px;
+        margin-top: 150px;
+    }
+
+    .contacto h4, .contacto2 h4 {
+        font-size: 9px; /* Reduce el tamaño del título de contacto */
+    }
+
+    .contacto img, .contacto2 img {
+        width: 12px; /* Ajusta el tamaño del icono */
+        height: 12px;
+    }
+
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 9px; /* Reduce el tamaño del texto de los campos */
+    }
+
+    .contenedorCotiza {
+        width: 90%; /* Ajusta el ancho del formulario */
+        margin-right: -20px; /* Ajusta la posición horizontal del formulario */
+        padding: 5px; /* Reduce el padding interno */
+        margin-top: -30px;
+        height: 550px;
+    }
+
+    .contenedorCotiza h1 {
+        font-size: 18px; /* Ajusta el tamaño del título */
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .contenedorCotiza h5 {
+        font-size: 16px; /* Ajusta el tamaño del subtítulo */
+        margin-left: 10px;
+        padding-top: 8px;
+        margin-top: -20px;
+    }
+
+    #prefContacto {
+        font-size: 9px; /* Ajusta el tamaño del texto de preferencia de contacto */
+    }
+
+    .preferencia .form-check {
+        font-size: 9px; /* Reduce el tamaño del texto de las opciones */
+    }
+
+    button {
+        font-size: 9px; /* Ajusta el tamaño del texto del botón */
+        height: 22px; /* Reduce la altura del botón */
+        margin-top: 8px; /* Ajusta el margen superior del botón */
+        margin-bottom: 6px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    #formulario-seccion {
+        width: 100vw;
+        height: 1400px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 5px; /* Reduce el padding */
+    }
+    
+    .txtSeccion {
+        margin-top: 35px; /* Ajusta la posición vertical del texto */
+        margin-left: 25px; /* Ajusta la posición horizontal del texto */
+    }
+    
+    .txtSeccion h1 {
+        font-size: 23px; /* Reduce el tamaño del título */
+    }
+    
+    .txtSeccion h5 {
+        font-size: 15px; /* Ajusta el tamaño del subtítulo */
+        margin-top: -8px;
+    }
+    
+    .txtSeccion p {
+        font-size: 9px; /* Ajusta el tamaño del párrafo */
+    }
+    
+    #container-encuentranos {
+        margin-left: 25px; /* Ajusta la posición de la sección */
+        margin-top: -60px;
+    }
+    
+    #txtCorreo,
+    #txtTelefono {
+        margin-left: 0px;
+        margin-top: -2px;
+    }
+    
+    .contacto,
+    .contacto2 {
+        margin-left: 3px; /* Reduce el margen izquierdo */
+        width: 140px; /* Ajusta el ancho de la sección de contacto */
+    }
+    
+    .contacto2 {
+        margin-left: -140px;
+        margin-top: 140px;
+    }
+    
+    .contacto h4,
+    .contacto2 h4 {
+        font-size: 8px; /* Reduce el tamaño del título de contacto */
+    }
+    
+    .contacto img,
+    .contacto2 img {
+        width: 10px; /* Ajusta el tamaño del icono */
+        height: 10px;
+    }
+    
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 8px; /* Reduce el tamaño del texto de los campos */
+    }
+    #formulario-seccion{
+        height: 1040px;
+    }
+    .contenedorCotiza {
+        width: 90%; /* Ajusta el ancho del formulario */
+        margin-right: -20px; /* Ajusta la posición horizontal del formulario */
+        padding: 4px; /* Reduce el padding interno */
+        margin-top: -30px;
+        height: 540px; /* Ajusta la altura */
+    }
+    
+    .contenedorCotiza h1 {
+        font-size: 17px; /* Ajusta el tamaño del título */
+        margin-bottom: 8px;
+        margin-left: 8px;
+        margin-top: 18px;
+    }
+    
+    .contenedorCotiza h5 {
+        font-size: 15px; /* Ajusta el tamaño del subtítulo */
+        margin-left: 8px;
+        padding-top: 7px;
+        margin-top: -15px;
+    }
+    
+    #prefContacto {
+        font-size: 8px; /* Ajusta el tamaño del texto de preferencia de contacto */
+    }
+    
+    .preferencia .form-check {
+        font-size: 8px; /* Reduce el tamaño del texto de las opciones */
+    }
+    
+    button {
+        font-size: 8px; /* Ajusta el tamaño del texto del botón */
+        height: 20px; /* Reduce la altura del botón */
+        margin-top: 7px; /* Ajusta el margen superior del botón */
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+    #formulario-seccion {
+        width: 100%;
+        height: 1400px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 4px; /* Reduce el padding */
+    }
+    
+    .txtSeccion {
+        margin-top: 30px; /* Ajusta la posición vertical del texto */
+        margin-left: 20px; /* Ajusta la posición horizontal del texto */
+    }
+    
+    .txtSeccion h1 {
+        font-size: 22px; /* Reduce el tamaño del título */
+    }
+    
+    .txtSeccion h5 {
+        font-size: 14px; /* Ajusta el tamaño del subtítulo */
+        margin-top: -6px;
+    }
+    
+    .txtSeccion p {
+        font-size: 9px; /* Ajusta el tamaño del párrafo */
+    }
+    
+    #container-encuentranos {
+        margin-left: 20px; /* Ajusta la posición de la sección */
+        margin-top: -80px;
+    }
+    
+    #txtCorreo,
+    #txtTelefono {
+        margin-left: 0px;
+        margin-top: -2px;
+    }
+    
+    .contacto,
+    .contacto2 {
+        margin-left: 3px; /* Reduce el margen izquierdo */
+        width: 130px; /* Ajusta el ancho de la sección de contacto */
+    }
+    
+    .contacto2 {
+        margin-left: -130px;
+        margin-top: 190px;
+    }
+    
+    .contacto h4,
+    .contacto2 h4 {
+        font-size: 7px; /* Reduce el tamaño del título de contacto */
+    }
+    
+    .contacto img,
+    .contacto2 img {
+        width: 10px; /* Ajusta el tamaño del icono */
+        height: 10px;
+    }
+    
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 7px; /* Reduce el tamaño del texto de los campos */
+    }
+    
+    .contenedorCotiza {
+        width: 90%; /* Ajusta el ancho del formulario */
+        margin-right: -20px; /* Ajusta la posición horizontal del formulario */
+        padding: 4px; /* Reduce el padding interno */
+        margin-top: -30px;
+        height: 520px; /* Ajusta la altura */
+    }
+    
+    .contenedorCotiza h1 {
+        font-size: 16px; /* Ajusta el tamaño del título */
+        margin-bottom: 8px;
+        margin-left: 8px;
+        margin-top: 18px;
+    }
+    
+    .contenedorCotiza h5 {
+        font-size: 14px; /* Ajusta el tamaño del subtítulo */
+        margin-left: 8px;
+        padding-top: 7px;
+        margin-top: -15px;
+    }
+    
+    #prefContacto {
+        font-size: 7px; /* Ajusta el tamaño del texto de preferencia de contacto */
+    }
+    
+    .preferencia .form-check {
+        font-size: 7px; /* Reduce el tamaño del texto de las opciones */
+    }
+    
+    button {
+        font-size: 7px; /* Ajusta el tamaño del texto del botón */
+        height: 18px; /* Reduce la altura del botón */
+        margin-top: 6px; /* Ajusta el margen superior del botón */
+        margin-bottom: 4px;
+    }
+}
+
+

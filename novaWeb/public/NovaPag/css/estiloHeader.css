@@ -1,0 +1,731 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#gradiente {
+    width: 100vw;
+    height: 38px;
+    background: linear-gradient(to right, #ffffff, #e8f3ff, #366597, #022d5c);
+}
+
+/* Estilos para los íconos de redes sociales alineados a la derecha */
+#redes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -5px;
+    right: 420px; /* Ajusta el espacio desde la parte derecha */
+    padding: 0 10px; /* Ajusta el relleno para darle espacio alrededor */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    z-index: 1000; /* Asegura que el contenedor esté por encima de otros elementos */
+}
+
+#redes a {
+    display: inline-flex;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px; /* Espacio entre íconos */
+}
+
+#redes a img {
+    width: 60%;
+    height: auto;
+}
+
+#redes a:hover {
+    background: linear-gradient(to right, #ddbc7d, #F9AF23);
+    transform: scale(1.1);
+}
+.container {
+    max-width: 1200px;
+    width: 100%; 
+    height: auto;
+    margin: 0 auto; /* Centra el contenedor */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* Estilos para el logo */
+#logo {
+    max-width: 100%;
+    height: 120px;
+    width: 250px;
+    margin-bottom: 0; /* Se ajusta para responsividad */
+    margin-left: -20px;
+}
+
+/* Estilos para el navbar */
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 25px;
+    width: 80%;
+    justify-content: space-between;
+    background-color: white !important;
+    font-weight: bold;
+    font-size: 15px !important;
+}
+.navbar-nav .nav-link {
+    color: #0B2735;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+.navbar-nav .nav-link:hover {
+    color: #F9AF23;
+}
+.dropdown-menu .dropdown-item{
+    color: #0B2735;
+    transition: color 0.3s ease;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.dropdown-menu .dropdown-item:hover{
+    color: #F9AF23;
+}
+.dropdown-menu .dropdown-item:hover{
+    background-color: transparent !important; /* Mantén el fondo transparente */
+    color: #F9AF23; /* Mantén el color del texto original */
+    outline: none; /* Elimina el borde de enfoque */
+}
+.navbar-toggler{
+    background-color: transparent !important; 
+}
+.navbar-toggler:hover,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    background-color: transparent !important; /* Mantiene el fondo transparente */
+    color: inherit !important; /* Mantiene el color original */
+    outline: none; /* Elimina el borde al hacer clic */
+}
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; 
+    z-index: 1000;
+}
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-submenu > a::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #000;
+    margin-left: 10px;
+}
+.navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
+    display: block; /* Mantener el menú desplegado en pantallas grandes */
+}
+.navbar-nav .dropdown-menu.show {
+    display: block; /* Asegúrate de que el menú se muestre cuando tiene la clase 'show' */
+}
+#contenedor-btnSelect{
+    width: 450px;
+    display: flex; /* Flex para alinear elementos */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Alineación vertical */
+    margin: auto; /* Centrar el contenedor */
+}
+/* Botón de Clientes */
+#btnCliente{
+    display: inline-flex;
+    align-items: center;
+    background-color: #F9AF23;
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-left: 0px;
+    height: 40px;
+}
+#btnCliente:hover {
+    background: linear-gradient(to right, #83bef5, #2b69aa, #0a4c92) !important;
+}
+
+/* Select de idioma */
+#container-lenguaje {
+    margin-left: auto;
+}
+
+#language-select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    width: 150px !important;
+    height: auto !important;
+}
+.select2-results__option[data-image] {
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 25px;
+}
+
+.select2-results__option[data-image="imgs/iconos/bandera.png"] {
+    background-image: url('imgs/iconos/bandera.png');
+}
+
+.select2-results__option[data-image="imgs/iconos/estados-unidos.png"] {
+    background-image: url('imgs/iconos/estados-unidos.png');
+}
+.select2-container--default .select2-results__option {
+    display: flex;
+    align-items: center;
+}
+
+.select2-container--default .select2-results__option img {
+    width: 20px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 8px; /* Espacio entre la imagen y el texto */
+}
+
+/* Asegúrate de que el select2 tenga suficiente espacio para las imágenes */
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    display: flex;
+    align-items: center;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered img {
+    width: 20px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 8px; /* Espacio entre la imagen y el texto */
+}
+.select2-container--default .select2-search--dropdown {
+    display: none;
+}
+
+.select2-container--default .select2-search {
+    display: none;
+}
+
+@media (max-width: 2560px) {
+    #redes {
+        top: 5px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    #logo {
+            max-width: 100%; /* Asegúrate de que el logo se ajuste bien */
+    }
+
+
+    .dropdown-menu {
+        display: none; /* Asegúrate de que el menú principal esté oculto por defecto */
+    }
+
+
+    #contenedor-btnSelect {
+        width: 40%; /* Mantiene el ancho del contenedor */
+    }
+
+    #btnCliente {
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    #language-select {
+        width: 50%; /* Mantiene el ancho del select */
+    }
+}
+
+
+
+@media (max-width: 1440px) {
+    #redes {
+        top: 5px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    #logo {
+        max-width: 120%;
+    }
+    .navbar {
+        width: 80%;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 13px;
+    }
+    #contenedor-btnSelect {
+        width: 40%; /* Ancho del 70% para pantallas grandes */
+
+    }
+    #btnCliente{
+        width: 50%;
+        margin-left: 10px;
+    }
+    #language-select {
+        width: 50%; /* Select ocupa todo el ancho */
+    }
+}
+@media (max-width: 1118px) {
+    body{
+        font-size: 14px;
+    }
+    #redes {
+        top: 5px;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+
+    #logo {
+        max-width: 60%; /* Ajusta el logo al 100% */
+        height: auto;
+        margin-left: 15px;
+    }
+
+    .navbar {
+        width: 80%; /* Ajusta el ancho del navbar */
+        font-size: 12px; /* Reduce el tamaño de fuente */
+        margin-left: -30px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 11px; /* Ajusta el tamaño del texto en el dropdown */
+    }
+
+    #contenedor-btnSelect {
+        width: 40%; /* Reduce el ancho del contenedor*/
+        margin-right: 15px;
+    }
+
+    #btnCliente {
+        width: 55%;
+        margin-left: -20px; /* Mantén el margen */
+        font-size: 13px;
+    }
+
+    #language-select {
+        width: 48%; /* Ajusta el ancho del select */
+    }
+}
+
+@media (max-width: 1024px) {
+    body{
+        font-size: 14px;
+    }
+    #redes {
+        top: 5px;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+
+    #logo {
+        max-width: 60%; /* Ajusta el logo al 100% */
+        height: auto;
+        margin-left: 15px;
+    }
+
+    .navbar {
+        width: 80%; /* Ajusta el ancho del navbar */
+        font-size: 12px; /* Reduce el tamaño de fuente */
+        margin-left: -30px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 11px; /* Ajusta el tamaño del texto en el dropdown */
+    }
+
+    #contenedor-btnSelect {
+        width: 40%; /* Reduce el ancho del contenedor */
+        margin-right: 15px;
+    }
+
+    #btnCliente {
+        width: 55%;
+        margin-left: -20px; /* Mantén el margen */
+        font-size: 13px;
+    }
+
+    #language-select {
+        width: 48%; /* Ajusta el ancho del select */
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        font-size: 12px;
+    }
+    #redes {
+        top: 5px;
+        flex-direction: row; /* Cambia a columna para mejor adaptación */
+        justify-content: flex-end; /* Centra el contenido */
+    }
+
+    #logo {
+        max-width: 50%; /* Aumenta el ancho del logo */
+        height: auto;
+        margin: 0 auto; /* Centra el logo */
+        margin-left: -5px;
+    }
+
+    .navbar {
+        width: 70%; /* Aumenta el ancho del navbar */
+        font-size: 9px; /* Reduce aún más el tamaño de fuente */
+        margin: 0 auto; /* Centra el navbar */
+        margin-left: -100px;
+        margin-right: 50px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 8px; /* Ajusta el tamaño del texto en el dropdown */
+    }
+
+    #contenedor-btnSelect {
+        width: 20%; /* Aumenta el ancho del contenedor */
+        margin-right: 30px;
+    }
+    #btnCliente {
+        width: 60%; /* Aumenta el ancho del botón */
+        margin: 10px auto; /* Centra el botón */
+        font-size: 10px; /* Reduce el tamaño de la fuente */
+        margin-left: -45px;
+    }
+    #btnCliente img{
+        width: 30%;
+        height: auto;
+        margin-left: -15px;
+        margin-right: -5px;
+    }
+
+    #language-select {
+        width: 100%; /* Aumenta el ancho del select */
+        height: auto;
+        margin-right: -60px;
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    body{
+        font-size: 11px;
+    }
+    #redes {
+        top: 5px;
+        flex-direction: row; /* Cambia a columna para mejor adaptación */
+        justify-content: flex-end; /* Centra el contenido */
+    }
+
+    #logo {
+        max-width: 50%; /* Aumenta el ancho del logo */
+        height: auto;
+        margin-top: -60px;
+        margin-left: 170px;
+    }
+
+    .navbar {
+        width: 40%; /* Aumenta el ancho del navbar */
+        height: auto;
+        font-size: 9px; /* Reduce aún más el tamaño de fuente */
+        right: 80px;
+        margin-left: -340px;
+        margin-top: 150px;
+        background-color: transparent !important;
+    }
+    .navbar-nav .dropdown-menu {
+        max-width: 241px; /* Ajusta el valor según tus necesidades */
+        padding-left: 0px;
+    }
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 8px; /* Ajusta el tamaño del texto en el dropdown */
+        overflow: hidden;
+        padding-left: 3px;
+    }
+    .navbar-nav .dropdown-menu .dropdown-submenu{
+        width: 160px;
+    }
+    .navbar-toggler:focus, 
+    .navbar-toggler:active {background-color: transparent !important; /* Asegura que el fondo sea transparente */
+
+    }
+    .navbar-toggler {
+        padding-bottom: 35px;
+        border: 1px solid rgba(0, 0, 0, 0.1); /* Mantén un borde ligero si lo prefieres */
+        border-radius: 4px; /* Puedes ajustar el radio del borde si lo necesitas */
+        border: solid 1px rgba(187, 187, 187, 0.712) !important;
+    }
+    .navbar-toggler:hover {
+        background: white !important;
+    }
+    .nav-link:focus{
+        background: white !important; /* Asegura que no haya color de fondo */
+
+    } 
+    .nav-link:active {
+        background: white !important; /* Asegura que no haya color de fondo */
+
+    }
+    .dropdown-menu .dropdown-item{
+        margin-top: -5px;
+        margin-bottom: -5px;
+    }
+
+    .dropdown-menu .dropdown-item:focus, 
+    .dropdown-menu .dropdown-item:active {
+        background-color: transparent !important; /* Asegura que no haya color de fondo */
+        outline: none;
+        box-shadow: none;
+    }
+    #contenedor-btnSelect {
+        width: 80%; /* Aumenta el ancho del contenedor */
+        margin: 10px auto; /* Centra el contenedor */
+        margin-top: 160px;
+        margin-left: -190px;
+    }
+
+    #btnCliente {
+        width: 31%; /* Aumenta el ancho del botón */
+        font-size: 11px; /* Reduce el tamaño de la fuente */
+        margin-left: 150px;
+    }
+    #language-select{
+        width: 30%;
+    }
+}
+@media (max-width: 425px) {
+    body{
+        font-size: 11px;
+    }
+    #redes {
+        top: 5px;
+        flex-direction: row; /* Cambia a columna para mejor adaptación */
+        justify-content: flex-end; /* Centra el contenido */
+    }
+
+    #logo {
+        max-width: 50%; /* Aumenta el ancho del logo */
+        height: auto;
+        margin-top: -60px;
+        margin-left: 110px;
+    }
+
+    .navbar {
+        width: 40%; /* Aumenta el ancho del navbar */
+        height: auto;
+        font-size: 9px; /* Reduce aún más el tamaño de fuente */
+        right: 80px;
+        margin-left: -300px;
+        margin-top: 150px;
+        background-color: transparent !important;
+    }
+    .navbar-nav .dropdown-menu {
+        max-width: 241px; /* Ajusta el valor según tus necesidades */
+        padding-left: 0px;
+    }
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 8px; /* Ajusta el tamaño del texto en el dropdown */
+        overflow: hidden;
+        padding-left: 3px;
+    }
+    .navbar-nav .dropdown-menu .dropdown-submenu{
+        width: 160px;
+    }
+    .navbar-toggler:focus, 
+    .navbar-toggler:active {background-color: transparent !important; /* Asegura que el fondo sea transparente */
+
+    }
+    .navbar-toggler {
+        padding-bottom: 35px;
+        border: 1px solid rgba(0, 0, 0, 0.1); /* Mantén un borde ligero si lo prefieres */
+        border-radius: 4px; /* Puedes ajustar el radio del borde si lo necesitas */
+        border: solid 1px rgba(187, 187, 187, 0.712) !important;
+    }
+.navbar-toggler:hover {
+        background: white !important;
+    }
+    .nav-link:focus{
+        background: white !important; /* Asegura que no haya color de fondo */
+
+    } 
+    .nav-link:active {
+        background: white !important; /* Asegura que no haya color de fondo */
+
+    }
+    .dropdown-menu .dropdown-item{
+        margin-top: -5px;
+        margin-bottom: -5px;
+    }
+
+    .dropdown-menu .dropdown-item:focus, 
+    .dropdown-menu .dropdown-item:active {
+        background-color: transparent !important; /* Asegura que no haya color de fondo */
+        outline: none;
+        box-shadow: none;
+    }
+    #contenedor-btnSelect {
+        width: 80%; /* Aumenta el ancho del contenedor */
+        margin: 10px auto; /* Centra el contenedor */
+        margin-top: 160px;
+        margin-left: -190px;
+    }
+
+    #btnCliente {
+        width: 31%; /* Aumenta el ancho del botón */
+        font-size: 11px; /* Reduce el tamaño de la fuente */
+        margin-left: 70px;
+    }
+    #language-select{
+        width: 40%;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        font-size: 10px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    #redes {
+        top: 5px;
+        flex-direction: row; /* Mantén en fila, ya que puede adaptarse bien */
+        justify-content: flex-end; /* Mantén la alineación a la derecha */
+    }
+
+    #logo {
+        max-width: 45%; /* Reduce un poco el tamaño del logo */
+        height: auto;
+        margin-top: -50px; /* Ajusta el margen superior */
+        margin-left: 90px; /* Ajusta el margen izquierdo */
+    }
+
+    .navbar {
+        width: 35%; /* Reduce ligeramente el ancho del navbar */
+        font-size: 8px; /* Disminuye el tamaño de la fuente */
+        right: 70px; /* Ajusta el margen derecho */
+        margin-left: -290px; /* Reduce el margen izquierdo */
+        margin-top: 140px; /* Ajusta el margen superior */
+        background-color: transparent !important;
+    }
+
+    .navbar-nav .dropdown-menu {
+        max-width: 210px; /* Ajusta el ancho del dropdown */
+        padding-left: 0px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 7px; /* Reduce aún más el tamaño del texto en el dropdown */
+        overflow: hidden;
+        padding-left: 2px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-submenu {
+        width: 150px; /* Ajusta el ancho del submenú */
+    }
+
+    #contenedor-btnSelect {
+        width: 75%; /* Reduce ligeramente el ancho del contenedor */
+        margin: 8px auto; /* Ajusta los márgenes */
+        margin-top: 150px;
+        margin-left: -140px; /* Ajusta el margen izquierdo */
+    }
+
+    #btnCliente {
+        width: 38%; /* Ajusta el ancho del botón */
+        font-size: 10px; /* Reduce el tamaño de la fuente */
+        margin-left: 65px; /* Ajusta el margen izquierdo */
+    }
+
+    #language-select {
+        width: 40%; /* Ajusta el ancho del selector de lenguaje */
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 9px; /* Reduce el tamaño de la fuente para pantallas pequeñas */
+        width: 100%;
+        
+    }
+    img, div {
+        max-width: 100%; /* Limita el ancho máximo de las imágenes o divs al ancho del contenedor */
+    }
+    #gradiente{
+        width: 100%;
+        height: auto;
+    }
+    #redes {
+        top: 5px;
+        flex-direction: row; /* Mantiene los iconos en fila */
+        justify-content: flex-end; /* Alinea a la derecha */
+    }
+
+    #logo {
+        max-width: 40%; /* Reduce el ancho del logo */
+        height: auto;
+        margin-top: -40px; /* Ajusta el margen superior */
+        margin-right: -15px;
+        margin-left: 90px;
+    }
+
+    .navbar {
+        width: 30%; /* Reduce el ancho del navbar */
+        font-size: 7px; /* Reduce aún más el tamaño de la fuente */
+        right: 60px; /* Ajusta el margen derecho */
+        margin-left: -250px; /* Ajusta el margen izquierdo */
+        margin-top: 130px; /* Ajusta el margen superior */
+        background-color: transparent !important;
+    }
+
+    .navbar-nav .dropdown-menu {
+        max-width: 175px; /* Reduce el ancho del dropdown */
+        padding-left: 0px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 6px; /* Reduce el tamaño del texto en el dropdown */
+        overflow: hidden;
+        padding-left: 1px; /* Ajusta el padding */
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-submenu {
+        width: 140px; /* Reduce el ancho del submenú */
+    }
+
+    #contenedor-btnSelect {
+        width: 80%;
+        margin: 6px auto; /* Ajusta los márgenes */
+        margin-top: 140px;
+        margin-left: -110px; /* Ajusta el margen izquierdo */
+        margin-right: -10px;
+    }
+
+    #btnCliente {
+        width: 45%; /* Ajusta el ancho del botón */
+        font-size: 9px; /* Reduce el tamaño de la fuente */
+        margin-left: 20px; /* Ajusta el margen izquierdo */
+    }
+
+    #language-select {
+        width: 55% !important; /* Ajusta el ancho del selector de idioma */
+        margin-right: -50px !important;
+    }
+}

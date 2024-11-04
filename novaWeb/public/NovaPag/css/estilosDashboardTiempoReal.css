@@ -1,0 +1,2222 @@
+
+/* Estilos para el body y gradiente de fondo */
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Asegura que el padding y el border no afecten el ancho total */
+}
+#gradiente {
+    width: 100vw;
+    height: 38px;
+    background: linear-gradient(to right, #ffffff, #e8f3ff, #366597, #022d5c);
+}
+
+/* Estilos para los íconos de redes sociales alineados a la derecha */
+#redes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -5px;
+    right: 420px; /* Ajusta el espacio desde la parte derecha */
+    padding: 0 10px; /* Ajusta el relleno para darle espacio alrededor */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    z-index: 1000; /* Asegura que el contenedor esté por encima de otros elementos */
+}
+
+#redes a {
+    display: inline-flex;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px; /* Espacio entre íconos */
+}
+
+#redes a img {
+    width: 60%;
+    height: auto;
+}
+
+#redes a:hover {
+    background: linear-gradient(to right, #ddbc7d, #F9AF23);
+    transform: scale(1.1);
+}
+.container {
+    max-width: 1200px;
+    width: 100%; 
+    height: auto;
+    margin: 0 auto; /* Centra el contenedor */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Estilos para el logo */
+#logo {
+    max-width: 100%;
+    height: 120px;
+    width: 250px;
+    margin-bottom: 0; /* Se ajusta para responsividad */
+    margin-left: -20px;
+}
+
+/* Estilos para el navbar */
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 25px;
+    width: 80%;
+    justify-content: space-between;
+    background-color: white !important;
+    font-weight: bold;
+}
+.navbar-nav .nav-link {
+    color: #0B2735;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+.navbar-nav .nav-link:hover {
+    color: #F9AF23;
+}
+.dropdown-menu .dropdown-item{
+    color: #0B2735;
+    transition: color 0.3s ease;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.dropdown-menu .dropdown-item:hover{
+    color: #F9AF23;
+}
+.dropdown-menu .dropdown-item:hover{
+    background-color: transparent !important; /* Mantén el fondo transparente */
+    color: #F9AF23; /* Mantén el color del texto original */
+    outline: none; /* Elimina el borde de enfoque */
+}
+.navbar-toggler{
+    background-color: transparent !important; 
+}
+.navbar-toggler:hover,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    background-color: transparent !important; /* Mantiene el fondo transparente */
+    color: inherit !important; /* Mantiene el color original */
+    outline: none; /* Elimina el borde al hacer clic */
+}
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; 
+    z-index: 1000;
+}
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-submenu > a::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #000;
+    margin-left: 10px;
+}
+.navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
+    display: block; /* Mantener el menú desplegado en pantallas grandes */
+}
+.navbar-nav .dropdown-menu.show {
+    display: block; /* Asegúrate de que el menú se muestre cuando tiene la clase 'show' */
+}
+#contenedor-btnSelect{
+    width: 450px;
+    display: flex; /* Flex para alinear elementos */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Alineación vertical */
+    margin: auto; /* Centrar el contenedor */
+}
+/* Botón de Clientes */
+#btnCliente{
+    display: inline-flex;
+    align-items: center;
+    background-color: #F9AF23;
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-left: 0px;
+    height: 40px;
+}
+#btnCliente:hover {
+    background: linear-gradient(to right, #83bef5, #2b69aa, #0a4c92) !important;
+}
+
+/* Select de idioma */
+#container-lenguaje {
+    margin-left: auto;
+}
+
+#lenguaje {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+.select2-results__option[data-image] {
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 25px;
+}
+
+.select2-results__option[data-image="imgs/iconos/bandera.png"] {
+    background-image: url('imgs/iconos/bandera.png');
+}
+
+.select2-results__option[data-image="imgs/iconos/estados-unidos.png"] {
+    background-image: url('imgs/iconos/estados-unidos.png');
+}
+.select2-container--default .select2-results__option {
+    display: flex;
+    align-items: center;
+}
+
+.select2-container--default .select2-results__option img {
+    width: 20px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 8px; /* Espacio entre la imagen y el texto */
+}
+
+/* Asegúrate de que el select2 tenga suficiente espacio para las imágenes */
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    display: flex;
+    align-items: center;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered img {
+    width: 20px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 8px; /* Espacio entre la imagen y el texto */
+}
+.select2-container--default .select2-search--dropdown {
+    display: none;
+}
+
+.select2-container--default .select2-search {
+    display: none;
+}
+
+
+/*////////////*/ 
+
+#bannerAgricola{
+    position: relative;
+    display: block;
+    width: 100vw;
+    background-color: #ffffff;
+    overflow: hidden; 
+}
+
+#bannerAgricola img {
+    width: 100vw;
+    height: auto;
+}
+
+#bannerAgricola-title h3{
+    position: absolute;
+    top: 50%; /* Posiciona verticalmente al centro */
+    left: 50%; /* Posiciona horizontalmente al centro */
+    transform: translate(-50%, -50%); /* Ajusta el texto para que esté centrado en relación a su propio tamaño */
+    padding: 10px 20px;
+    font-size: 3rem;
+    width: 900px;
+    height: auto;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center; /* Centra el texto dentro del contenedor */
+    z-index: 2;
+}
+
+/****************/
+.textos {
+    border: solid 5px #0B2733;
+    width: 100%; /* Cambiado para que sea responsivo */
+    max-width: 890px; /* Ancho máximo */
+    height: 530px; /* Altura automática */
+    background-color: rgba(36, 35, 35, 0.048);
+    position: relative; /* Necesario para posicionar el botón y la imagen */
+    padding: 10px; /* Ajuste del padding interno */
+    padding-left: 60px;
+    margin: 0 auto; /* Centra horizontalmente */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.textos h3 {
+    color: #F9AF23;
+    margin: 55px 0 20px; /* Ajustado márgenes */
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: start;
+    font-weight: bold;
+    margin-top: 30px;
+    
+}
+
+.textos h1 {
+    color: #0B2733;
+    margin: 20px 0; /* Ajustado márgenes */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: start;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: -20px;
+    width: 80%;
+}
+
+.txt {
+    float: left; /* Permite que el texto fluya a la izquierda */
+    width: 75%; /* Ajustar el ancho del texto */
+}
+
+.txt p {
+    width: 100%; /* Cambiado a 100% para ser responsivo */
+    font-size: 20px; /* Ajustado el tamaño de fuente */
+    text-align: justify;
+    margin: 0 0 20px; /* Ajustado márgenes */
+}
+
+.textos img {
+    width: 50%; /* Cambiado para que sea responsivo */
+    max-width: 650px; /* Ancho máximo */
+    height: auto; /* Altura automática para mantener la proporción */
+    position: relative; /* Para posicionar la imagen */
+    margin-left: 600px;
+    margin-top: -450px;
+    border: solid 10px #0B2733;
+    clip-path: inset(0px 20px 0px 60px);
+}
+
+.btnCotiza {
+    display: inline-flex;
+    font-size: 16px;
+    color: white; /* Color del texto */
+    background-color: #ec9d09 !important; /* Color de fondo personalizado */
+    border: none; /* Sin borde */
+    border-radius: 30px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    margin-top: 20px; /* Espaciado superior */
+    padding: 15px 25px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    text-align: center; /* Centrado del texto */
+    font-weight: bold; /* Negrita */
+    position: relative; /* Necesario para mantener la posición */
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+}
+
+.btnCotiza:hover {
+    background: linear-gradient(to right, #83bef5, #2b69aa, #0a4c92); /* Color de fondo en hover */
+}
+
+/*************/
+
+/* Sección del formulario */
+#formulario-seccion {
+    width: 100%;
+    height: 900px;
+    background-image: url('imgs/fondos/imgFormulario.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+
+.txtSeccion {
+    position: relative; 
+    margin-top: 110px;
+    margin-left: 370px; 
+}
+
+.txtSeccion h1 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.txtSeccion h5 {
+    color: #ec9d09;
+    font-size: 30px;
+    margin-top: -35px;
+}
+
+.txtSeccion p {
+    margin-top: 20px;
+}
+#container-encuentranos{
+    margin-left: 330px;
+}
+/* Sección de contacto */
+.contacto {
+    position: relative; /* Mantener posición relativa por defecto */
+    margin-top: 50px;
+    margin-left: 50px; /* Cambiado para que esté alineado a la izquierda */
+    width: 250px;
+}
+
+.contacto h4 {
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.contacto img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#txtCorreo,
+#txtTelefono {
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+/* Sección de contacto2 */
+.contacto2 {
+    position: relative; /* Mantener posición relativa por defecto */
+    margin-top: 50px;
+    margin-left: 50px; /* Cambiado para que esté alineado a la izquierda */
+    width: 250px;
+}
+
+.contacto2 h4 {
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    margin-top: -2px;
+}
+
+.contacto2 a {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contacto2 img {
+    width: 20px;
+    height: 20px;
+    margin-top: -1px;
+    margin-right: 10px;
+}
+
+.contacto2 a span {
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+.contacto2 a:hover span {
+    color: #ec9d09;
+}
+#contenedor-formulario{
+    height: 800px;
+    margin-top: 80px;
+}
+/* Sección del formulario */
+.contenedorCotiza {
+    position: relative; /* Mantener posición relativa por defecto */
+    margin-right: 220px; /* Ajustado para centrar mejor */
+    width: 450px;
+    padding: 20px;
+    background-color: rgba(34, 34, 34, 0.514);
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.contenedorCotiza h1 {
+    margin-top: 0px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contenedorCotiza h5 {
+    margin-top: -40px;
+    color: #ec9d09;
+    height: 15px;
+    font-size: 25px;
+}
+
+/* Estilo para inputs y textarea */
+input,
+textarea {
+    background-color: rgba(110, 110, 110, 0.582);
+    font-weight: bold;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Preferencias de contacto */
+#prefContacto {
+    margin-top: 30px;
+}
+
+.preferencia .form-check {
+    margin-right: 40px;
+}
+
+/* Icono del botón */
+#iconoMensaje {
+    width: 19px;
+    height: 19px;
+}
+
+/* Estilo del botón */
+button {
+    margin-top: 30px;
+    background-color: #ec9d09 !important;
+    border: none !important;
+    border-radius: 50px;
+    height: 40px;
+    font-weight: bold !important;
+}
+button:hover {
+    background: linear-gradient(to right, #83bef5, #2b69aa, #0a4c92);
+}
+
+
+/******************/ 
+
+.footer {
+    background-color: #0B2733;
+    color: #fff;
+    padding: 50px 0;
+    position: relative; /* Asegura que los elementos absolutos se posicionen respecto al footer */
+}
+
+.footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer .logo-container {
+    text-align: justify; /* Alineación del logo y texto a la izquierda */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin-left: 25px;
+}
+
+
+.footer .logo-container img {
+    width: 240px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+
+.footer p {
+    margin: 0;
+    color: #ccc;
+}
+
+.footer .row {
+    margin-bottom: 20px;
+}
+
+.footer .col-md-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+
+    
+}
+
+.footer .col-md-4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 6px;
+}
+
+.footer .menuFooter, .footer .menuInspeccion, .footer .tecnologiasFooter {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+  
+    
+}
+
+
+.footer .menuFooter li a::before,
+.footer .menuInspeccion a::before,
+.footer .tecnologiasFooter li a::before {
+    content: "➢ ";
+    margin-right: 6px;
+    color: #F9AF23; 
+    font-size: 16px; 
+}
+
+.footer .menuFooter li, .footer .menuInspeccion li, .footer .tecnologiasFooter li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 16px;
+    color:#F9AF23;
+
+}
+
+.footer .menuFooter a, .footer .menuInspeccion a, .footer .tecnologiasFooter a {
+    text-decoration: none;
+    color: #ccc;
+    
+   
+}
+
+.footer .menuFooter a:hover, .footer .menuInspeccion a:hover, .footer .tecnologiasFooter a:hover {
+    color: #F9AF23;
+}
+
+.footer .menuFooter i, .footer .menuInspeccion i, .footer .tecnologiasFooter i {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+.footer .social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Tamaño del ícono */
+    height: 40px; /* Tamaño del ícono */
+    border-radius: 50%; /* Hacerlo circular */
+    background-color: #555; /* Color gris más oscuro */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    background-color: #F9AF23; /* Color naranja al pasar el cursor */
+    color: #fff; /* Color del ícono al pasar el cursor */
+}
+
+.footer .social-icons img {
+    width: 20px; /* Tamaño del ícono dentro del círculo */
+    height: 20px; /* Tamaño del ícono dentro del círculo */
+}
+
+.whatsapp-button {
+    position: fixed; /* Posicionamiento absoluto */
+    bottom: 20px; /* Espaciado desde la parte inferior */
+    right: 20px; /* Espaciado desde la derecha */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* Tamaño del botón */
+    height: 60px; /* Tamaño del botón */
+    border-radius: 50%; /* Hacerlo circular */
+    background-color: #25D366; /* Color de fondo de WhatsApp */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para darle un efecto de profundidad */
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Color de fondo al pasar el ratón */
+}
+
+.whatsapp-button img {
+    width: 40px; /* Tamaño del ícono dentro del botón */
+    height: 40px; /* Tamaño del ícono dentro del botón */
+}
+@media (max-width: 2560px) {
+    #redes {
+        top: 5px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    #logo {
+        max-width: 100%; /* Asegúrate de que el logo se ajuste bien */
+    }
+
+    
+    .dropdown-menu {
+        display: none; /* Asegúrate de que el menú principal esté oculto por defecto */
+    }
+
+    
+    #contenedor-btnSelect {
+        width: 40%; /* Mantiene el ancho del contenedor */
+    }
+
+    #btnCliente {
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    #lenguaje {
+        width: 50%; /* Mantiene el ancho del select */
+    }
+
+    .textos{
+        margin: 0 auto; /* Centra horizontalmente */
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .textos h1 {
+        font-size: 45px; /* Ajuste de tamaño de fuente */
+    }
+    .textos h3{
+        margin-top: 40px;
+    }
+    .txtSeccion {
+        margin-left: 540px;
+    }
+    #container-encuentranos{
+        margin-left: 500px;
+    }
+    #txtTelefono,
+    #txtCorreo {
+        margin-left: 2px;
+        margin-top: -5px;
+    }
+}
+
+@media (max-width: 1440px) {
+    #redes {
+        top: 5px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    #logo {
+        max-width: 120%;
+    }
+    .navbar {
+        width: 80%;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 13px;
+    }
+    #contenedor-btnSelect {
+        width: 40%; /* Ancho del 70% para pantallas grandes */
+        
+    }
+    #btnCliente{
+        width: 50%;
+        margin-left: 10px;
+    }
+    #lenguaje {
+        width: 50%; /* Select ocupa todo el ancho */
+    }
+    .textos {
+        max-width: 800px;
+        height: auto; /* Altura automática para ajustarse al contenido */
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .textos h1 {
+        font-size: 40px; /* Ajuste de tamaño de fuente */
+    }
+
+    .textos img {
+        width: 60%; /* Ajuste del ancho de la imagen */
+        margin-left: 510px; /* Ajuste de la posición */
+        margin-top: -420px; /* Ajuste de la posición */
+    }
+
+    .txt p {
+        font-size: 18px; /* Ajuste de tamaño de texto */
+    }
+
+    .btnCotiza {
+        font-size: 14px; /* Ajuste de tamaño del botón */
+        padding: 15px 20px; /* Ajuste del padding */
+        padding-bottom: -20px !important;
+    }
+
+    #formulario-seccion {
+        height: 800px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 15px; /* Reduce el padding */
+    }
+
+    .txtSeccion {
+        margin-top: 80px; /* Ajusta la posición vertical del texto */
+        margin-left: 250px; /* Ajusta la posición horizontal del texto */
+    }
+
+    .txtSeccion h1 {
+        font-size: 40px; /* Reduce el tamaño del título */
+    }
+
+    .txtSeccion h5 {
+        font-size: 25px; /* Ajusta el tamaño del subtítulo */
+    }
+
+    .txtSeccion p {
+        font-size: 16px; /* Ajusta el tamaño del párrafo */
+    }
+
+    #container-encuentranos {
+        margin-left: 230px; /* Ajusta la posición de la sección */
+    }
+
+    .contacto,
+    .contacto2 {
+        margin-left: 30px; /* Reduce el margen izquierdo para adaptarse a la pantalla */
+        width: 220px; /* Ajusta el ancho de la sección de contacto */
+    }
+    #txtTelefono,
+    #txtCorreo {
+        margin-left: 2px;
+        margin-top: -5px;
+    }
+    .contacto h4, 
+    .contacto2 h4 {
+        font-size: 13px; /* Reduce el tamaño del título de contacto */
+    }
+
+    .contacto img, 
+    .contacto2 img {
+        width: 18px; /* Ajusta el tamaño del icono */
+        height: 18px;
+    }
+
+    .contenedorCotiza {
+        width: 400px; /* Ajusta el ancho del formulario */
+        margin-right: 180px; /* Ajusta la posición horizontal del formulario */
+        padding: 15px; /* Reduce el padding interno */
+    }
+
+    .contenedorCotiza h1 {
+        font-size: 25px; /* Ajusta el tamaño del título */
+        margin-bottom: 20px;
+    }
+
+    .contenedorCotiza h5 {
+        font-size: 22px; /* Ajusta el tamaño del subtítulo */
+    }
+
+    input,
+    textarea {
+        font-size: 14px; /* Ajusta el tamaño del texto en los inputs y textarea */
+    }
+
+    button {
+        font-size: 14px; /* Ajusta el tamaño del texto del botón */
+        height: 35px; /* Reduce la altura del botón */
+        margin-top: 20px; /* Ajusta el margen superior del botón */
+    }
+}
+@media (max-width: 1118px) {
+    body{
+        font-size: 14px;
+    }
+    #redes {
+        top: 5px;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+
+    #logo {
+        max-width: 60%; /* Ajusta el logo al 100% */
+        height: auto;
+        margin-left: 15px;
+    }
+
+    .navbar {
+        width: 80%; /* Ajusta el ancho del navbar */
+        font-size: 12px; /* Reduce el tamaño de fuente */
+        margin-left: -30px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 11px; /* Ajusta el tamaño del texto en el dropdown */
+    }
+
+    #contenedor-btnSelect {
+        width: 40%; /* Reduce el ancho del contenedor */
+        margin-right: 15px;
+    }
+
+    #btnCliente {
+        width: 55%;
+        margin-left: -20px; /* Mantén el margen */
+        font-size: 13px;
+    }
+
+    #lenguaje {
+        width: 48%; /* Ajusta el ancho del select */
+    }
+    #bannerAgricola-title h3{
+        font-size: 35px;
+    }
+    .textos {
+        max-width: 760px;
+        height: auto; /* Altura automática para ajustarse al contenido */
+        padding-left: 60px;
+        padding-right: 50px;
+    }
+
+    .textos h1 {
+        font-size: 35px; /* Ajuste de tamaño de fuente */
+    }
+
+    .textos img {
+        width: 55%; /* Ajuste del ancho de la imagen */
+        margin-left: 490px; /* Ajuste de la posición */
+        margin-top: -400px; /* Ajuste de la posición */
+    }
+
+    .txt p {
+        font-size: 18px; /* Ajuste de tamaño de texto */
+    }
+
+    .btnCotiza {
+        font-size: 14px; /* Ajuste de tamaño del botón */
+        padding: 15px 20px; /* Ajuste del padding */
+        padding-bottom: -20px !important;
+    }
+
+    #formulario-seccion {
+        height: 700px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 10px; /* Reduce el padding */
+    }
+
+    .txtSeccion {
+        margin-top: 50px; /* Ajusta la posición vertical del texto */
+        margin-left: 100px; /* Ajusta la posición horizontal del texto */
+    }
+
+    .txtSeccion h1 {
+        font-size: 35px; /* Reduce el tamaño del título */
+    }
+
+    .txtSeccion h5 {
+        font-size: 20px; /* Ajusta el tamaño del subtítulo */
+    }
+
+    .txtSeccion p {
+        font-size: 14px; /* Ajusta el tamaño del párrafo */
+    }
+
+    #container-encuentranos {
+        margin-left: 80px; /* Ajusta la posición de la sección */
+        margin-top: -50px;
+    }
+    .contacto, .contacto2 {
+        margin-left: 20px; /* Reduce el margen izquierdo */
+        width: 200px; /* Ajusta el ancho de la sección de contacto */
+    }
+    .contacto2{
+        margin-left: 50px;
+    }
+    #txtCorreo, 
+    #txtTelefono {
+        margin-left: 2px;
+        margin-top: -5px;
+    }
+    .contacto h4, .contacto2 h4 {
+        font-size: 12px; /* Reduce el tamaño del título de contacto */
+    }
+
+    .contacto img, .contacto2 img {
+        width: 16px; /* Ajusta el tamaño del icono */
+        height: 16px;
+    }
+
+    .contenedorCotiza {
+        width: 80%; /* Ajusta el ancho del formulario */
+        height: auto;
+        margin-right: 50px; /* Ajusta la posición horizontal del formulario */
+        padding: 10px; /* Reduce el padding interno */
+        margin-top: -30px;
+        
+    }
+
+    .contenedorCotiza h1 {
+        font-size: 25px; /* Ajusta el tamaño del título */
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .contenedorCotiza h5 {
+        font-size: 20px; /* Ajusta el tamaño del subtítulo */
+        margin-left: 20px;
+        padding-top: 5px;
+    }
+    #contactForm input,
+    #contactForm textarea{
+        font-size: 12px;
+    }
+    #prefContacto {
+        font-size: 12px;
+    }
+    
+    .preferencia .form-check {
+        font-size: 12px;
+    }
+    button {
+        font-size: 12px; /* Ajusta el tamaño del texto del botón */
+        height: 30px; /* Reduce la altura del botón */
+        margin-top: 15px; /* Ajusta el margen superior del botón */
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    body{
+        font-size: 14px;
+    }
+    #redes {
+        top: 5px;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+
+    #logo {
+        max-width: 60%; /* Ajusta el logo al 100% */
+        height: auto;
+        margin-left: 15px;
+    }
+
+    .navbar {
+        width: 80%; /* Ajusta el ancho del navbar */
+        font-size: 12px; /* Reduce el tamaño de fuente */
+        margin-left: -30px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 11px; /* Ajusta el tamaño del texto en el dropdown */
+    }
+
+    #contenedor-btnSelect {
+        width: 40%; /* Reduce el ancho del contenedor */
+        margin-right: 15px;
+    }
+
+    #btnCliente {
+        width: 55%;
+        margin-left: -20px; /* Mantén el margen */
+        font-size: 13px;
+    }
+
+    #lenguaje {
+        width: 48%; /* Ajusta el ancho del select */
+    }
+    #bannerAgricola-title h3{
+        font-size: 30px;
+    }
+    .textos {
+        max-width: 600px;
+        height: auto;
+        padding-right: 50px;
+        padding-left: 50px; /* Ajustar padding para pantallas más pequeñas */
+    }
+
+    .textos h1 {
+        font-size: 30px; /* Reducir tamaño de fuente */
+        margin-top: 0; /* Ajustar márgenes */
+    }
+
+    .textos h3 {
+        font-size: 16px; /* Reducir tamaño de fuente */
+        margin: 40px 0 15px; /* Ajustar márgenes */
+    }
+
+    .textos img {
+        width: 60%; /* Ajustar ancho de imagen */
+        margin-left: 370px; /* Ajustar la posición de la imagen */
+        margin-top: -420px; /* Ajustar margen superior */
+    }
+
+    .txt p {
+        font-size: 16px; /* Reducir tamaño de fuente del texto */
+    }
+
+    .btnCotiza {
+        font-size: 12px; /* Reducir tamaño de fuente del botón */
+        padding: 10px 10px; /* Ajustar padding del botón */
+        padding-bottom: 10px !important; /* Ajusta el padding inferior */
+    }
+
+    #formulario-seccion {
+        height: 700px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 10px; /* Reduce el padding */
+    }
+
+    .txtSeccion {
+        margin-top: 50px; /* Ajusta la posición vertical del texto */
+        margin-left: 100px; /* Ajusta la posición horizontal del texto */
+    }
+
+    .txtSeccion h1 {
+        font-size: 35px; /* Reduce el tamaño del título */
+    }
+
+    .txtSeccion h5 {
+        font-size: 20px; /* Ajusta el tamaño del subtítulo */
+    }
+
+    .txtSeccion p {
+        font-size: 14px; /* Ajusta el tamaño del párrafo */
+    }
+
+    #container-encuentranos {
+        margin-left: 80px; /* Ajusta la posición de la sección */
+        margin-top: -50px;
+    }
+    .contacto, .contacto2 {
+        margin-left: 20px; /* Reduce el margen izquierdo */
+        width: 200px; /* Ajusta el ancho de la sección de contacto */
+    }
+    .contacto2{
+        margin-left: 50px;
+    }
+    #txtCorreo, 
+    #txtTelefono {
+        margin-left: 2px;
+        margin-top: -5px;
+    }
+    .contacto h4, .contacto2 h4 {
+        font-size: 12px; /* Reduce el tamaño del título de contacto */
+    }
+
+    .contacto img, .contacto2 img {
+        width: 16px; /* Ajusta el tamaño del icono */
+        height: 16px;
+    }
+
+    .contenedorCotiza {
+        width: 80%; /* Ajusta el ancho del formulario */
+        height: auto;
+        margin-right: 50px; /* Ajusta la posición horizontal del formulario */
+        padding: 10px; /* Reduce el padding interno */
+        margin-top: -30px;
+        
+    }
+
+    .contenedorCotiza h1 {
+        font-size: 25px; /* Ajusta el tamaño del título */
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .contenedorCotiza h5 {
+        font-size: 20px; /* Ajusta el tamaño del subtítulo */
+        margin-left: 20px;
+        padding-top: 5px;
+    }
+    #contactForm input,
+    #contactForm textarea{
+        font-size: 12px;
+    }
+    #prefContacto {
+        font-size: 12px;
+    }
+    
+    .preferencia .form-check {
+        font-size: 12px;
+    }
+    button {
+        font-size: 12px; /* Ajusta el tamaño del texto del botón */
+        height: 30px; /* Reduce la altura del botón */
+        margin-top: 15px; /* Ajusta el margen superior del botón */
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 768px) {
+    body{
+        font-size: 12px;
+    }
+    #redes {
+        top: 5px;
+        flex-direction: row; /* Cambia a columna para mejor adaptación */
+        justify-content: flex-end; /* Centra el contenido */
+    }
+
+    #logo {
+        max-width: 50%; /* Aumenta el ancho del logo */
+        height: auto;
+        margin: 0 auto; /* Centra el logo */
+        margin-left: -5px;
+    }
+
+    .navbar {
+        width: 70%; /* Aumenta el ancho del navbar */
+        font-size: 9px; /* Reduce aún más el tamaño de fuente */
+        margin: 0 auto; /* Centra el navbar */
+        margin-left: -100px;
+        margin-right: 50px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 8px; /* Ajusta el tamaño del texto en el dropdown */
+    }
+
+    #contenedor-btnSelect {
+        width: 20%; /* Aumenta el ancho del contenedor */
+        margin-right: 30px;
+    }
+    #btnCliente {
+        width: 60%; /* Aumenta el ancho del botón */
+        margin: 10px auto; /* Centra el botón */
+        font-size: 10px; /* Reduce el tamaño de la fuente */
+        margin-left: -45px;
+    }
+    #btnCliente img{
+        width: 30%;
+        height: auto;
+        margin-left: -15px;
+        margin-right: -5px;
+    }
+
+    #lenguaje {
+        width: 100%; /* Aumenta el ancho del select */
+        height: auto;
+        margin-right: -60px;
+        font-size: 5px;
+    }
+    #bannerAgricola-title h3{
+        font-size: 25px;
+    }
+    .textos {
+        max-width: 70%; /* Usar el 100% del ancho disponible */
+        padding-left: 30px; /* Reducir padding */
+        margin-top: 30px;
+        padding-right: 40px;
+        margin-bottom: 30px;
+        margin-left: 70px;
+        
+    }
+
+    .textos h1 {
+        font-size: 25px; /* Reducir tamaño de fuente */
+        margin-top: 0;
+    }
+
+    .textos h3 {
+        font-size: 14px; /* Reducir tamaño de fuente */
+        margin: 30px 0 10px;
+    }
+
+    .textos img {
+        width: 70%; /* La imagen ocupa todo el ancho disponible */
+        margin-left: 320px; /* Centrar la imagen automáticamente */
+        margin-top: -360px; /* Ajustar margen superior */
+    }
+
+    .txt p {
+        font-size: 14px; /* Reducir tamaño de fuente */
+    }
+
+    .btnCotiza {
+        font-size: 12px; /* Reducir tamaño de fuente */
+        padding: 10px 10px; /* Reducir padding */
+    }
+
+    #formulario-seccion {
+        height: 600px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 8px; /* Reduce el padding */
+    }
+
+    .txtSeccion {
+        margin-top: 30px; /* Ajusta la posición vertical del texto */
+        margin-left: 70px; /* Ajusta la posición horizontal del texto */
+    }
+
+    .txtSeccion h1 {
+        font-size: 30px; /* Reduce el tamaño del título */
+    }
+
+    .txtSeccion h5 {
+        font-size: 18px; /* Ajusta el tamaño del subtítulo */
+        margin-top: -20px;
+    }
+
+    .txtSeccion p {
+        font-size: 12px; /* Ajusta el tamaño del párrafo */
+    }
+
+    #container-encuentranos {
+        margin-left: 60px; /* Ajusta la posición de la sección */
+        margin-top: -40px;
+    }
+    #txtCorreo,
+    #txtTelefono {
+        margin-left: 0px;
+        margin-top: -2px;
+    
+    }
+    .contacto, .contacto2 {
+        margin-left: 10px; /* Reduce el margen izquierdo */
+        width: 180px; /* Ajusta el ancho de la sección de contacto */
+    }
+    .contacto2 {
+        margin-left: -180px;
+        margin-top: 180px;
+    }
+    .contacto h4, .contacto2 h4 {
+        font-size: 10px; /* Reduce el tamaño del título de contacto */
+    }
+
+    .contacto img, .contacto2 img {
+        width: 14px; /* Ajusta el tamaño del icono */
+        height: 14px;
+    }
+    #contactForm input,
+    #contactForm textarea{
+        font-size: 10px;
+    }
+    .contenedorCotiza {
+        width: 75%; /* Ajusta el ancho del formulario */
+        height: auto;
+        margin-right: 40px; /* Ajusta la posición horizontal del formulario */
+        padding: 8px; /* Reduce el padding interno */
+        margin-top: -50px;
+    }
+
+    .contenedorCotiza h1 {
+        font-size: 22px; /* Ajusta el tamaño del título */
+        margin-bottom: 13px;
+        margin-left: 15px;
+    }
+
+    .contenedorCotiza h5 {
+        font-size: 18px; /* Ajusta el tamaño del subtítulo */
+        margin-left: 15px;
+        padding-top: 10px;
+    }
+
+    #prefContacto {
+        font-size: 10px;
+    }
+    
+    .preferencia .form-check {
+        font-size: 10px;
+    }
+    
+    button {
+        font-size: 10px; /* Ajusta el tamaño del texto del botón */
+        height: 25px; /* Reduce la altura del botón */
+        margin-top: 10px; /* Ajusta el margen superior del botón */
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    body{
+        font-size: 11px;
+    }
+    #redes {
+        top: 5px;
+        flex-direction: row; /* Cambia a columna para mejor adaptación */
+        justify-content: flex-end; /* Centra el contenido */
+    }
+
+    #logo {
+        max-width: 50%; /* Aumenta el ancho del logo */
+        height: auto;
+        margin-top: -60px;
+        margin-left: 170px;
+    }
+
+    .navbar {
+        width: 40%; /* Aumenta el ancho del navbar */
+        height: auto;
+        font-size: 9px; /* Reduce aún más el tamaño de fuente */
+        right: 80px;
+        margin-left: -340px;
+        margin-top: 150px;
+        background-color: transparent !important;
+    }
+    .navbar-nav .dropdown-menu {
+        max-width: 241px; /* Ajusta el valor según tus necesidades */
+        padding-left: 0px;
+    }
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 8px; /* Ajusta el tamaño del texto en el dropdown */
+        overflow: hidden;
+        padding-left: 3px;
+    }
+    .navbar-nav .dropdown-menu .dropdown-submenu{
+        width: 160px;
+    }
+    .navbar-toggler:focus, 
+    .navbar-toggler:active {background-color: transparent !important; /* Asegura que el fondo sea transparente */
+        
+    }
+    .navbar-toggler {
+        padding-bottom: 35px;
+        border: 1px solid rgba(0, 0, 0, 0.1); /* Mantén un borde ligero si lo prefieres */
+        border-radius: 4px; /* Puedes ajustar el radio del borde si lo necesitas */
+        border: solid 1px rgba(187, 187, 187, 0.712) !important;
+    }
+    .navbar-toggler:hover {
+        background: white !important;
+    }
+    .nav-link:focus{
+        background: white !important; /* Asegura que no haya color de fondo */
+        
+    } 
+    .nav-link:active {
+        background: white !important; /* Asegura que no haya color de fondo */
+        
+    }
+    .dropdown-menu .dropdown-item{
+        margin-top: -5px;
+        margin-bottom: -5px;
+    }
+
+    .dropdown-menu .dropdown-item:focus, 
+    .dropdown-menu .dropdown-item:active {
+        background-color: transparent !important; /* Asegura que no haya color de fondo */
+        outline: none;
+        box-shadow: none;
+    }
+    #contenedor-btnSelect {
+        width: 80%; /* Aumenta el ancho del contenedor */
+        margin: 10px auto; /* Centra el contenedor */
+        margin-top: 160px;
+        margin-left: -190px;
+    }
+
+    #btnCliente {
+        width: 31%; /* Aumenta el ancho del botón */
+        font-size: 11px; /* Reduce el tamaño de la fuente */
+        margin-left: 150px;
+    }
+    #lenguaje{
+        width: 30%;
+    }
+    #bannerAgricola-title h3 {
+        font-size: 18px; /* Ajusta el tamaño del título */
+    }
+    .textos {
+        max-width: 70%; /* Usar el 100% del ancho disponible */
+        padding-left: 30px; /* Reducir padding */
+        margin-top: 30px;
+        padding-right: 40px;
+        margin-bottom: 30px;
+        margin-left: 60px;
+        
+    }
+
+    .textos h1 {
+        font-size: 20px; /* Reducir tamaño de fuente */
+        margin-top: 0;
+    }
+
+    .textos h3 {
+        font-size: 14px; /* Reducir tamaño de fuente */
+        margin: 30px 0 10px;
+    }
+
+    .textos img {
+        width: 70%; /* La imagen ocupa todo el ancho disponible */
+        max-width: 500px; /* Limitar el tamaño máximo */
+        margin-left: 230px; /* Centrar la imagen automáticamente */
+        margin-top: -390px; /* Ajustar margen superior */
+    }
+
+    .txt p {
+        font-size: 14px; /* Reducir tamaño de fuente */
+    }
+
+    .btnCotiza {
+        font-size: 12px; /* Reducir tamaño de fuente */
+        padding: 10px 10px; /* Reducir padding */
+    }
+
+
+    #titCards2 h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #titCards2 h4 {
+        font-size: 17px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    #formulario-seccion {
+        height: 1050px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 5px; /* Reduce el padding */
+    }
+
+    .txtSeccion {
+        margin-top: 40px; /* Ajusta la posición vertical del texto */
+        margin-left: 30px; /* Ajusta la posición horizontal del texto */
+    }
+
+    .txtSeccion h1 {
+        font-size: 25px; /* Reduce el tamaño del título */
+    }
+
+    .txtSeccion h5 {
+        font-size: 16px; /* Ajusta el tamaño del subtítulo */
+        margin-top: -10px;
+    }
+
+    .txtSeccion p {
+        font-size: 10px; /* Ajusta el tamaño del párrafo */
+    }
+
+    #container-encuentranos {
+        margin-left: 30px; /* Ajusta la posición de la sección */
+        margin-top: -70px;
+    }
+
+    #txtCorreo,
+    #txtTelefono {
+        margin-left: 0px;
+        margin-top: -2px;
+    }
+
+    .contacto,
+    .contacto2 {
+        margin-left: 5px; /* Reduce el margen izquierdo */
+        width: 150px; /* Ajusta el ancho de la sección de contacto */
+    }
+
+    .contacto2 {
+        margin-left: -150px;
+        margin-top: 150px;
+    }
+
+    .contacto h4,
+    .contacto2 h4 {
+        font-size: 9px; /* Reduce el tamaño del título de contacto */
+    }
+
+    .contacto img,
+    .contacto2 img {
+        width: 12px; /* Ajusta el tamaño del icono */
+        height: 12px;
+    }
+
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 9px; /* Reduce el tamaño del texto de los campos */
+    }
+
+    .contenedorCotiza {
+        width: 90%; /* Ajusta el ancho del formulario */
+        margin-right: -20px; /* Ajusta la posición horizontal del formulario */
+        padding: 5px; /* Reduce el padding interno */
+        margin-top: -30px;
+        height: 550px;
+    }
+
+    .contenedorCotiza h1 {
+        font-size: 18px; /* Ajusta el tamaño del título */
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .contenedorCotiza h5 {
+        font-size: 16px; /* Ajusta el tamaño del subtítulo */
+        margin-left: 10px;
+        padding-top: 8px;
+        margin-top: -20px;
+    }
+
+    #prefContacto {
+        font-size: 9px; /* Ajusta el tamaño del texto de preferencia de contacto */
+    }
+
+    .preferencia .form-check {
+        font-size: 9px; /* Reduce el tamaño del texto de las opciones */
+    }
+
+    button {
+        font-size: 9px; /* Ajusta el tamaño del texto del botón */
+        height: 22px; /* Reduce la altura del botón */
+        margin-top: 8px; /* Ajusta el margen superior del botón */
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 425px) {
+    body{
+        font-size: 11px;
+    }
+    #redes {
+        top: 5px;
+        flex-direction: row; /* Cambia a columna para mejor adaptación */
+        justify-content: flex-end; /* Centra el contenido */
+    }
+
+    #logo {
+        max-width: 50%; /* Aumenta el ancho del logo */
+        height: auto;
+        margin-top: -60px;
+        margin-left: 110px;
+    }
+
+    .navbar {
+        width: 40%; /* Aumenta el ancho del navbar */
+        height: auto;
+        font-size: 9px; /* Reduce aún más el tamaño de fuente */
+        right: 80px;
+        margin-left: -300px;
+        margin-top: 150px;
+        background-color: transparent !important;
+    }
+    .navbar-nav .dropdown-menu {
+        max-width: 241px; /* Ajusta el valor según tus necesidades */
+        padding-left: 0px;
+    }
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 8px; /* Ajusta el tamaño del texto en el dropdown */
+        overflow: hidden;
+        padding-left: 3px;
+    }
+    .navbar-nav .dropdown-menu .dropdown-submenu{
+        width: 160px;
+    }
+    .navbar-toggler:focus, 
+    .navbar-toggler:active {background-color: transparent !important; /* Asegura que el fondo sea transparente */
+        
+    }
+    .navbar-toggler {
+        padding-bottom: 35px;
+        border: 1px solid rgba(0, 0, 0, 0.1); /* Mantén un borde ligero si lo prefieres */
+        border-radius: 4px; /* Puedes ajustar el radio del borde si lo necesitas */
+        border: solid 1px rgba(187, 187, 187, 0.712) !important;
+    }
+    .navbar-toggler:hover {
+        background: white !important;
+    }
+    .nav-link:focus{
+        background: white !important; /* Asegura que no haya color de fondo */
+        
+    } 
+    .nav-link:active {
+        background: white !important; /* Asegura que no haya color de fondo */
+        
+    }
+    .dropdown-menu .dropdown-item{
+        margin-top: -5px;
+        margin-bottom: -5px;
+    }
+
+    .dropdown-menu .dropdown-item:focus, 
+    .dropdown-menu .dropdown-item:active {
+        background-color: transparent !important; /* Asegura que no haya color de fondo */
+        outline: none;
+        box-shadow: none;
+    }
+    #contenedor-btnSelect {
+        width: 80%; /* Aumenta el ancho del contenedor */
+        margin: 10px auto; /* Centra el contenedor */
+        margin-top: 160px;
+        margin-left: -190px;
+    }
+
+    #btnCliente {
+        width: 31%; /* Aumenta el ancho del botón */
+        font-size: 11px; /* Reduce el tamaño de la fuente */
+        margin-left: 70px;
+    }
+    #lenguaje{
+        width: 40%;
+    }
+    #bannerAgricola-title h3 {
+        font-size: 20px; /* Ajusta el tamaño del título */
+        width: 350px;
+    }
+
+    .textos {
+        max-width: 300px; /* Reduce aún más el ancho máximo */
+        height: auto; /* Ajusta la altura automáticamente */
+        padding-left: 20px; /* Reduce el padding */
+        padding-right: 30px;
+        margin-left: 40px;
+    }
+
+    .textos h1 {
+        font-size: 20px; /* Reduce el tamaño del título principal */
+    }
+
+    .textos h3 {
+        font-size: 10px; /* Reduce el tamaño del subtítulo */
+        margin-top: 15px;
+    }
+
+    .txt p {
+        font-size: 12px; /* Reduce el tamaño del párrafo */
+    }
+
+    .textos img {
+        width: 200px; /* Reduce el tamaño máximo de la imagen */
+        margin-left: 150px; /* Centra la imagen */
+        margin-top: -350px; /* Ajusta la posición superior */
+    }
+
+    .btnCotiza {
+        font-size: 9px; /* Reduce el tamaño del texto del botón */
+        padding: 10px 10px; /* Reducir padding */
+        padding-bottom: 10px !important;
+        margin-top: 5px;
+    }
+    #titCards2 h1{
+        font-size: 28px;
+        text-align: center;
+    }
+    #titCards2 h4{
+        font-size: 17px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    #formulario-seccion {
+        height: 1050px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 5px; /* Reduce el padding */
+    }
+
+    .txtSeccion {
+        margin-top: 40px; /* Ajusta la posición vertical del texto */
+        margin-left: 30px; /* Ajusta la posición horizontal del texto */
+    }
+
+    .txtSeccion h1 {
+        font-size: 25px; /* Reduce el tamaño del título */
+    }
+
+    .txtSeccion h5 {
+        font-size: 16px; /* Ajusta el tamaño del subtítulo */
+        margin-top: -10px;
+    }
+
+    .txtSeccion p {
+        font-size: 10px; /* Ajusta el tamaño del párrafo */
+    }
+
+    #container-encuentranos {
+        margin-left: 30px; /* Ajusta la posición de la sección */
+        margin-top: -70px;
+    }
+
+    #txtCorreo,
+    #txtTelefono {
+        margin-left: 0px;
+        margin-top: -2px;
+    }
+
+    .contacto, .contacto2 {
+        margin-left: 5px; /* Reduce el margen izquierdo */
+        width: 150px; /* Ajusta el ancho de la sección de contacto */
+    }
+
+    .contacto2 {
+        margin-left: -150px;
+        margin-top: 150px;
+    }
+
+    .contacto h4, .contacto2 h4 {
+        font-size: 9px; /* Reduce el tamaño del título de contacto */
+    }
+
+    .contacto img, .contacto2 img {
+        width: 12px; /* Ajusta el tamaño del icono */
+        height: 12px;
+    }
+
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 9px; /* Reduce el tamaño del texto de los campos */
+    }
+
+    .contenedorCotiza {
+        width: 90%; /* Ajusta el ancho del formulario */
+        margin-right: -20px; /* Ajusta la posición horizontal del formulario */
+        padding: 5px; /* Reduce el padding interno */
+        margin-top: -30px;
+        height: 550px;
+    }
+
+    .contenedorCotiza h1 {
+        font-size: 18px; /* Ajusta el tamaño del título */
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .contenedorCotiza h5 {
+        font-size: 16px; /* Ajusta el tamaño del subtítulo */
+        margin-left: 10px;
+        padding-top: 8px;
+        margin-top: -20px;
+    }
+
+    #prefContacto {
+        font-size: 9px; /* Ajusta el tamaño del texto de preferencia de contacto */
+    }
+
+    .preferencia .form-check {
+        font-size: 9px; /* Reduce el tamaño del texto de las opciones */
+    }
+
+    button {
+        font-size: 9px; /* Ajusta el tamaño del texto del botón */
+        height: 22px; /* Reduce la altura del botón */
+        margin-top: 8px; /* Ajusta el margen superior del botón */
+        margin-bottom: 6px;
+    }
+
+}
+@media (max-width: 375px) {
+    body {
+        font-size: 10px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    #redes {
+        top: 5px;
+        flex-direction: row; /* Mantén en fila, ya que puede adaptarse bien */
+        justify-content: flex-end; /* Mantén la alineación a la derecha */
+    }
+
+    #logo {
+        max-width: 45%; /* Reduce un poco el tamaño del logo */
+        height: auto;
+        margin-top: -50px; /* Ajusta el margen superior */
+        margin-left: 90px; /* Ajusta el margen izquierdo */
+    }
+
+    .navbar {
+        width: 35%; /* Reduce ligeramente el ancho del navbar */
+        font-size: 8px; /* Disminuye el tamaño de la fuente */
+        right: 70px; /* Ajusta el margen derecho */
+        margin-left: -290px; /* Reduce el margen izquierdo */
+        margin-top: 140px; /* Ajusta el margen superior */
+        background-color: transparent !important;
+    }
+
+    .navbar-nav .dropdown-menu {
+        max-width: 210px; /* Ajusta el ancho del dropdown */
+        padding-left: 0px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 7px; /* Reduce aún más el tamaño del texto en el dropdown */
+        overflow: hidden;
+        padding-left: 2px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-submenu {
+        width: 150px; /* Ajusta el ancho del submenú */
+    }
+
+    #contenedor-btnSelect {
+        width: 75%; /* Reduce ligeramente el ancho del contenedor */
+        margin: 8px auto; /* Ajusta los márgenes */
+        margin-top: 150px;
+        margin-left: -140px; /* Ajusta el margen izquierdo */
+    }
+
+    #btnCliente {
+        width: 38%; /* Ajusta el ancho del botón */
+        font-size: 10px; /* Reduce el tamaño de la fuente */
+        margin-left: 65px; /* Ajusta el margen izquierdo */
+    }
+
+    #lenguaje {
+        width: 40%; /* Ajusta el ancho del selector de lenguaje */
+    }
+    #bannerAgricola-title h3 {
+        font-size: 18px; /* Ajusta el tamaño del título */
+    }
+    
+    .textos {
+        max-width: 280px; /* Reduce un poco más el ancho máximo */
+        height: auto; /* Ajusta la altura automáticamente */
+        padding-left: 15px; /* Reduce el padding */
+        padding-right: 25px;
+        margin-left: 30px; /* Ajusta el margen */
+    }
+    
+    .textos h1 {
+        font-size: 18px; /* Reduce el tamaño del título principal */
+    }
+    
+    .textos h3 {
+        font-size: 9px; /* Reduce el tamaño del subtítulo */
+        margin-top: 12px;
+    }
+    
+    .txt p {
+        font-size: 11px; /* Reduce el tamaño del párrafo */
+    }
+    
+    .textos img {
+        width: 200px; /* Reduce el tamaño máximo de la imagen */
+        margin-left: 135px; /* Ajusta la imagen más hacia el centro */
+        margin-top: -320px; /* Ajusta la posición superior */
+    }
+    
+    .btnCotiza {
+        font-size: 8px; /* Reduce el tamaño del texto del botón */
+        padding-top: 8px !important;
+        padding-bottom: 10px !important;
+        margin-top: 4px;
+    }
+    
+    #titCards2 h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    #titCards2 h4 {
+        font-size: 16px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    
+    #formulario-seccion {
+        height: 950px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 4px; /* Reduce el padding */
+    }
+    
+    .txtSeccion {
+        margin-top: 35px; /* Ajusta la posición vertical del texto */
+        margin-left: 25px; /* Ajusta la posición horizontal del texto */
+    }
+    
+    .txtSeccion h1 {
+        font-size: 23px; /* Reduce el tamaño del título */
+    }
+    
+    .txtSeccion h5 {
+        font-size: 15px; /* Ajusta el tamaño del subtítulo */
+        margin-top: -8px;
+    }
+    
+    .txtSeccion p {
+        font-size: 9px; /* Ajusta el tamaño del párrafo */
+    }
+    
+    #container-encuentranos {
+        margin-left: 25px; /* Ajusta la posición de la sección */
+        margin-top: -60px;
+    }
+    
+    #txtCorreo,
+    #txtTelefono {
+        margin-left: 0px;
+        margin-top: -2px;
+    }
+    
+    .contacto,
+    .contacto2 {
+        margin-left: 3px; /* Reduce el margen izquierdo */
+        width: 140px; /* Ajusta el ancho de la sección de contacto */
+    }
+    
+    .contacto2 {
+        margin-left: -140px;
+        margin-top: 140px;
+    }
+    
+    .contacto h4,
+    .contacto2 h4 {
+        font-size: 8px; /* Reduce el tamaño del título de contacto */
+    }
+    
+    .contacto img,
+    .contacto2 img {
+        width: 10px; /* Ajusta el tamaño del icono */
+        height: 10px;
+    }
+    
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 8px; /* Reduce el tamaño del texto de los campos */
+    }
+    #formulario-seccion{
+        height: 1040px;
+    }
+    .contenedorCotiza {
+        width: 90%; /* Ajusta el ancho del formulario */
+        margin-right: -20px; /* Ajusta la posición horizontal del formulario */
+        padding: 4px; /* Reduce el padding interno */
+        margin-top: -30px;
+        height: 540px; /* Ajusta la altura */
+    }
+    
+    .contenedorCotiza h1 {
+        font-size: 17px; /* Ajusta el tamaño del título */
+        margin-bottom: 8px;
+        margin-left: 8px;
+        margin-top: 18px;
+    }
+    
+    .contenedorCotiza h5 {
+        font-size: 15px; /* Ajusta el tamaño del subtítulo */
+        margin-left: 8px;
+        padding-top: 7px;
+        margin-top: -15px;
+    }
+    
+    #prefContacto {
+        font-size: 8px; /* Ajusta el tamaño del texto de preferencia de contacto */
+    }
+    
+    .preferencia .form-check {
+        font-size: 8px; /* Reduce el tamaño del texto de las opciones */
+    }
+    
+    button {
+        font-size: 8px; /* Ajusta el tamaño del texto del botón */
+        height: 20px; /* Reduce la altura del botón */
+        margin-top: 7px; /* Ajusta el margen superior del botón */
+        margin-bottom: 5px;
+    }
+    
+    
+}
+@media (max-width: 320px) {
+    body {
+        font-size: 9px; /* Reduce el tamaño de la fuente para pantallas pequeñas */
+    }
+
+    #redes {
+        top: 5px;
+        flex-direction: row; /* Mantiene los iconos en fila */
+        justify-content: flex-end; /* Alinea a la derecha */
+    }
+
+    #logo {
+        max-width: 40%; /* Reduce el ancho del logo */
+        height: auto;
+        margin-top: -40px; /* Ajusta el margen superior */
+        margin-left: 75px; /* Ajusta el margen izquierdo */
+    }
+
+    .navbar {
+        width: 30%; /* Reduce el ancho del navbar */
+        font-size: 7px; /* Reduce aún más el tamaño de la fuente */
+        right: 60px; /* Ajusta el margen derecho */
+        margin-left: -293px; /* Ajusta el margen izquierdo */
+        margin-top: 130px; /* Ajusta el margen superior */
+        background-color: transparent !important;
+    }
+
+    .navbar-nav .dropdown-menu {
+        max-width: 175px; /* Reduce el ancho del dropdown */
+        padding-left: 0px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 6px; /* Reduce el tamaño del texto en el dropdown */
+        overflow: hidden;
+        padding-left: 1px; /* Ajusta el padding */
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-submenu {
+        width: 140px; /* Reduce el ancho del submenú */
+    }
+
+    #contenedor-btnSelect {
+        width: 70%; /* Reduce el ancho del contenedor */
+        margin: 6px auto; /* Ajusta los márgenes */
+        margin-top: 140px;
+        margin-left: -120px; /* Ajusta el margen izquierdo */
+    }
+
+    #btnCliente {
+        width: 45%; /* Ajusta el ancho del botón */
+        font-size: 9px; /* Reduce el tamaño de la fuente */
+        margin-left: 60px; /* Ajusta el margen izquierdo */
+    }
+
+    #lenguaje {
+        width: 50%; /* Ajusta el ancho del selector de idioma */
+    }
+    #bannerAgricola-title h3 {
+        font-size: 16px; /* Ajusta el tamaño del título */
+    }
+    
+    .textos {
+        max-width: 250px; /* Reduce más el ancho máximo */
+        height: auto; /* Ajusta la altura automáticamente */
+        padding-left: 20px; /* Reduce el padding */
+        padding-right: 20px;
+        margin-left: 20px; /* Ajusta el margen */
+    }
+    
+    .textos h1 {
+        font-size: 16px; /* Reduce aún más el tamaño del título principal */
+    }
+    
+    .textos h3 {
+        font-size: 8px; /* Reduce el tamaño del subtítulo */
+        margin-top: 10px;
+    }
+    
+    .txt p {
+        font-size: 10px; /* Reduce el tamaño del párrafo */
+    }
+    
+    .textos img {
+        width: 150px; /* Reduce el tamaño máximo de la imagen */
+        margin-left: 125px; /* Ajusta la imagen más hacia el centro */
+        margin-top: -300px; /* Ajusta la posición superior */
+    }
+    .btnCotiza {
+        font-size: 8px; /* Reduce el tamaño del texto del botón */
+        padding-top: 8px !important;
+        padding-bottom: 10px !important; 
+        margin-top: 4px;
+    }
+    
+    #titCards2 h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    #titCards2 h4 {
+        font-size: 15px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    
+    #formulario-seccion {
+        height: 1050px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 4px; /* Reduce el padding */
+    }
+    
+    .txtSeccion {
+        margin-top: 30px; /* Ajusta la posición vertical del texto */
+        margin-left: 20px; /* Ajusta la posición horizontal del texto */
+    }
+    
+    .txtSeccion h1 {
+        font-size: 22px; /* Reduce el tamaño del título */
+    }
+    
+    .txtSeccion h5 {
+        font-size: 14px; /* Ajusta el tamaño del subtítulo */
+        margin-top: -6px;
+    }
+    
+    .txtSeccion p {
+        font-size: 9px; /* Ajusta el tamaño del párrafo */
+    }
+    
+    #container-encuentranos {
+        margin-left: 20px; /* Ajusta la posición de la sección */
+        margin-top: -80px;
+    }
+    
+    #txtCorreo,
+    #txtTelefono {
+        margin-left: 0px;
+        margin-top: -2px;
+    }
+    
+    .contacto,
+    .contacto2 {
+        margin-left: 3px; /* Reduce el margen izquierdo */
+        width: 130px; /* Ajusta el ancho de la sección de contacto */
+    }
+    
+    .contacto2 {
+        margin-left: -130px;
+        margin-top: 190px;
+    }
+    
+    .contacto h4,
+    .contacto2 h4 {
+        font-size: 7px; /* Reduce el tamaño del título de contacto */
+    }
+    
+    .contacto img,
+    .contacto2 img {
+        width: 10px; /* Ajusta el tamaño del icono */
+        height: 10px;
+    }
+    
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 7px; /* Reduce el tamaño del texto de los campos */
+    }
+    
+    .contenedorCotiza {
+        width: 90%; /* Ajusta el ancho del formulario */
+        margin-right: -20px; /* Ajusta la posición horizontal del formulario */
+        padding: 4px; /* Reduce el padding interno */
+        margin-top: -30px;
+        height: 520px; /* Ajusta la altura */
+    }
+    
+    .contenedorCotiza h1 {
+        font-size: 16px; /* Ajusta el tamaño del título */
+        margin-bottom: 8px;
+        margin-left: 8px;
+        margin-top: 18px;
+    }
+    
+    .contenedorCotiza h5 {
+        font-size: 14px; /* Ajusta el tamaño del subtítulo */
+        margin-left: 8px;
+        padding-top: 7px;
+        margin-top: -15px;
+    }
+    
+    #prefContacto {
+        font-size: 7px; /* Ajusta el tamaño del texto de preferencia de contacto */
+    }
+    
+    .preferencia .form-check {
+        font-size: 7px; /* Reduce el tamaño del texto de las opciones */
+    }
+    
+    button {
+        font-size: 7px; /* Ajusta el tamaño del texto del botón */
+        height: 18px; /* Reduce la altura del botón */
+        margin-top: 6px; /* Ajusta el margen superior del botón */
+        margin-bottom: 4px;
+    }
+    
+}

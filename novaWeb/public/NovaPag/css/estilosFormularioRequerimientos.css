@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*////////*/
+#fondo-formulario{
+    width: 100vw;
+    height: auto;
+    background-color: #f1f1f1; /* Fondo gris claro */
+    margin-top: 0;
+    border: solid 2px #f1f1f1;
+}
+#container-formulario{
+    width: 1000px;
+    height: auto;
+}
+#titulo{
+    width: 200px;
+    color: #0B2733;
+    padding-bottom: 30px;
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+#formulario label{
+    color: #555555;
+    font-weight: bold;
+}
+.form-control, .form-select {
+    background-color: #e4e4e4; /* Fondo gris claro */
+    border: solid 1px #929292;
+}
+#siguiente{
+    background-color: #F9AF23;
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 20PX;
+    margin-bottom: 40px;
+}
+#siguiente:hover{
+    background: linear-gradient(to right, #83bef5, #2b69aa, #0a4c92) !important;
+}
+
+
+/*////////*/
+
+
+@media (max-width: 768px) {
+    #fondo-formulario {
+        width: 100vw;
+        margin-top: -40px; /* Ajustar margen superior en pantallas más pequeñas */
+    }
+    
+    #container-formulario {
+        width: 90%; /* Ajustar el ancho del contenedor para pantallas más pequeñas */
+        margin: 0 auto; /* Centrar el contenedor */
+    }
+
+    #titulo {
+        width: 100%; /* El título ocupará todo el ancho disponible */
+        text-align: center; /* Centrar el texto del título */
+        padding-top: 20px; /* Reducir el padding superior */
+    }
+
+    #formulario label {
+        font-size: 1rem; /* Ajustar tamaño del texto en etiquetas */
+    }
+
+    .form-control, .form-select {
+        width: 100%; /* Los campos del formulario ocuparán todo el ancho */
+    }
+
+    #siguiente {
+        width: 100%; 
+        margin-top: 20px; 
+        padding: 15px; 
+    }
+}
+
+@media (max-width: 425px) {
+    #fondo-formulario{
+        margin-top: -40px;
+    }
+    #titulo{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #formulario label,
+    #formulario input,
+    #formulario textarea,
+    #opciones {
+        font-size: 14px;
+    }
+}
+@media (max-width: 375px) {
+    #fondo-formulario{
+        margin-top: -40px;
+    }
+    #titulo{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #formulario label,
+    #formulario input,
+    #formulario textarea,
+    #opciones {
+        font-size: 12px;
+    }
+}
+@media (max-width: 320px) {
+    #fondo-formulario{
+        margin-top: -40px;
+    }
+    #titulo{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #formulario label,
+    #formulario input,
+    #formulario textarea,
+    #opciones {
+        font-size: 10px;
+    }
+    #siguiente{
+        font-size: 12px;
+        width: 100%;
+    }
+}

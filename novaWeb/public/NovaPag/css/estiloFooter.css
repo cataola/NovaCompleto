@@ -1,0 +1,2044 @@
+#banner-footer {
+    background-color: #0B2733;
+    color: #fff;
+    width: 100vw !important;
+    min-width: 100vw !important;
+    height: auto;
+}
+#contenedorfooter{
+    width: 100% ;
+    max-width: 100% ;
+}
+
+#logo-container {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    margin-left: 50px;
+}
+
+#logo-container p{
+    margin-left: 100x !important;
+}
+
+#logo-img {
+    width: 240px;
+    height: auto;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-left: 78px !important;
+}
+#menu-section{
+    margin-top: 10px;
+    
+}
+#menuFooter h3{
+    /*border:solid 2px rgb(211, 211, 9);*/
+    margin-left: 150px;
+
+}
+#menuInspeccion h3, #tecnologiasFooter h3 {
+    /*border:solid 2px rgb(241, 241, 180);*/
+    margin-left: -30px;
+}
+#menuFooter ul{
+    margin-left: 135px;
+
+    margin-top: 30px;
+    /*border:solid 2px rgb(197, 100, 100);*/
+}
+
+#menuInspeccion ul{
+   
+    margin-left: -30px;
+    margin-top: 30px;
+    margin-right: 70px;
+}
+#tecnologiasFooter ul{
+   
+    margin-left: -40px;
+    margin-top: 30px;
+    margin-right: 80px;
+    width: 400px;
+}
+
+#menuFooter li a::before, #menuInspeccion li a::before, #tecnologiasFooter li a::before {
+    content: "➢";
+    margin-right: 8px;
+    color: #F9AF23;
+    font-size: 16px;
+}
+
+
+#menuFooter li, #menuInspeccion li, #tecnologiasFooter li {
+    margin-bottom: 10px;
+    padding-left: 16px;
+    color: #F9AF23;
+    white-space: nowrap;
+}
+
+#tecnologiasFooter a {
+    
+    margin-right: 40px !important;
+    width: 400px !important;
+}
+
+#menuFooter a, #menuInspeccion a, #tecnologiasFooter a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+#menuFooter a:hover, #menuInspeccion a:hover, #tecnologiasFooter a:hover {
+    color: #F9AF23;
+}
+#social-icons {
+    margin-left: -60px !important;
+    display: flex;
+    justify-content: center; /* Asegura que los íconos estén centrados */
+    align-items: center; /* Alineación vertical */
+    gap: 10px; /* Espaciado reducido entre íconos */
+    
+}
+
+#social-icons a {
+    padding: 8px; /* Reducción del padding interno */
+    width: 50px; /* Tamaño ligeramente reducido de los íconos */
+    height: 50px;
+}
+
+#social-icons a img {
+    width: 24px; /* Ajuste del tamaño de las imágenes dentro de los íconos */
+    height: 24px;
+}
+
+#social-icons a:hover {
+    background-color: #F9AF23;
+}
+#logo-section p{
+    color: white;
+
+}
+
+
+/* Botón flotante de WhatsApp */
+#whatsapp-button {
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+#whatsapp-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Posicionar el contenedor QR sobre el botón */
+#qr-code-container {
+    bottom: 80px;
+    right: 0;
+    z-index: 1000;
+    width: 150px;
+    height: auto;
+}
+#qr-code-container h1{
+    font-size: 12px;
+    text-align: center;
+    color: #000;
+}
+
+#qr-code {
+    width: 150px;
+    height: 150px;
+}
+
+/* Mostrar el código QR al pasar el mouse sobre el botón de WhatsApp */
+#whatsapp-button:hover #qr-code-container {
+    display: block !important; /* Forzar la visibilidad del contenedor del QR */
+    
+}
+
+
+
+@media (min-width: 2560px) {
+    #banner-footer {
+        background-color: #0B2733;
+        color: #fff;
+        width: 100%!important;
+        height: auto !important;
+    }
+    #contenedorfooter {
+        width: 100%;
+        max-width: 100vw;
+    }
+    #logo-container {
+        text-align: justify;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 24px;
+        margin-left: 80px;
+        
+    }
+
+    #logo-container p {
+        margin-left: 150px !important;
+    }
+
+    #logo-img {
+        width: 280px;
+        height: auto;
+        text-align: center;
+        margin-bottom: 25px;
+        margin-left: 100px !important;
+    }
+
+    #menu-section {
+        margin-top: 20px;
+    }
+
+    #menuFooter h3 {
+        margin-left: 180px;
+    }
+
+    #menuInspeccion h3, #tecnologiasFooter h3 {
+        margin-left: -180px;
+    }
+
+    #menuFooter ul {
+        margin-left: 165px;
+        margin-top: 40px;
+    }
+
+    #menuInspeccion ul {
+        margin-left: 10px;
+        margin-top: 40px;
+        margin-right: 100px;
+    }
+
+    #tecnologiasFooter ul {
+        margin-left: -10px;
+        margin-top: 40px;
+        margin-right: 110px;
+        width: 500px;
+    }
+
+    #menuFooter li, #menuInspeccion li, #tecnologiasFooter li {
+        margin-bottom: 15px;
+        padding-left: 20px;
+        color: #F9AF23;
+        white-space: nowrap;
+    }
+
+    #tecnologiasFooter a {
+        margin-right: 50px !important;
+        width: 500px !important;
+    }
+
+    #social-icons {
+        gap: 30px; /* Mayor separación entre íconos */
+        margin-left: -120px !important;
+        margin-right: auto; /* Centra perfectamente en pantallas grandes */
+    }
+
+    #social-icons a {
+        padding: 15px;
+        width: 70px;
+        height: 70px;
+    }
+
+    #social-icons a img {
+        width: 35px;
+        height: 35px;
+    }
+
+        /* Botón flotante de WhatsApp */
+    #whatsapp-button {
+        bottom: 40px;
+        right: 40px;
+        width: 80px;
+        height: 80px;
+        background-color: #25D366;
+        border-radius: 50%;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+
+    #whatsapp-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Posicionar el contenedor QR sobre el botón */
+    #qr-code-container {
+        bottom: 100px;
+        right: 20px;
+        z-index: 1000;
+        width: 200px;
+        height: auto;
+    }
+
+    #qr-code-container h1 {
+        font-size: 14px;
+        text-align: center;
+        color: #000;
+    }
+
+    #qr-code {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Mostrar el código QR al pasar el mouse sobre el botón de WhatsApp */
+    #whatsapp-button:hover #qr-code-container {
+        display: block !important;
+    }
+
+    
+    
+}
+
+@media (max-width: 1920px){
+    #banner-footer {
+        
+        background-color: #0B2733;
+        overflow: hidden;
+        color: #fff;
+        padding: 50px 50px !important;
+        width: 110% !important;
+        max-width: 100vw;
+        height: auto !important;
+    }
+    
+    #logo-container {
+        text-align: justify;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 24px;
+        margin-left: 50px;
+    }
+    
+    #logo-container p{
+        margin-left: 100x !important;
+    }
+    
+    #logo-img {
+        width: 240px;
+        height: auto;
+        text-align: center;
+        margin-bottom: 25px;
+        margin-left: 78px !important;
+    }
+    #menu-section{
+        margin-top: 10px;
+        
+    }
+    #menuFooter h3{
+        /*border:solid 2px rgb(211, 211, 9);*/
+        margin-left: 150px;
+    
+    }
+    #menuInspeccion h3, #tecnologiasFooter h3 {
+        /*border:solid 2px rgb(241, 241, 180);*/
+        margin-left: -30px;
+    }
+    #menuFooter ul{
+        margin-left: 135px;
+    
+        margin-top: 30px;
+        /*border:solid 2px rgb(197, 100, 100);*/
+    }
+    
+    #menuInspeccion ul{
+       
+        margin-left: -30px;
+        margin-top: 30px;
+        margin-right: 70px;
+    }
+    #tecnologiasFooter ul{
+       
+        margin-left: -40px;
+        margin-top: 30px;
+        margin-right: 80px;
+        width: 400px;
+    }
+    
+    #menuFooter li a::before, #menuInspeccion li a::before, #tecnologiasFooter li a::before {
+        content: "➢";
+        margin-right: 8px;
+        color: #F9AF23;
+        font-size: 16px;
+    }
+    
+    
+    #menuFooter li, #menuInspeccion li, #tecnologiasFooter li {
+        margin-bottom: 10px;
+        padding-left: 16px;
+        color: #F9AF23;
+        white-space: nowrap;
+    }
+    
+    #tecnologiasFooter a {
+        
+        margin-right: 40px !important;
+        width: 400px !important;
+    }
+    
+    #menuFooter a, #menuInspeccion a, #tecnologiasFooter a {
+        text-decoration: none;
+        color: #ccc;
+    }
+    
+    #menuFooter a:hover, #menuInspeccion a:hover, #tecnologiasFooter a:hover {
+        color: #F9AF23;
+    }
+    #social-icons {
+        margin-left: -60px;  /* Alineación central */
+        margin-right: auto; /* Alineación central */
+        gap: 25px; /* Espaciado entre íconos ajustado */
+    }
+
+    #social-icons a {
+        width: 60px; /* Tamaño del ícono */
+        height: 60px;
+    }
+
+    #social-icons a img {
+        width: 30px; /* Tamaño de la imagen dentro del ícono */
+        height: 30px;
+    }
+    
+    #social-icons a:hover {
+        background-color: #F9AF23;
+    }
+    #logo-section p{
+        color: white;
+    
+    }
+    /* Botón flotante de WhatsApp */
+    #whatsapp-button {
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+
+    #whatsapp-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Posicionar el contenedor QR sobre el botón */
+    #qr-code-container {
+        bottom: 80px;
+        right: 0;
+        z-index: 1000;
+        width: 150px;
+        height: auto;
+    }
+    #qr-code-container h1{
+        font-size: 12px;
+        text-align: center;
+        color: #000;
+    }
+
+    #qr-code {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Mostrar el código QR al pasar el mouse sobre el botón de WhatsApp */
+    #whatsapp-button:hover #qr-code-container {
+        display: block !important; /* Forzar la visibilidad del contenedor del QR */
+        
+    }
+
+    
+   
+}
+@media (max-width: 1440px) {
+    
+    #banner-footer {
+        background-color: #0B2733;
+        overflow: hidden;
+
+        color: #fff;
+        padding: 50px 50px !important;
+        width: 110% !important;
+        max-width: 100vw;
+    }
+    
+    #logo-container {
+        text-align: justify;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 24px;
+        margin-left: auto;
+        margin-right:  auto;
+    }
+    
+    #logo-container p {
+        margin-left: 90px !important; /* Corregido de 100x a 100px */
+    }
+    
+    #logo-img {
+        width: 240px;
+        height: auto;
+        text-align: center;
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #menu-section {
+        margin-top: 10px;
+    }
+
+    #menuFooter h3 {
+        margin-left: 150px;
+    }
+
+    #menuInspeccion h3, #tecnologiasFooter h3 {
+        margin-left: -30px;
+    }
+
+    #menuFooter ul {
+        margin-left: auto;
+        margin-top: auto;
+    }
+    
+    #menuInspeccion ul {
+        margin-left: auto;
+        margin-top: 30px;
+        margin-right: auto;
+    }
+
+    #tecnologiasFooter ul {
+        margin-left: auto;
+        margin-top: 30px;
+        margin-right: auto;
+        width: 400px;
+    }
+    
+    #menuFooter li a::before, #menuInspeccion li a::before, #tecnologiasFooter li a::before {
+        content: "➢";
+        margin-right: 8px;
+        color: #F9AF23;
+        font-size: 16px;
+    }
+    
+    #menuFooter li, #menuInspeccion li, #tecnologiasFooter li {
+        margin-bottom: 10px;
+        padding-left: 16px;
+        color: #F9AF23;
+        white-space: nowrap;
+    }
+    
+    #tecnologiasFooter a {
+        margin-right: 40px !important;
+        width: 400px !important;
+    }
+    
+    #menuFooter a, #menuInspeccion a, #tecnologiasFooter a {
+        text-decoration: none;
+        color: #ccc;
+    }
+    
+    #menuFooter a:hover, #menuInspeccion a:hover, #tecnologiasFooter a:hover {
+        color: #F9AF23;
+    }
+
+    #social-icons {
+        margin-top: 20px;
+        margin-left: 20px !important;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        
+    }
+    
+    #social-icons a {
+        padding: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #555;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    #social-icons a img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    #social-icons a:hover {
+        background-color: #F9AF23;
+    }
+    
+
+    #logo-section p {
+        color: white;
+    }
+    
+    #whatsapp-button:hover {
+        background-color: #128C7E;
+    }
+    
+    #whatsapp-button {
+        bottom: 30px;
+        right: 30px;
+        width: 70px;
+        height: 70px;
+        background-color: #25D366;
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+    
+    #whatsapp-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    #qr-code-container {
+        bottom: 90px;  /* Ajustar la posición del contenedor QR */
+        right: 0;
+        z-index: 1000;
+        width: 120px;  /* Ajustar el tamaño del contenedor QR */
+        height: auto;
+    }
+    
+    #qr-code-container h1 {
+        font-size: 12px;
+        text-align: center;
+        color: #000;
+    }
+    
+    #qr-code {
+        width: 120px;  /* Ajustar el tamaño del código QR */
+        height: 120px; /* Ajustar el tamaño del código QR */
+    }
+    
+    #whatsapp-button:hover #qr-code-container {
+        display: block !important;
+    }
+    
+    
+
+}
+@media (min-width: 1280px) {
+    #banner-footer {
+        background-color: #0B2733;
+        overflow: hidden;
+        color: #fff;
+        padding: 50px 80px; /* Ajusta el padding para pantallas más grandes */
+        width: 100%; /* Asegúrate de que ocupe el ancho completo */
+        max-width: 100vw;
+    }
+    #logo-section #logo-container p {
+        color: white;
+        font-size: 16px !important; /* Asegúrate de que se aplique correctamente */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 20px !important; /* Aumenta el margen izquierdo */
+        text-align: justify;
+        width: 300px;
+    }
+
+    #logo-img {
+        width: 280px; /* Aumenta el ancho de la imagen del logo */
+        height: auto;
+        margin-bottom: 25px;
+        margin-left: 30px !important; /* Aumenta el margen izquierdo */
+    }
+
+    #menu-section {
+        margin-top: 50px; /* Aumenta el margen superior */
+        margin-left: -50px;
+        
+    }
+
+    #menuFooter h3 {
+        margin-left: 10px; /* Aumenta el margen izquierdo */
+        font-size: 18px;
+    }
+
+    #menuInspeccion h3 {
+        margin-left: -40px; /* Ajusta el margen izquierdo */
+        font-size: 18px;
+        width: 300px;
+    }
+
+    #tecnologiasFooter h3 {
+        margin-left: -20px; /* Ajusta el margen izquierdo */
+        font-size: 18px;
+        width: 400px;
+    }
+
+    #menuFooter ul {
+        margin-left: 0; /* Aumenta el margen izquierdo */
+        margin-top: 30px;
+    }
+
+    #menuInspeccion ul {
+        margin-left: -55px; /* Ajusta el margen izquierdo */
+        margin-top: 25px;
+        margin-right: 80px; /* Aumenta el margen derecho */
+    }
+
+    #tecnologiasFooter ul {
+        margin-left: -35px; /* Ajusta el margen izquierdo */
+        margin-top: 25px;
+        margin-right: 80px; /* Aumenta el margen derecho */
+        width: 450px; /* Aumenta el ancho */
+    }
+
+    #menuFooter li a::before, 
+    #menuInspeccion li a::before, 
+    #tecnologiasFooter li a::before {
+        content: "➢";
+        margin-right: 8px;
+        color: #F9AF23;
+        font-size: 16px; /* Aumenta el tamaño de la flecha */
+    }
+
+    #menuFooter li, 
+    #menuInspeccion li {
+        margin-bottom: 15px; /* Aumenta el margen inferior */
+        padding-left: 16px;
+        color: #F9AF23;
+        white-space: nowrap;
+        font-size: 14px;
+    }
+    
+    #tecnologiasFooter li {
+        margin-bottom: 15px; /* Aumenta el margen inferior */
+        padding-left: 16px;
+        color: #F9AF23;
+        white-space: normal;
+        font-size: 14px;
+    }
+
+    #tecnologiasFooter a {
+        margin-right: 50px !important;
+        width: 450px !important; /* Aumenta el ancho */
+    }
+
+    #menuFooter a, 
+    #menuInspeccion a, 
+    #tecnologiasFooter a {
+        text-decoration: none;
+        color: #ccc;
+    }
+
+    #menuFooter a:hover, 
+    #menuInspeccion a:hover, 
+    #tecnologiasFooter a:hover {
+        color: #F9AF23;
+    }
+
+    #social-icons {
+        margin-top: 10px; /* Ajusta según sea necesario */
+        margin-left: -20px;
+        display: flex;
+        justify-content: center; /* Alinea los íconos en el centro */
+        align-items: center; /* Centra verticalmente los íconos */
+        gap: 20px; /* Añade espacio uniforme entre los íconos */
+        
+    }
+
+    #social-icons a {
+        padding: 12px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px; /* Aumenta el tamaño de los iconos */
+        height: 60px;
+        border-radius: 50%;
+        background-color: #555;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    #social-icons a img {
+        width: 35px; /* Aumenta el tamaño de las imágenes de los iconos */
+        height: 35px;
+    }
+
+    #social-icons a:hover {
+        background-color: #F9AF23;
+    }
+    #logo-section p {
+        color: white;
+        font-size: 22px; /* Aumenta el tamaño del texto */
+    }
+
+    #whatsapp-button:hover {
+        background-color: #128C7E; /* Cambiar el color al hacer hover */
+    }
+    #whatsapp-button {
+        bottom: 30px;
+        right: 30px;
+        width: 70px;
+        height: 70px;
+        background-color: #25D366;
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+    
+    #whatsapp-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    #qr-code-container {
+        bottom: 90px;  /* Ajustar la posición del contenedor QR */
+        right: 0;
+        z-index: 1000;
+        width: 100px;  /* Ajustar el tamaño del contenedor QR */
+        height: auto;
+        display: none; /* Ocultar inicialmente */
+    }
+    
+    #qr-code-container h1 {
+        font-size: 10px; /* Ajustar el tamaño de la fuente */
+        text-align: center;
+        color: #000;
+    }
+    
+    #qr-code {
+        width: 100px;  /* Ajustar el tamaño del código QR */
+        height: 100px; /* Ajustar el tamaño del código QR */
+    }
+    
+    #whatsapp-button:hover #qr-code-container {
+        display: block !important;
+    }
+    
+
+    
+}
+@media (max-width: 1118px) {
+    #banner-footer {
+        width: 100%;
+        max-width: 100vw;
+        padding: 20px 15px; /* Ajusta el padding para pantallas más pequeñas */
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo-container {
+        order: 1;
+        text-align: center;
+        margin-bottom: 40px; 
+        width: 100%; /* Asegúrate de que ocupe el ancho completo */
+    }
+
+    #logo-container img {
+        
+        align-content: center;
+        margin-bottom: 20px; /* Ajusta el margen inferior de la imagen */
+        width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        max-width: 400px; /* Aumenta el ancho máximo de la imagen */
+        margin-left: 70px;
+    }
+    #logo-container p {
+        font-size: 30px; /* Ajusta el tamaño de la fuente */
+        text-align: center;
+    }
+    #logo-section {
+        align-items: center;
+        width: 100%;
+    }
+    #menu-section {
+        margin-top: 40px;
+        margin-left: 220px;
+        width: 55%;
+        max-width: 100vw;
+        text-align: center;
+        justify-content: center; /* Cambia 'justify-items' a 'justify-content' */
+        display: flex;
+        flex-direction: column;
+        order: 3;
+       
+        
+    }
+
+    #menu-section h3 {
+        font-size: 28px; /* Ajusta el tamaño de fuente */
+        margin-bottom: 40px; /* Reduce el margen inferior */
+        
+        
+    } 
+
+    #menuFooter h3 {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        justify-content: center; /* Alinea los elementos al principio */
+        
+        width: 120px;
+        margin-left: 200px;
+    }
+    #menuFooter a{
+        
+        margin-left: -100px;
+        text-align: center;
+        font-size: 22px;
+        width: 500px;
+        
+        
+    }
+    #menuFooter li {
+        margin-left: 50px;
+        text-align: center;
+        font-size: 22px;
+        width: 500px;
+    }
+   
+    #menuInspeccion h3{
+
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        text-align: center; /* Alinea los elementos al principio */
+        width: 500px;
+        margin-left: 20px;
+        margin-bottom: 40px; /* Reduce el margen inferior */
+        margin-top: 40px; /* Reduce el margen inferior */
+    }
+    #menuInspeccion a, #menuInspeccion li{
+        
+        font-size: 22px;
+        text-align:center;
+        width: 400px;
+        margin-right: 10px;
+    }
+    #menuInspeccion li{
+        margin-left: 80px;
+    }
+
+    #tecnologiasFooter h3{
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        justify-content: center; /* Alinea los elementos al principio */
+        width: 500px;
+        margin-left: 15px;
+        margin-bottom: 40px; /* Reduce el margen inferior */
+        margin-top: 40px; /* Reduce el margen inferior */
+    }
+    #tecnologiasFooter li{
+        
+        white-space: normal;
+        margin-left: 98px;
+        font-size: 22px;
+        text-align: center;
+        width: 400px;
+
+        
+    }
+    #tiemporeal{
+        
+        width: 50%;
+        display: block; 
+    }
+
+    #menus-categorias {
+        display: flex;
+        flex-direction: column; /* Cambia a columna si necesitas que estén en una línea */
+        text-align: center;
+        margin-bottom: 10px; 
+        white-space: nowrap; /* Evita el salto de línea */
+    }
+    #social-icons {
+        gap: 15px;
+        margin-left: 375px !important;
+        
+        
+    }
+    #social-icons a {
+        
+        width: 50px;
+        height: 50px;
+    }
+    #social-icons a img {
+        width: 25px;
+        height: 25px;
+    }
+    #whatsapp-button {
+        bottom: 30px;
+        right: 30px;
+        width: 70px;
+        height: 70px;
+        background-color: #25D366;
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+    
+    #whatsapp-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    #qr-code-container {
+        bottom: 90px;  /* Ajustar la posición del contenedor QR */
+        right: 0;
+        z-index: 1000;
+        width: 100px;  /* Ajustar el tamaño del contenedor QR */
+        height: auto;
+        display: none; /* Ocultar inicialmente */
+    }
+    
+    #qr-code-container h1 {
+        font-size: 10px; /* Ajustar el tamaño de la fuente */
+        text-align: center;
+        color: #000;
+    }
+    
+    #qr-code {
+        width: 100px;  /* Ajustar el tamaño del código QR */
+        height: 100px; /* Ajustar el tamaño del código QR */
+    }
+    
+    #whatsapp-button:hover #qr-code-container {
+        display: block !important;
+    }
+
+    #whatsapp-button:hover{
+        color:#128C7E;
+    }
+   
+}
+@media (max-width: 1024px) {
+    #banner-footer {
+        width: 100%;
+        max-width: 100vw;
+        padding: 20px 15px; /* Ajusta el padding para pantallas más pequeñas */
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo-container {
+        order: 1;
+        text-align: center;
+        margin-bottom: 40px; 
+        width: 100%; /* Asegúrate de que ocupe el ancho completo */
+    }
+
+    #logo-container img {
+        
+        align-content: center;
+        margin-bottom: 20px; /* Ajusta el margen inferior de la imagen */
+        width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        max-width: 400px; /* Aumenta el ancho máximo de la imagen */
+        margin-left: 70px;
+    }
+
+    #logo-container p {
+        font-size: 30px; /* Ajusta el tamaño de la fuente */
+        text-align: center;
+    }
+
+    #logo-section {
+        align-items: center;
+        width: 100%;
+    }
+
+
+    #menu-section {
+        margin-top: 40px;
+        margin-left: 220px;
+        width: 55%;
+        max-width: 100vw;
+        text-align: center;
+        justify-content: center; /* Cambia 'justify-items' a 'justify-content' */
+        display: flex;
+        flex-direction: column;
+        order: 3;
+       
+        
+    }
+
+    #menu-section h3 {
+        font-size: 28px; /* Ajusta el tamaño de fuente */
+        margin-bottom: 40px; /* Reduce el margen inferior */
+        
+        
+    }
+    
+    
+
+    #menuFooter h3 {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        justify-content: center; /* Alinea los elementos al principio */
+        
+        width: 120px;
+        margin-left: 200px;
+    }
+    #menuFooter a{
+        
+        margin-left: -100px;
+        text-align: center;
+        font-size: 22px;
+        width: 500px;
+        
+        
+    }
+    #menuFooter li {
+        margin-left: 50px;
+        text-align: center;
+        font-size: 22px;
+        width: 500px;
+    }
+   
+    #menuInspeccion h3{
+
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        text-align: center; /* Alinea los elementos al principio */
+        width: 500px;
+        margin-left: 20px;
+        margin-bottom: 40px; /* Reduce el margen inferior */
+        margin-top: 40px; /* Reduce el margen inferior */
+    }
+    #menuInspeccion a, #menuInspeccion li{
+        
+        font-size: 22px;
+        text-align:center;
+        width: 400px;
+        margin-right: 10px;
+    }
+    #menuInspeccion li{
+        margin-left: 80px;
+    }
+
+    #tecnologiasFooter h3{
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        justify-content: center; /* Alinea los elementos al principio */
+        width: 500px;
+        margin-left: 15px;
+        margin-bottom: 40px; /* Reduce el margen inferior */
+        margin-top: 40px; /* Reduce el margen inferior */
+    }
+    #tecnologiasFooter li{
+        
+        white-space: normal;
+        margin-left: 80px;
+        font-size: 22px;
+        text-align: center;
+        width: 400px;
+
+        
+    }
+    #tiemporeal{
+        
+        width: 50%;
+        display: block; 
+    }
+
+    #menus-categorias {
+        display: flex;
+        flex-direction: column; /* Cambia a columna si necesitas que estén en una línea */
+        text-align: center;
+        margin-bottom: 10px; 
+        white-space: nowrap; /* Evita el salto de línea */
+    }
+    #social-icons {
+        gap: 15px;
+        margin-left: 375px !important;
+        
+        
+    }
+    #social-icons a {
+        
+        width: 50px;
+        height: 50px;
+    }
+    #social-icons a img {
+        width: 25px;
+        height: 25px;
+    }
+    #whatsapp-button {
+        bottom: 30px;
+        right: 30px;
+        width: 70px;
+        height: 70px;
+        background-color: #25D366;
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+    
+    #whatsapp-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    #qr-code-container {
+        bottom: 90px;  /* Ajustar la posición del contenedor QR */
+        right: 0;
+        z-index: 1000;
+        width: 100px;  /* Ajustar el tamaño del contenedor QR */
+        height: auto;
+        display: none; /* Ocultar inicialmente */
+    }
+    
+    #qr-code-container h1 {
+        font-size: 10px; /* Ajustar el tamaño de la fuente */
+        text-align: center;
+        color: #000;
+    }
+    
+    #qr-code {
+        width: 100px;  /* Ajustar el tamaño del código QR */
+        height: 100px; /* Ajustar el tamaño del código QR */
+    }
+    
+    #whatsapp-button:hover #qr-code-container {
+        display: block !important;
+    }
+
+    #whatsapp-button:hover{
+        color:#128C7E;
+    }
+   
+}
+@media (max-width: 768px) {
+    #banner-footer {
+        width: 100%;
+        max-width: 100vw;
+        padding: 30px; /* Ajusta el padding para pantallas más pequeñas */
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo-container {
+        order: 1;
+        text-align: center;
+        margin-bottom: 40px; 
+        width: 100%; /* Asegúrate de que ocupe el ancho completo */
+    }
+
+    #logo-container img {
+        align-content: center;
+        margin-bottom: 20px; /* Ajusta el margen inferior de la imagen */
+        width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        max-width: 400px; /* Aumenta el ancho máximo de la imagen */
+    }
+
+    #logo-container p {
+        font-size: 30px; /* Ajusta el tamaño de la fuente */
+        text-align: center;
+    }
+
+    #logo-section {
+        align-items: center;
+        width: 100%; 
+        margin-left: -35px;
+    }
+
+    #menu-section {
+        
+        margin-top: 40px;
+        margin-left: 45px;
+        width: 55%;
+        max-width: 100vw;
+        text-align: center;
+        justify-content: center; /* Cambia 'justify-items' a 'justify-content' */
+        display: flex;
+        flex-direction: column;
+        order: 3;
+    }
+
+    #menu-section h3 {
+        font-size: 28px; /* Ajusta el tamaño de fuente */
+        margin-bottom: 40px; /* Reduce el margen inferior */
+    }
+
+    #menuFooter h3 {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        justify-content: center; /* Alinea los elementos al principio */
+        width: 120px;
+        margin-left: 200px;
+    }
+
+    #menuFooter a, #menuFooter li {
+        margin-left: 5px;
+        text-align: center;
+        font-size: 22px;
+        width: 500px;
+    }
+
+    #menuInspeccion h3 {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        text-align: center; /* Alinea los elementos al principio */
+        width: 500px;
+        margin-left: 20px;
+        margin-bottom: 40px; /* Reduce el margen inferior */
+        margin-top: 40px; /* Reduce el margen inferior */
+    }
+
+    #menuInspeccion a, #menuInspeccion li {
+        font-size: 22px;
+        text-align: center;
+        width: 400px;
+        margin-right: 60px;
+    }
+
+    #menuInspeccion li {
+        margin-left: 95px;
+    }
+
+    #tecnologiasFooter h3 {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        justify-content: center; /* Alinea los elementos al principio */
+        width: 500px;
+        margin-left: 20px;
+        margin-bottom: 40px; /* Reduce el margen inferior */
+        margin-top: 40px; /* Reduce el margen inferior */
+    }
+
+    #tecnologiasFooter li {
+        white-space: normal;
+        margin-left: 80px;
+        font-size: 22px;
+        text-align: center;
+        width: 400px;
+    }
+
+    #tiemporeal {
+        width: 50%;
+        display: block; 
+    }
+
+    #menus-categorias {
+        display: flex;
+        flex-direction: column; /* Cambia a columna si necesitas que estén en una línea */
+        text-align: center;
+        margin-bottom: 10px; 
+        white-space: nowrap; /* Evita el salto de línea */
+    }
+
+    #social-icons {
+        margin-top: 10px; /* Ajusta según sea necesario */
+        display: flex;
+        justify-content: center; /* Alinea los íconos en el centro */
+        align-items: center; /* Centra verticalmente los íconos */
+        gap: 15px; /* Añade espacio uniforme entre los íconos */
+        width: 400px;
+        margin-left: 150px !important; /* Ajusta o elimina márgenes laterales */
+        
+    }
+
+    #social-icons a {
+        padding: 12px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px; /* Aumenta el tamaño de los iconos */
+        height: 60px;
+        border-radius: 50%;
+        background-color: #555;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    #social-icons a img {
+        width: 35px; /* Aumenta el tamaño de las imágenes de los iconos */
+        height: 35px;
+    }
+
+    #social-icons a:hover {
+        background-color: #F9AF23;
+    }
+
+    #whatsapp-button {
+        width: 60px; /* Botón más grande en pantallas grandes */
+        height: 60px;
+    }
+
+    #whatsapp-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+@media (max-width: 576px) {
+    #banner-footer {
+        width: 100%;
+        max-width: 100vw;
+        padding: 30px; /* Ajusta el padding para pantallas más pequeñas */
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo-container {
+        order: 1;
+        text-align: center;
+        margin-bottom: 40px; 
+        width: 100%; /* Asegúrate de que ocupe el ancho completo */
+    }
+
+    #logo-container img {
+        align-content: center;
+        margin-bottom: 20px; /* Ajusta el margen inferior de la imagen */
+        width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        max-width: 400px; /* Aumenta el ancho máximo de la imagen */
+    }
+
+    #logo-container p {
+        font-size: 30px; /* Ajusta el tamaño de la fuente */
+        text-align: center;
+    }
+
+    #logo-section {
+        align-items: center;
+        width: 100%; 
+        margin-left: -35px;
+    }
+
+    #menu-section {
+        
+        margin-top: 40px;
+        margin-left: -35px !important;
+        width: 55%;
+        max-width: 100vw;
+        text-align: center;
+        justify-content: center; /* Cambia 'justify-items' a 'justify-content' */
+        display: flex;
+        flex-direction: column;
+        order: 3;
+    }
+
+    #menu-section h3 {
+        font-size: 28px; /* Ajusta el tamaño de fuente */
+        margin-bottom: 40px; /* Reduce el margen inferior */
+    }
+
+    #menuFooter h3 {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        justify-content: center; /* Alinea los elementos al principio */
+        width: 120px;
+        margin-left: 200px;
+    }
+
+    #menuFooter a, #menuFooter li {
+        margin-left: 5px;
+        text-align: center;
+        font-size: 22px;
+        width: 500px;
+    }
+
+    #menuInspeccion h3 {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        text-align: center; /* Alinea los elementos al principio */
+        width: 500px;
+        margin-left: 20px;
+        margin-bottom: 40px; /* Reduce el margen inferior */
+        margin-top: 40px; /* Reduce el margen inferior */
+    }
+
+    #menuInspeccion a, #menuInspeccion li {
+        font-size: 22px;
+        text-align: center;
+        width: 400px;
+        margin-right: 60px;
+    }
+
+    #menuInspeccion li {
+        margin-left: 95px;
+    }
+
+    #tecnologiasFooter h3 {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        justify-content: center; /* Alinea los elementos al principio */
+        width: 500px;
+        margin-left: 20px;
+        margin-bottom: 40px; /* Reduce el margen inferior */
+        margin-top: 40px; /* Reduce el margen inferior */
+    }
+
+    #tecnologiasFooter li {
+        white-space: normal;
+        margin-left: 80px;
+        font-size: 22px;
+        text-align: center;
+        width: 400px;
+    }
+
+    #tiemporeal {
+        width: 50%;
+        display: block; 
+    }
+
+    #menus-categorias {
+        display: flex;
+        flex-direction: column; /* Cambia a columna si necesitas que estén en una línea */
+        text-align: center;
+        margin-bottom: 10px; 
+        white-space: nowrap; /* Evita el salto de línea */
+    }
+
+    #social-icons {
+        margin-top: 10px; /* Ajusta según sea necesario */
+        display: flex;
+        justify-content: center; /* Alinea los íconos en el centro */
+        align-items: center; /* Centra verticalmente los íconos */
+        gap: 15px; /* Añade espacio uniforme entre los íconos */
+        width: 400px;
+        margin-left: 70px !important; /* Ajusta o elimina márgenes laterales */
+        
+    }
+
+    #social-icons a {
+        padding: 12px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px; /* Aumenta el tamaño de los iconos */
+        height: 60px;
+        border-radius: 50%;
+        background-color: #555;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    #social-icons a img {
+        width: 35px; /* Aumenta el tamaño de las imágenes de los iconos */
+        height: 35px;
+    }
+
+    #social-icons a:hover {
+        background-color: #F9AF23;
+    }
+
+    #whatsapp-button {
+        width: 60px; /* Botón más grande en pantallas grandes */
+        height: 60px;
+    }
+
+    #whatsapp-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+@media (max-width: 425px) {
+     #banner-footer {
+        width: 100%;
+        max-width: 100vw;
+        padding: 20px; /* Ajusta el padding para pantallas más pequeñas */
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo-container {
+        order: 1;
+        text-align: center;
+        margin-bottom: 20px; /* Menor espacio inferior para pantallas más pequeñas */
+        width: 100%; /* Asegúrate de que ocupe el ancho completo */
+    }
+
+    #logo-container img {
+        margin-bottom: 15px; /* Ajusta el margen inferior de la imagen */
+        width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        max-width: 200px; /* Disminuye el ancho máximo de la imagen */
+    }
+
+    #logo-container p {
+        font-size: 22px; /* Ajusta el tamaño de la fuente */
+        text-align: center;
+        width: 250px;
+        margin-left: 60px !important;
+    }
+
+    #logo-section {
+        align-items: center;
+        width: 100%; 
+        padding-left: 10px; /* Elimina el margen negativo */
+        margin-right: 10px;
+
+    }
+    #menu-section {
+        
+        margin-top: 40px;
+        
+        width: 55%;
+        max-width: 100vw;
+        text-align: center;
+        justify-content: center; /* Cambia 'justify-items' a 'justify-content' */
+        display: flex;
+        flex-direction: column;
+        order: 3;
+    }
+
+    #menu-section h3 {
+        font-size: 24px; /* Ajusta el tamaño de fuente */
+        margin-bottom: 40px; /* Reduce el margen inferior */
+    }
+
+    #menuFooter h3 {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        justify-content: center; /* Alinea los elementos al principio */
+        width: 120px;
+        margin-left: 120px;
+    }
+
+    #menuFooter li {
+        margin-left: -70px;
+        text-align: center;
+        font-size: 22px;
+        width: 500px;
+    }
+
+    #menuInspeccion h3 {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        text-align: center; /* Alinea los elementos al principio */
+        width: 500px;
+        margin-left: -60px;
+        margin-bottom: 40px; /* Reduce el margen inferior */
+        margin-top: 40px; /* Reduce el margen inferior */
+    }
+
+
+    #menuInspeccion li {
+        font-size: 20px;
+        text-align: center;
+        width: 400px;
+        margin-left: 10px;
+    }
+
+    #tecnologiasFooter h3 {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        justify-content: center; /* Alinea los elementos al principio */
+        width: 500px;
+        margin-left: -50px;
+        margin-bottom: 40px; /* Reduce el margen inferior */
+        margin-top: 40px; /* Reduce el margen inferior */
+    }
+
+    #tecnologiasFooter li {
+        white-space: normal;
+        margin-left: 10px;
+        font-size: 20px;
+        text-align: center;
+        width: 350px;
+    }
+
+    #tiemporeal {
+        width: 50%;
+        display: block; 
+    }
+    
+
+
+    #menus-categorias {
+        display: flex;
+        flex-direction: column; /* Mantiene items en columna */
+        text-align: center;
+        margin-bottom: 10px; 
+        white-space: nowrap; /* Evita el salto de línea */
+    }
+    #social-icons {
+        margin-top: 10px; /* Ajusta según sea necesario */
+        
+        display: flex;
+        justify-content: center; /* Alinea los íconos en el centro */
+        align-items: center; /* Centra verticalmente los íconos */
+        gap: 10px; /* Añade espacio uniforme entre los íconos */
+        
+        margin-left: 25px !important;
+        width: 400px;
+    }
+
+    #social-icons a {
+        
+        padding: 12px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px; /* Aumenta el tamaño de los iconos */
+        height: 50px;
+        border-radius: 50%;
+        background-color: #555;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        
+    }
+
+    #social-icons a img {
+        width: 30px; /* Aumenta el tamaño de las imágenes de los iconos */
+        height: 30px;
+    }
+    
+
+    #social-icons a:hover {
+        background-color: #F9AF23;
+    }
+
+    #whatsapp-button {
+        width: 50px; /* Ajusta el tamaño del botón en pantallas pequeñas */
+        height: 50px;
+    }
+
+    #whatsapp-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (max-width: 375px) {
+    #banner-footer {
+        width: 100%;
+        max-width: 100vw;
+        padding: 10px 5px; /* Ajusta el padding para pantallas más pequeñas */
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo-container {
+        order: 1;
+        text-align: center;
+        margin-bottom: 20px; 
+        margin-left: -30px;
+        width: 100%; /* Asegúrate de que ocupe el ancho completo */
+    }
+
+    #logo-container img {
+        align-content: center;
+        margin-bottom: 8px; /* Ajusta el margen inferior de la imagen */
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        max-width: 250px; /* Aumenta el ancho máximo de la imagen */
+    }
+
+    #logo-container p {
+        font-size: 18px; /* Ajusta el tamaño de la fuente */
+        text-align: center;
+    }
+
+    #logo-section {
+        align-items: center;
+        width: 100%; 
+    }
+    #menu-section {
+        margin-left: -50px !important;
+        margin-top: 40px;
+        width: 45%;
+        max-width: 100vw;
+        text-align: center;
+        justify-content: center; /* Cambia 'justify-items' a 'justify-content' */
+        display: flex;
+        flex-direction: column;
+        order: 3;
+    }
+
+    #menu-section h3 {
+        font-size: 24px; /* Ajusta el tamaño de fuente */
+        margin-bottom: 40px; /* Reduce el margen inferior */
+    }
+
+    #menuFooter h3 {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        justify-content: center; /* Alinea los elementos al principio */
+        width: 100px;
+        margin-left: 120px;
+    }
+
+    #menuFooter li a{
+        margin-left: -30px;
+        text-align: center;
+        font-size: 18px;
+        width: 300px;
+    }
+
+    #menuInspeccion h3 {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        text-align: center; /* Alinea los elementos al principio */
+        width: 300px;
+        margin-left: 10px;
+        margin-bottom: 40px; /* Reduce el margen inferior */
+        margin-top: 40px; /* Reduce el margen inferior */
+    }
+
+
+    #menuInspeccion li a {
+        font-size: 18px;
+        text-align: center;
+        width: 400px;
+        margin-left: -30px;
+    }
+
+    #tecnologiasFooter h3 {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        justify-content: center; /* Alinea los elementos al principio */
+        width: 500px;
+        margin-left: -60px;
+        margin-bottom: 40px; /* Reduce el margen inferior */
+        margin-top: 40px; /* Reduce el margen inferior */
+    }
+
+    #tecnologiasFooter li {
+        white-space: normal;
+        margin-left: -10px;
+        font-size: 18px;
+        text-align: center;
+        width: 350px;
+    }
+
+    #tiemporeal {
+        width: 50%;
+        display: block; 
+    }
+
+    #menus-categorias {
+        display: flex;
+        flex-direction: column; /* Cambia a columna si necesitas que estén en una línea */
+        text-align: center;
+        margin-bottom: 10px; 
+        white-space: nowrap; /* Evita el salto de línea */
+    }
+
+    #social-icons {
+        margin-top: 10px; /* Ajusta según sea necesario */
+        
+        display: flex;
+        justify-content: center; /* Alinea los íconos en el centro */
+        align-items: center; /* Centra verticalmente los íconos */
+        gap: 10px; /* Añade espacio uniforme entre los íconos */
+        
+        margin-left: 15px;
+        width: 360px;
+    }
+
+    #social-icons a {
+        
+        padding: 12px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px; /* Aumenta el tamaño de los iconos */
+        height: 50px;
+        border-radius: 50%;
+        background-color: #555;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        
+    }
+
+    #social-icons a img {
+        width: 30px; /* Aumenta el tamaño de las imágenes de los iconos */
+        height: 30px;
+    }
+
+    #whatsapp-button {
+        width: 35px; /* Botón más grande en pantallas pequeñas */
+        height: 35px;
+        
+    }
+
+    #whatsapp-icon {
+        width: 35px;
+        height: 35px;
+    }
+} 
+@media (max-width: 320px) {
+    #banner-footer {
+        width: 100%;
+        max-width: 100vw;
+        padding: 5px 10px;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo-container {
+        order: 1;
+        text-align: center;
+        margin-bottom: 20px; 
+        margin-left: -30px;
+        width: 100%;
+    }
+
+    #logo-container img {
+        align-content: center;
+        margin-bottom: 8px;
+        margin-left: 20px;
+        margin-right: 10px;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    #logo-container p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #logo-section {
+        align-items: center;
+        width: 100%; 
+        margin-left: -50px;
+    }
+
+    #menu-section {
+        margin-left: -50px;
+        margin-top: 40px !important;
+        width: 100%;
+        max-width: 100vw;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        order: 3;
+    }
+
+    #menu-section h3 {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #menu-section li {
+        font-size: 16px;
+    }
+
+    #menuFooter h3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100px;
+        margin-left: 100px;
+    }
+
+    #menuFooter li a {
+        margin-left: -80px;
+        text-align: center;
+        font-size: 16px;
+        width: 300px;
+    }
+
+    #menuInspeccion h3 {
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 300px;
+        margin-left: -5px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    #menuInspeccion li a {
+        font-size: 16px;
+        text-align: center;
+        width: 300px;
+        margin-left: -80px;
+    }
+
+    #tecnologiasFooter h3 {
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        margin-left: -10px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    #tecnologiasFooter li {
+        white-space: normal;
+        margin-left: -20px;
+        font-size: 16px;
+        text-align: center;
+        width: 310px;
+    }
+
+    #tiemporeal {
+        width: 100%;
+        display: block; 
+    }
+
+    #social-icons {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        width: 300px;
+    }
+
+    #social-icons a {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #555;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    #social-icons a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #social-icons a:hover {
+        background-color: #F9AF23;
+    }
+
+    #whatsapp-button {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        right: 40px;
+    }
+
+    #whatsapp-icon {
+        width: 35px;
+        height: 35px;
+    }
+}

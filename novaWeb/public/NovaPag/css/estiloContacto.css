@@ -1,0 +1,1590 @@
+/* Estilos para el body y gradiente de fondo */
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Asegura que el padding y el border no afecten el ancho total */
+}
+
+/*FORMULARIO*/
+/* Sección del formulario */
+#formulario-seccion {
+    width: 100%;
+    height: 900px;
+    background-image: url('../NovaPag-main/imgs/fondos/imgFormulario.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+
+.txtSeccion {
+    position: relative; 
+    margin-top: 110px;
+    margin-left: 370px; 
+}
+
+.txtSeccion h1 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.txtSeccion h5 {
+    color: #ec9d09;
+    font-size: 30px;
+    margin-top: -35px;
+    
+}
+
+.txtSeccion p {
+    margin-top: 20px;
+    text-align: justify;
+}
+#container-encuentranos{
+    margin-left: 330px;
+    margin-top: -40px;
+}
+/* Sección de contacto */
+.contacto {
+    position: relative; /* Mantener posición relativa por defecto */
+    margin-top: 50px;
+    margin-left: 50px; /* Cambiado para que esté alineado a la izquierda */
+    width: 250px;
+}
+
+.contacto h4 {
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.contacto img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#txtCorreo,
+#txtTelefono {
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+/* Sección de contacto2 */
+.contacto2 {
+    position: relative; /* Mantener posición relativa por defecto */
+    margin-top: 50px;
+    margin-left: 50px; /* Cambiado para que esté alineado a la izquierda */
+    width: 250px;
+}
+
+.contacto2 h4 {
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    margin-top: -2px;
+}
+
+.contacto2 a {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contacto2 img {
+    width: 20px;
+    height: 20px;
+    margin-top: -1px;
+    margin-right: 10px;
+}
+
+.contacto2 a span {
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+.contacto2 a:hover span {
+    color: #ec9d09;
+}
+#contenedor-formulario{
+    height: 800px;
+    margin-top: 80px;
+}
+/* Sección del formulario */
+.contenedorCotiza {
+    position: relative; /* Mantener posición relativa por defecto */
+    margin-right: 220px; /* Ajustado para centrar mejor */
+    width: 450px;
+    padding: 20px;
+    background-color: rgba(34, 34, 34, 0.514);
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.contenedorCotiza h1 {
+    margin-top: 0px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contenedorCotiza h5 {
+    margin-top: -40px;
+    color: #ec9d09;
+    height: 15px;
+    font-size: 25px;
+}
+
+/* Estilo para inputs y textarea */
+input,
+textarea {
+    background-color: rgba(110, 110, 110, 0.582);
+    font-weight: bold;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Preferencias de contacto */
+#prefContacto {
+    margin-top: 30px;
+}
+
+.preferencia .form-check {
+    margin-right: 40px;
+}
+
+/* Icono del botón */
+#iconoMensaje {
+    width: 19px;
+    height: 19px;
+}
+
+/* Estilo del botón */
+button {
+    margin-top: 30px;
+    background-color: #ec9d09 !important;
+    border: none !important;
+    border-radius: 50px;
+    height: 40px;
+    font-weight: bold;
+}
+button:hover {
+    background: linear-gradient(to right, #83bef5, #2b69aa, #0a4c92);
+}
+
+
+
+
+@media (max-width:2560px){
+    #redes {
+        top: 5px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    #logo {
+        max-width: 100%; /* Asegúrate de que el logo se ajuste bien */
+    }
+
+
+    .dropdown-menu {
+        display: none; /* Asegúrate de que el menú principal esté oculto por defecto */
+    }
+
+
+    #contenedor-btnSelect {
+        width: 40%; /* Mantiene el ancho del contenedor */
+    }
+
+    #btnCliente {
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    #lenguaje {
+        width: 50%; /* Mantiene el ancho del select */
+    }
+
+    .textos{
+        margin: 0 auto; /* Centra horizontalmente */
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .txtSeccion {
+        margin-left: 540px;
+    }
+    #container-encuentranos{
+        margin-left: 500px;
+    }
+    #txtTelefono,
+    #txtCorreo {
+        margin-left: 2px;
+        margin-top: -5px;
+    }
+   
+}
+@media (max-width: 1440px) {
+    #formulario-seccion {
+        height: 800px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 15px; /* Reduce el padding */
+    }
+
+    .txtSeccion {
+        margin-top: 80px; /* Ajusta la posición vertical del texto */
+        margin-left: 250px; /* Ajusta la posición horizontal del texto */
+    }
+
+    .txtSeccion h1 {
+        font-size: 40px; /* Reduce el tamaño del título */
+    }
+
+    .txtSeccion h5 {
+        font-size: 25px; /* Ajusta el tamaño del subtítulo */
+    }
+
+    .txtSeccion p {
+        font-size: 16px; /* Ajusta el tamaño del párrafo */
+    }
+
+    #container-encuentranos {
+        margin-left: 230px; /* Ajusta la posición de la sección */
+    }
+
+    .contacto,
+    .contacto2 {
+        margin-left: 30px; /* Reduce el margen izquierdo para adaptarse a la pantalla */
+        width: 220px; /* Ajusta el ancho de la sección de contacto */
+    }
+    #txtTelefono,
+    #txtCorreo {
+        margin-left: 2px;
+        margin-top: -5px;
+    }
+    .contacto h4, 
+    .contacto2 h4 {
+        font-size: 13px; /* Reduce el tamaño del título de contacto */
+    }
+
+    .contacto img, 
+    .contacto2 img {
+        width: 18px; /* Ajusta el tamaño del icono */
+        height: 18px;
+    }
+
+    .contenedorCotiza {
+        width: 400px; /* Ajusta el ancho del formulario */
+        margin-right: 180px; /* Ajusta la posición horizontal del formulario */
+        padding: 15px; /* Reduce el padding interno */
+    }
+
+    .contenedorCotiza h1 {
+        font-size: 25px; /* Ajusta el tamaño del título */
+        margin-bottom: 20px;
+    }
+
+    .contenedorCotiza h5 {
+        font-size: 22px; /* Ajusta el tamaño del subtítulo */
+    }
+
+    input,
+    textarea {
+        font-size: 14px; /* Ajusta el tamaño del texto en los inputs y textarea */
+    }
+
+    button {
+        font-size: 14px; /* Ajusta el tamaño del texto del botón */
+        height: 35px; /* Reduce la altura del botón */
+        margin-top: 20px; /* Ajusta el margen superior del botón */
+    }
+
+    #banner-footer {
+        background-color: #0B2733;
+        color: #fff;
+        padding: 50px 50px;
+        width: 100%;
+        max-width: 100vw;
+    }
+    
+    #logo-container {
+        text-align: justify;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 24px;
+        margin-left: 10px;
+    }
+    
+    #logo-img {
+        width: 240px;
+        height: auto;
+        margin-bottom: 25px;
+        margin-left: 20px;
+    }
+    #menu-section{
+    
+        margin-top: 10px;
+    }
+   
+    
+    
+    
+    
+    #menuFooter li a::before, #menuInspeccion li a::before, #tecnologiasFooter li a::before {
+        content: "➢";
+        margin-right: 3px;
+        color: #F9AF23;
+        font-size: 16px;
+        
+    }
+    
+    #menuFooter li, #menuInspeccion li, #tecnologiasFooter li {
+       
+        margin-bottom: 8px;
+        margin-top: 20px;
+        padding-left: 10px;
+        color: #F9AF23;
+        font-size: 18px;
+    }
+    
+    #menuFooter a, #menuInspeccion a, #tecnologiasFooter a {
+        text-decoration: none;
+        color: #ccc;
+    }
+    
+    #menuFooter a:hover, #menuInspeccion a:hover, #tecnologiasFooter a:hover {
+        color: #F9AF23;
+    }
+    #social-icons{
+    
+        margin-top: -50px;
+        margin-right: 1000px;
+        position: relative;
+    }
+    
+    #social-icons #btnIg2{
+    
+        top: 10%;
+        position: relative;
+        margin: 0 20px 20px 20px;
+        padding: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #555;
+        transition: background-color 0.3s ease, color 0.3s ease; 
+    }
+    #social-icons a {
+    
+        margin: 0 20px 20px 20px;
+        padding: 2px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #555;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    #social-icons a:hover {
+        background-color: #F9AF23;
+    }
+    
+    
+    #whatsapp-button {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        background-color: #25D366;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease;
+    }
+    
+    #whatsapp-button:hover {
+        background-color: #128C7E;
+    }
+    
+    #whatsapp-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 1024px) {
+    #redes {
+        top: 5px;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+
+    #logo {
+        max-width: 60%; /* Ajusta el logo al 100% */
+        height: auto;
+        margin-left: 15px;
+    }
+
+    .navbar {
+        width: 80%; /* Ajusta el ancho del navbar */
+        font-size: 12px; /* Reduce el tamaño de fuente */
+        margin-left: -30px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 11px; /* Ajusta el tamaño del texto en el dropdown */
+    }
+
+    #contenedor-btnSelect {
+        width: 40%; /* Reduce el ancho del contenedor */
+        margin-right: 15px;
+    }
+
+    #btnCliente {
+        width: 50%;
+        margin-left: -20px; /* Mantén el margen */
+        font-size: 13px;
+    }
+
+    #lenguaje {
+        width: 45%; /* Ajusta el ancho del select */
+    }
+
+    #formulario-seccion {
+        height: 700px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 10px; /* Reduce el padding */
+    }
+
+    .txtSeccion {
+        margin-top: 50px; /* Ajusta la posición vertical del texto */
+        margin-left: 100px; /* Ajusta la posición horizontal del texto */
+    }
+
+    .txtSeccion h1 {
+        font-size: 35px; /* Reduce el tamaño del título */
+    }
+
+    .txtSeccion h5 {
+        font-size: 20px; /* Ajusta el tamaño del subtítulo */
+    }
+
+    .txtSeccion p {
+        font-size: 14px; /* Ajusta el tamaño del párrafo */
+    }
+
+    #container-encuentranos {
+        margin-left: 80px; /* Ajusta la posición de la sección */
+        margin-top: -50px;
+    }
+    .contacto, .contacto2 {
+        margin-left: 20px; /* Reduce el margen izquierdo */
+        width: 200px; /* Ajusta el ancho de la sección de contacto */
+    }
+    .contacto2{
+        margin-left: 50px;
+    }
+    #txtCorreo, 
+    #txtTelefono {
+        margin-left: 2px;
+        margin-top: -5px;
+    }
+    .contacto h4, .contacto2 h4 {
+        font-size: 12px; /* Reduce el tamaño del título de contacto */
+    }
+
+    .contacto img, .contacto2 img {
+        width: 16px; /* Ajusta el tamaño del icono */
+        height: 16px;
+    }
+
+    .contenedorCotiza {
+        width: 80%; /* Ajusta el ancho del formulario */
+        height: auto;
+        margin-right: 50px; /* Ajusta la posición horizontal del formulario */
+        padding: 10px; /* Reduce el padding interno */
+        margin-top: -30px;
+        
+    }
+
+    .contenedorCotiza h1 {
+        font-size: 25px; /* Ajusta el tamaño del título */
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .contenedorCotiza h5 {
+        font-size: 20px; /* Ajusta el tamaño del subtítulo */
+        margin-left: 20px;
+        padding-top: 5px;
+    }
+    #contactForm input,
+    #contactForm textarea{
+        font-size: 12px;
+    }
+    #prefContacto {
+        font-size: 12px;
+    }
+    
+    .preferencia .form-check {
+        font-size: 12px;
+    }
+    button {
+        font-size: 12px; /* Ajusta el tamaño del texto del botón */
+        height: 30px; /* Reduce la altura del botón */
+        margin-top: 15px; /* Ajusta el margen superior del botón */
+        margin-bottom: 10px;
+    }
+
+    #banner-footer {
+        width: 100%;
+        max-width: 100vw;
+        padding: 20px 15px; /* Ajusta el padding para pantallas más pequeñas */
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo-container {
+        order: 1;
+        text-align: justify;
+        margin-bottom: 20px; 
+        width: 100%; /* Asegúrate de que ocupe el ancho completo */
+    }
+
+    #logo-container img {
+        margin-bottom: 20px; /* Ajusta el margen inferior de la imagen */
+        width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        max-width: 500px; /* Aumenta el ancho máximo de la imagen */
+    }
+
+    #logo-container p {
+        font-size: 30px; /* Ajusta el tamaño de la fuente */
+    }
+
+    #logo-section {
+        align-items: center;
+        width: 100%; 
+    }
+
+    #menu-section {
+        margin-top: 40px; /* Ajusta el margen superior */
+        margin-left: 0;
+        width: 100%;
+        max-width: 100vw;
+        text-align: start;
+        display: flex;
+        flex-direction: column; /* Asegura que el menú se apile verticalmente */
+        order: 3;
+    }
+
+    #menu-section h3 {
+        font-size: 22px; /* Ajusta el tamaño de fuente */
+        margin-bottom: 15px; /* Reduce el margen inferior */
+    }
+
+    /* Para los menús, asegurando que se muestren uno debajo del otro */
+    #menuFooter, 
+    #menuInspeccion, 
+    #tecnologiasFooter {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        justify-content: flex-start; /* Alinea los elementos al principio */
+        margin-bottom: 15px; /* Ajusta el margen inferior */
+    }
+
+    /* Asegura que los items dentro de cada menú ocupen espacio adecuadamente */
+    #menuFooter div, 
+    #menuInspeccion div, 
+    #tecnologiasFooter div {
+        flex: none; /* Evita que los elementos se expandan */
+        min-width: 120px; /* Define un ancho mínimo */
+        margin-bottom: 10px; /* Espaciado entre elementos */
+    }
+
+    #menus-categorias {
+        display: flex;
+        flex-direction: column; /* Cambia a columna si necesitas que estén en una línea */
+        justify-content: flex-start; 
+        margin-bottom: 10px; 
+        font-size: 18px; /* Ajusta el tamaño de la fuente */
+        white-space: nowrap; /* Evita el salto de línea */
+    }
+
+    /* Íconos sociales */
+    #social-icons {
+        margin-top: 20px; 
+        width: 100%;
+        max-width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    #redes {
+        top: 5px;
+        flex-direction: row; /* Cambia a columna para mejor adaptación */
+        justify-content: flex-end; /* Centra el contenido */
+    }
+
+    #logo {
+        max-width: 50%; /* Aumenta el ancho del logo */
+        height: auto;
+        margin: 0 auto; /* Centra el logo */
+        margin-left: -5px;
+    }
+
+    .navbar {
+        width: 70%; /* Aumenta el ancho del navbar */
+        font-size: 9px; /* Reduce aún más el tamaño de fuente */
+        margin: 0 auto; /* Centra el navbar */
+        margin-left: -100px;
+        margin-right: 50px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 8px; /* Ajusta el tamaño del texto en el dropdown */
+    }
+
+    #contenedor-btnSelect {
+        width: 20%; /* Aumenta el ancho del contenedor */
+        margin-right: 30px;
+    }
+
+    #btnCliente {
+        width: 60%; /* Aumenta el ancho del botón */
+        margin: 10px auto; /* Centra el botón */
+        font-size: 10px; /* Reduce el tamaño de la fuente */
+        margin-left: -45px;
+    }
+    #btnCliente img{
+        width: 30%;
+        height: auto;
+        margin-left: -15px;
+        margin-right: -5px;
+    }
+
+    #lenguaje {
+        width: 100%; /* Aumenta el ancho del select */
+        height: auto;
+        margin-right: -60px;
+        font-size: 5px;
+    }
+    #formulario-seccion {
+        height: 600px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 8px; /* Reduce el padding */
+    }
+
+    .txtSeccion {
+        margin-top: 30px; /* Ajusta la posición vertical del texto */
+        margin-left: 70px; /* Ajusta la posición horizontal del texto */
+    }
+
+    .txtSeccion h1 {
+        font-size: 30px; /* Reduce el tamaño del título */
+    }
+
+    .txtSeccion h5 {
+        font-size: 18px; /* Ajusta el tamaño del subtítulo */
+        margin-top: -20px;
+    }
+
+    .txtSeccion p {
+        font-size: 12px; /* Ajusta el tamaño del párrafo */
+    }
+
+    #container-encuentranos {
+        margin-left: 60px; /* Ajusta la posición de la sección */
+        margin-top: -40px;
+    }
+    #txtCorreo,
+    #txtTelefono {
+        margin-left: 0px;
+        margin-top: -2px;
+    
+    }
+    .contacto, .contacto2 {
+        margin-left: 10px; /* Reduce el margen izquierdo */
+        width: 180px; /* Ajusta el ancho de la sección de contacto */
+    }
+    .contacto2 {
+        margin-left: -180px;
+        margin-top: 180px;
+    }
+    .contacto h4, .contacto2 h4 {
+        font-size: 10px; /* Reduce el tamaño del título de contacto */
+    }
+
+    .contacto img, .contacto2 img {
+        width: 14px; /* Ajusta el tamaño del icono */
+        height: 14px;
+    }
+    #contactForm input,
+    #contactForm textarea{
+        font-size: 10px;
+    }
+    .contenedorCotiza {
+        width: 75%; /* Ajusta el ancho del formulario */
+        height: auto;
+        margin-right: 40px; /* Ajusta la posición horizontal del formulario */
+        padding: 8px; /* Reduce el padding interno */
+        margin-top: -50px;
+    }
+
+    .contenedorCotiza h1 {
+        font-size: 22px; /* Ajusta el tamaño del título */
+        margin-bottom: 13px;
+        margin-left: 15px;
+    }
+
+    .contenedorCotiza h5 {
+        font-size: 18px; /* Ajusta el tamaño del subtítulo */
+        margin-left: 15px;
+        padding-top: 10px;
+    }
+
+    #prefContacto {
+        font-size: 10px;
+    }
+    
+    .preferencia .form-check {
+        font-size: 10px;
+    }
+    
+    button {
+        font-size: 10px; /* Ajusta el tamaño del texto del botón */
+        height: 25px; /* Reduce la altura del botón */
+        margin-top: 10px; /* Ajusta el margen superior del botón */
+        margin-bottom: 8px;
+    }
+    #banner-footer {
+        width: 100%;
+        max-width: 100vw;
+        padding: 20px 15px; /* Ajusta el padding para pantallas más pequeñas */
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo-container {
+        order: 1;
+        text-align: justify;
+        margin-bottom: 20px; 
+        width: 100%; /* Asegúrate de que ocupe el ancho completo */
+    }
+
+    #logo-container img {
+        margin-bottom: 20px; /* Ajusta el margen inferior de la imagen */
+        width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        max-width: 399px; /* Ancho máximo de la imagen */
+    }
+
+    #logo-container p {
+        font-size: 20px; /* Ajusta el tamaño de la fuente */
+    }
+
+    #logo-section {
+        align-items: center;
+        width: 100%; 
+    }
+
+    #menu-section {
+        margin-top: 40px; /* Ajusta el margen superior */
+        margin-left: 0;
+        width: 100%;
+        max-width: 100vw;
+        text-align: start;
+        display: flex;
+        flex-direction: column; /* Asegura que el menú se apile verticalmente */
+        order: 3;
+    }
+
+    #menu-section h3 {
+        font-size: 20px; /* Ajusta el tamaño de fuente */
+        margin-bottom: 15px; /* Reduce el margen inferior */
+    }
+
+    /* Para los menús, asegurando que se muestren uno debajo del otro */
+    #menuFooter, 
+    #menuInspeccion, 
+    #tecnologiasFooter {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        justify-content: flex-start; /* Alinea los elementos al principio */
+        margin-bottom: 15px; /* Ajusta el margen inferior */
+    }
+
+    /* Asegura que los items dentro de cada menú ocupen espacio adecuadamente */
+    #menuFooter div, 
+    #menuInspeccion div, 
+    #tecnologiasFooter div {
+        flex: none; /* Evita que los elementos se expandan */
+        min-width: 100px; /* Define un ancho mínimo */
+        margin-bottom: 10px; /* Espaciado entre elementos */
+    }
+
+    #menus-categorias {
+        display: flex;
+        flex-direction: column; /* Cambia a fila si necesitas que estén en una línea */
+        justify-content: flex-start; 
+        margin-bottom: 10px; 
+        font-size: 18px; /* Ajusta el tamaño de la fuente */
+        white-space: nowrap; /* Evita el salto de línea */
+    }
+
+    /* Íconos sociales */
+    #social-icons {
+        margin-top: 20px; 
+        width: 100%;
+        max-width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*Esta fue una excepcion*/
+@media (max-width: 600px) {
+    #banner-footer {
+        width: 100%;
+        max-width: 100vw;
+        padding: 20px 15px;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo-container {
+        order: 1;
+        text-align: justify;
+        margin-bottom: 20px; 
+        width: 100%; 
+    }
+
+    #logo-container img {
+        margin-bottom: 10px; 
+        width: 100%; 
+        max-width: 500px; 
+    }
+
+    #logo-container p {
+        font-size: 20px; 
+    }
+
+    #logo-section {
+        align-items: center;
+        width: 100%; 
+    }
+
+    #menu-section {
+        margin-top: 40px;
+        margin-left: 0;
+        width: 100%;
+        max-width: 100vw;
+        text-align: start;
+        display: flex;
+        flex-direction: column; /* Asegura que el menú se apile verticalmente */
+        order: 3;
+    }
+
+    #menu-section h3 {
+        font-size: 20px;
+        margin-bottom: 15px; 
+    }
+
+    /* Para los menús, asegurando que se muestren uno debajo del otro */
+    #menuFooter, 
+    #menuInspeccion, 
+    #tecnologiasFooter {
+        display: flex;
+        flex-direction: column; /* Cambia a columna */
+        justify-content: flex-start; /* Alinea los elementos al principio */
+        margin-bottom: 15px; 
+    }
+
+    /* Asegura que los items dentro de cada menú ocupen espacio adecuadamente */
+    #menuFooter div, 
+    #menuInspeccion div, 
+    #tecnologiasFooter div {
+        flex: none; 
+        min-width: 100px; /* Define un ancho mínimo */
+        margin-bottom: 8px; /* Espaciado entre elementos, usa margen inferior */
+    }
+
+    #menus-categorias {
+        display: flex;
+        flex-direction: row; /* Cambia a fila si necesitas que estén en una línea */
+        justify-content: flex-start; 
+        margin-bottom: 15px; 
+        overflow-x: auto; /* Habilita el desplazamiento horizontal */
+        white-space: nowrap; 
+    }
+
+    /* Íconos sociales */
+    #social-icons {
+        margin-top: 20px; 
+        width: 100%;
+        max-width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Pantallas de hasta 576px */
+@media (max-width: 425px) {
+
+    body{
+        font-size: 11px;
+    }
+    #redes {
+        top: 5px;
+        flex-direction: row; /* Cambia a columna para mejor adaptación */
+        justify-content: flex-end; /* Centra el contenido */
+    }
+
+    #logo {
+        max-width: 50%; /* Aumenta el ancho del logo */
+        height: auto;
+        margin-top: -60px;
+        margin-left: 120px;
+    }
+
+    .navbar {
+        width: 40%; /* Aumenta el ancho del navbar */
+        font-size: 9px; /* Reduce aún más el tamaño de fuente */
+        right: 80px;
+        margin-left: -300px;
+        margin-top: 150px;
+        background-color: transparent !important;
+    }
+    .navbar-nav .dropdown-menu {
+        max-width: 241px; /* Ajusta el valor según tus necesidades */
+        padding-left: 0px;
+    }
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 8px; /* Ajusta el tamaño del texto en el dropdown */
+        overflow: hidden;
+        padding-left: 3px;
+    }
+    .navbar-nav .dropdown-menu .dropdown-submenu{
+        width: 160px;
+    }
+    #contenedor-btnSelect {
+        width: 80%; /* Aumenta el ancho del contenedor */
+        margin: 10px auto; /* Centra el contenedor */
+        margin-top: 160px;
+        margin-left: -190px;
+    }
+
+    #btnCliente {
+        width: 40%; /* Aumenta el ancho del botón */
+        font-size: 11px; /* Reduce el tamaño de la fuente */
+        margin-left: 70px;
+    }
+    #lenguaje{
+        width: 40%;
+    }
+
+    
+    #formulario-seccion {
+        height: 1050px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 5px; /* Reduce el padding */
+    }
+
+    .txtSeccion {
+        margin-top: 40px; /* Ajusta la posición vertical del texto */
+        margin-left: 30px; /* Ajusta la posición horizontal del texto */
+    }
+
+    .txtSeccion h1 {
+        font-size: 25px; /* Reduce el tamaño del título */
+    }
+
+    .txtSeccion h5 {
+        font-size: 16px; /* Ajusta el tamaño del subtítulo */
+        margin-top: -10px;
+    }
+
+    .txtSeccion p {
+        font-size: 10px; /* Ajusta el tamaño del párrafo */
+    }
+
+    #container-encuentranos {
+        margin-left: 30px; /* Ajusta la posición de la sección */
+        margin-top: -70px;
+    }
+
+    #txtCorreo,
+    #txtTelefono {
+        margin-left: 0px;
+        margin-top: -2px;
+    }
+
+    .contacto, .contacto2 {
+        margin-left: 5px; /* Reduce el margen izquierdo */
+        width: 150px; /* Ajusta el ancho de la sección de contacto */
+    }
+
+    .contacto2 {
+        margin-left: -150px;
+        margin-top: 150px;
+    }
+
+    .contacto h4, .contacto2 h4 {
+        font-size: 9px; /* Reduce el tamaño del título de contacto */
+    }
+
+    .contacto img, .contacto2 img {
+        width: 12px; /* Ajusta el tamaño del icono */
+        height: 12px;
+    }
+
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 9px; /* Reduce el tamaño del texto de los campos */
+    }
+
+    .contenedorCotiza {
+        width: 90%; /* Ajusta el ancho del formulario */
+        margin-right: -20px; /* Ajusta la posición horizontal del formulario */
+        padding: 5px; /* Reduce el padding interno */
+        margin-top: -30px;
+        height: 550px;
+    }
+
+    .contenedorCotiza h1 {
+        font-size: 18px; /* Ajusta el tamaño del título */
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .contenedorCotiza h5 {
+        font-size: 16px; /* Ajusta el tamaño del subtítulo */
+        margin-left: 10px;
+        padding-top: 8px;
+        margin-top: -20px;
+    }
+
+    #prefContacto {
+        font-size: 9px; /* Ajusta el tamaño del texto de preferencia de contacto */
+    }
+
+    .preferencia .form-check {
+        font-size: 9px; /* Reduce el tamaño del texto de las opciones */
+    }
+
+    button {
+        font-size: 9px; /* Ajusta el tamaño del texto del botón */
+        height: 22px; /* Reduce la altura del botón */
+        margin-top: 8px; /* Ajusta el margen superior del botón */
+        margin-bottom: 6px;
+    }
+
+
+    #banner-footer {
+        width: 100%;
+        max-width: 100vw;
+        padding: 15px 10px; /* Ajusta el padding para pantallas más pequeñas */
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo-container {
+        order: 1;
+        text-align: justify;
+        margin-bottom: 5px; 
+        margin-left: 10px;
+        width: 100%; /* Asegúrate de que ocupe el ancho completo */
+    }
+
+    #logo-container img {
+        margin-bottom: 0; /* Ajusta el margen inferior de la imagen */
+        width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        max-width: 350px; /* Ancho máximo de la imagen */
+        margin-left: 10px;
+    }
+
+    #logo-container p {
+        font-size: 14px; /* Ajusta el tamaño de la fuente */
+    }
+
+    #logo-section {
+        align-items: center;
+        width: 100%; 
+    }
+
+    #menu-section {
+        margin-top: 30px; /* Reduce el margen superior */
+        margin-left: 0;
+        width: 100%;
+        max-width: 100vw;
+        text-align: start;
+        display: flex;
+        flex-direction: column; /* Asegura que el menú se apile verticalmente */
+        order: 3;
+    }
+
+    #menu-section h3 {
+        font-size: 18px; /* Ajusta el tamaño de fuente */
+        margin-bottom: 10px; /* Reduce el margen inferior */
+    }
+
+    /* Para los menús, asegurando que se muestren uno debajo del otro */
+    #menuFooter, 
+    #menuInspeccion, 
+    #tecnologiasFooter {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        justify-content: flex-start; /* Alinea los elementos al principio */
+        margin-bottom: 10px; /* Ajusta el margen inferior */
+    }
+
+    /* Asegura que los items dentro de cada menú ocupen espacio adecuadamente */
+    #menuFooter div, 
+    #menuInspeccion div, 
+    #tecnologiasFooter div {
+        flex: none; /* Evita que los elementos se expandan */
+        min-width: 80px; /* Define un ancho mínimo */
+        margin-bottom: 6px; /* Espaciado entre elementos */
+    }
+
+    #menus-categorias {
+        display: flex;
+        flex-direction: row; /* Cambia a fila si necesitas que estén en una línea */
+        justify-content: flex-start; 
+        margin-bottom: 10px; 
+        font-size: 8px;
+        white-space: nowrap; /* Evita el salto de línea */
+    }
+
+    /* Íconos sociales */
+    #social-icons {
+        margin-top: 15px; 
+        width: 100%;
+        max-width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        font-size: 10px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    #redes {
+        top: 5px;
+        flex-direction: row; /* Mantén en fila, ya que puede adaptarse bien */
+        justify-content: flex-end; /* Mantén la alineación a la derecha */
+    }
+
+    #logo {
+        max-width: 45%; /* Reduce un poco el tamaño del logo */
+        height: auto;
+        margin-top: -50px; /* Ajusta el margen superior */
+        margin-left: 100px; /* Ajusta el margen izquierdo */
+    }
+
+    .navbar {
+        width: 35%; /* Reduce ligeramente el ancho del navbar */
+        font-size: 8px; /* Disminuye el tamaño de la fuente */
+        right: 70px; /* Ajusta el margen derecho */
+        margin-left: -300px; /* Reduce el margen izquierdo */
+        margin-top: 140px; /* Ajusta el margen superior */
+        background-color: transparent !important;
+    }
+
+    .navbar-nav .dropdown-menu {
+        max-width: 210px; /* Ajusta el ancho del dropdown */
+        padding-left: 0px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 7px; /* Reduce aún más el tamaño del texto en el dropdown */
+        overflow: hidden;
+        padding-left: 2px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-submenu {
+        width: 150px; /* Ajusta el ancho del submenú */
+    }
+
+    #contenedor-btnSelect {
+        width: 75%; /* Reduce ligeramente el ancho del contenedor */
+        margin: 8px auto; /* Ajusta los márgenes */
+        margin-top: 150px;
+        margin-left: -180px; /* Ajusta el margen izquierdo */
+    }
+
+    #btnCliente {
+        width: 38%; /* Ajusta el ancho del botón */
+        font-size: 10px; /* Reduce el tamaño de la fuente */
+        margin-left: 65px; /* Ajusta el margen izquierdo */
+    }
+
+    #lenguaje {
+        width: 38%; /* Ajusta el ancho del selector de lenguaje */
+    }
+
+    #formulario-seccion {
+        height: 950px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 4px; /* Reduce el padding */
+    }
+    
+    .txtSeccion {
+        margin-top: 35px; /* Ajusta la posición vertical del texto */
+        margin-left: 25px; /* Ajusta la posición horizontal del texto */
+    }
+    
+    .txtSeccion h1 {
+        font-size: 23px; /* Reduce el tamaño del título */
+    }
+    
+    .txtSeccion h5 {
+        font-size: 15px; /* Ajusta el tamaño del subtítulo */
+        margin-top: -8px;
+    }
+    
+    .txtSeccion p {
+        font-size: 9px; /* Ajusta el tamaño del párrafo */
+    }
+    
+    #container-encuentranos {
+        margin-left: 25px; /* Ajusta la posición de la sección */
+        margin-top: -60px;
+    }
+    
+    #txtCorreo,
+    #txtTelefono {
+        margin-left: 0px;
+        margin-top: -2px;
+    }
+    
+    .contacto,
+    .contacto2 {
+        margin-left: 3px; /* Reduce el margen izquierdo */
+        width: 140px; /* Ajusta el ancho de la sección de contacto */
+    }
+    
+    .contacto2 {
+        margin-left: -140px;
+        margin-top: 140px;
+    }
+    
+    .contacto h4,
+    .contacto2 h4 {
+        font-size: 8px; /* Reduce el tamaño del título de contacto */
+    }
+    
+    .contacto img,
+    .contacto2 img {
+        width: 10px; /* Ajusta el tamaño del icono */
+        height: 10px;
+    }
+    
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 8px; /* Reduce el tamaño del texto de los campos */
+    }
+    #formulario-seccion{
+        height: 1040px;
+    }
+    .contenedorCotiza {
+        width: 90%; /* Ajusta el ancho del formulario */
+        margin-right: -20px; /* Ajusta la posición horizontal del formulario */
+        padding: 4px; /* Reduce el padding interno */
+        margin-top: -30px;
+        height: 540px; /* Ajusta la altura */
+    }
+    
+    .contenedorCotiza h1 {
+        font-size: 17px; /* Ajusta el tamaño del título */
+        margin-bottom: 8px;
+        margin-left: 8px;
+        margin-top: 18px;
+    }
+    
+    .contenedorCotiza h5 {
+        font-size: 15px; /* Ajusta el tamaño del subtítulo */
+        margin-left: 8px;
+        padding-top: 7px;
+        margin-top: -15px;
+    }
+    
+    #prefContacto {
+        font-size: 8px; /* Ajusta el tamaño del texto de preferencia de contacto */
+    }
+    
+    .preferencia .form-check {
+        font-size: 8px; /* Reduce el tamaño del texto de las opciones */
+    }
+    
+    button {
+        font-size: 8px; /* Ajusta el tamaño del texto del botón */
+        height: 20px; /* Reduce la altura del botón */
+        margin-top: 7px; /* Ajusta el margen superior del botón */
+        margin-bottom: 5px;
+    }
+
+    #banner-footer {
+        width: 100%;
+        max-width: 100vw;
+        padding: 15px 5px; /* Ajusta el padding para pantallas más pequeñas */
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo-container {
+        order: 1;
+        text-align: justify;
+        margin-bottom: 5px; 
+        margin-left: 5px; /* Reduce el margen izquierdo */
+        width: 100%; /* Asegúrate de que ocupe el ancho completo */
+    }
+
+    #logo-container img {
+        margin-bottom: 0; /* Ajusta el margen inferior de la imagen */
+        width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        max-width: 300px; /* Ancho máximo de la imagen */
+        margin-left: 0; /* Quita el margen izquierdo */
+    }
+
+    #logo-container p {
+        font-size: 13px; /* Ajusta el tamaño de la fuente */
+    }
+
+    #logo-section {
+        align-items: center;
+        width: 100%; 
+    }
+
+    #menu-section {
+        margin-top: 20px; /* Reduce el margen superior */
+        margin-left: 0;
+        width: 100%;
+        max-width: 100vw;
+        text-align: start;
+        display: flex;
+        flex-direction: column; /* Asegura que el menú se apile verticalmente */
+        order: 3;
+    }
+
+    #menu-section h3 {
+        font-size: 16px; /* Ajusta el tamaño de fuente */
+        margin-bottom: 8px; /* Reduce el margen inferior */
+    }
+
+    /* Para los menús, asegurando que se muestren uno debajo del otro */
+    #menuFooter, 
+    #menuInspeccion, 
+    #tecnologiasFooter {
+        display: flex;
+        flex-direction: column; /* Mantiene los items en una columna */
+        justify-content: flex-start; /* Alinea los elementos al principio */
+        margin-bottom: 8px; /* Ajusta el margen inferior */
+    }
+
+    /* Asegura que los items dentro de cada menú ocupen espacio adecuadamente */
+    #menuFooter div, 
+    #menuInspeccion div, 
+    #tecnologiasFooter div {
+        flex: none; /* Evita que los elementos se expandan */
+        min-width: 70px; /* Define un ancho mínimo */
+        margin-bottom: 4px; /* Espaciado entre elementos */
+    }
+
+    #menus-categorias {
+        display: flex;
+        flex-direction: row; /* Cambia a fila si necesitas que estén en una línea */
+        justify-content: flex-start; 
+        margin-bottom: 8px; 
+        font-size: 9px; /* Ajusta el tamaño de la fuente */
+        white-space: nowrap; /* Evita el salto de línea */
+    }
+
+    /* Íconos sociales */
+    #social-icons {
+        margin-top: 10px; 
+        width: 100%;
+        max-width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 9px; /* Reduce el tamaño de la fuente para pantallas pequeñas */
+    }
+
+    #redes {
+        top: 5px;
+        flex-direction: row; /* Mantiene los iconos en fila */
+        justify-content: flex-end; /* Alinea a la derecha */
+    }
+
+    #logo {
+        max-width: 40%; /* Reduce el ancho del logo */
+        height: auto;
+        margin-top: -40px; /* Ajusta el margen superior */
+        margin-left: 90px; /* Ajusta el margen izquierdo */
+    }
+
+    .navbar {
+        width: 30%; /* Reduce el ancho del navbar */
+        font-size: 7px; /* Reduce aún más el tamaño de la fuente */
+        right: 60px; /* Ajusta el margen derecho */
+        margin-left: -307px; /* Ajusta el margen izquierdo */
+        margin-top: 130px; /* Ajusta el margen superior */
+        background-color: transparent !important;
+    }
+
+    .navbar-nav .dropdown-menu {
+        max-width: 175px; /* Reduce el ancho del dropdown */
+        padding-left: 0px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 6px; /* Reduce el tamaño del texto en el dropdown */
+        overflow: hidden;
+        padding-left: 1px; /* Ajusta el padding */
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-submenu {
+        width: 140px; /* Reduce el ancho del submenú */
+    }
+
+    #contenedor-btnSelect {
+        width: 70%; /* Reduce el ancho del contenedor */
+        margin: 6px auto; /* Ajusta los márgenes */
+        margin-top: 140px;
+        margin-left: -120px; /* Ajusta el margen izquierdo */
+    }
+
+    #btnCliente {
+        width: 45%; /* Ajusta el ancho del botón */
+        font-size: 9px; /* Reduce el tamaño de la fuente */
+        margin-left: 60px; /* Ajusta el margen izquierdo */
+    }
+
+    #lenguaje {
+        width: 50%; /* Ajusta el ancho del selector de idioma */
+    }
+    #formulario-seccion {
+        height: 1050px; /* Ajusta la altura para pantallas más pequeñas */
+        padding: 4px; /* Reduce el padding */
+    }
+    
+    .txtSeccion {
+        margin-top: 30px; /* Ajusta la posición vertical del texto */
+        margin-left: 20px; /* Ajusta la posición horizontal del texto */
+    }
+    
+    .txtSeccion h1 {
+        font-size: 22px; /* Reduce el tamaño del título */
+    }
+    
+    .txtSeccion h5 {
+        font-size: 14px; /* Ajusta el tamaño del subtítulo */
+        margin-top: -6px;
+    }
+    
+    .txtSeccion p {
+        font-size: 9px; /* Ajusta el tamaño del párrafo */
+    }
+    
+    #container-encuentranos {
+        margin-left: 20px; /* Ajusta la posición de la sección */
+        margin-top: -80px;
+    }
+    
+    #txtCorreo,
+    #txtTelefono {
+        margin-left: 0px;
+        margin-top: -2px;
+    }
+    
+    .contacto,
+    .contacto2 {
+        margin-left: 3px; /* Reduce el margen izquierdo */
+        width: 130px; /* Ajusta el ancho de la sección de contacto */
+    }
+    
+    .contacto2 {
+        margin-left: -130px;
+        margin-top: 190px;
+    }
+    
+    .contacto h4,
+    .contacto2 h4 {
+        font-size: 7px; /* Reduce el tamaño del título de contacto */
+    }
+    
+    .contacto img,
+    .contacto2 img {
+        width: 10px; /* Ajusta el tamaño del icono */
+        height: 10px;
+    }
+    
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 7px; /* Reduce el tamaño del texto de los campos */
+    }
+    
+    .contenedorCotiza {
+        width: 90%; /* Ajusta el ancho del formulario */
+        margin-right: -20px; /* Ajusta la posición horizontal del formulario */
+        padding: 4px; /* Reduce el padding interno */
+        margin-top: -30px;
+        height: 520px; /* Ajusta la altura */
+    }
+    
+    .contenedorCotiza h1 {
+        font-size: 16px; /* Ajusta el tamaño del título */
+        margin-bottom: 8px;
+        margin-left: 8px;
+        margin-top: 18px;
+    }
+    
+    .contenedorCotiza h5 {
+        font-size: 14px; /* Ajusta el tamaño del subtítulo */
+        margin-left: 8px;
+        padding-top: 7px;
+        margin-top: -15px;
+    }
+    
+    #prefContacto {
+        font-size: 7px; /* Ajusta el tamaño del texto de preferencia de contacto */
+    }
+    
+    .preferencia .form-check {
+        font-size: 7px; /* Reduce el tamaño del texto de las opciones */
+    }
+    
+    button {
+        font-size: 7px; /* Ajusta el tamaño del texto del botón */
+        height: 18px; /* Reduce la altura del botón */
+        margin-top: 6px; /* Ajusta el margen superior del botón */
+        margin-bottom: 4px;
+    }
+}
+

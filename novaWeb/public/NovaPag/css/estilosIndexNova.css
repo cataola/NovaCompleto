@@ -1,0 +1,2539 @@
+
+/* Estilos para el body y gradiente de fondo */
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Asegura que el padding y el border no afecten el ancho total */
+}
+
+#banner-section {
+    position: relative;
+    display: block;
+    width: 100vw;
+    background-color: #ffffff;
+    overflow: hidden; 
+}
+
+#banner-section img {
+    width: 100%;
+    height: auto;
+}
+
+#bannerTitle {
+    position: absolute;
+    margin-top: -130px;
+    margin-left: -780px;
+    padding: 10px 20px;
+    font-size: 40px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 950px;
+    text-align: center;
+    z-index: 2;
+}
+
+#bannerSubtitle {
+    position: absolute;
+    margin-top: -60px;
+    margin-left: -805px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    width: 800px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 2;
+}
+
+#bannerButton {
+    position: absolute;
+    margin-top: 13px;
+    margin-left: -740px;
+    background-color: #008000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    width: 280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+#bannerButton:hover {
+    background: linear-gradient(to right, #3780ce, #164679, #022d5c);
+}
+
+
+/*///////////*/
+/* Estilos generales */
+#main-container {
+    display: flex;
+    width: 100vw;
+    height: 1000px; /* Hace que el contenedor ocupe toda la altura de la pantalla */
+}
+
+/* Estilos de la sección de video */
+#video-section {
+    width: 60%;
+    position: relative;
+}
+
+#video-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos de la sección derecha (título y carrusel) */
+#right-section {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+#clients-title {
+    padding: 1rem;
+    text-align: center;
+}
+
+#clients-title h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 90px;
+    color: #0B2735;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Estilos del contenedor del carrusel */
+#clients-carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+/* Estilos del carrusel */
+#clientsCarousel {
+    width: 80%; /* Ajusta el tamaño del carrusel */
+}
+
+#clientsCarousel .carousel-inner {
+    width: 100%;
+}
+
+#clientsCarousel .carousel-item img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 300px !important; /* Controla la altura máxima de las imágenes */
+    object-fit: contain !important;
+    margin-left: -15px !important;
+}
+.carousel-control-prev{
+    left: -65px !important;
+}
+.carousel-control-next{
+    right: -65px !important;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    width: 50px !important;
+    height: 50px !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 50% !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    border: none !important;
+    color: #fff !important;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px !important;
+    z-index: 10 !important;
+}
+/* Estilos para los controles de navegación del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #fff !important;
+    border-radius: 50% !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+/*///////////*/
+
+/* Contenedor del diagrama */
+#contenedor-diagrama {
+    width: 100vw; /* Ocupa todo el ancho del viewport */
+    height: 900px; /* Altura fija del contenedor */
+    background-color: #0B2733; /* Color de fondo azul */
+    display: flex; /* Utiliza Flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    position: relative; /* Posicionamiento relativo para el contenedor */
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+/* Sección de la imagen dentro del contenedor */
+#image-section {
+    display: flex; /* Utiliza Flexbox para centrar la imagen */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 80%; /* Ajusta el ancho del contenedor de la imagen */
+    max-width: 600px; /* Ancho máximo del contenedor de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilo de la imagen */
+.img-placeholder {
+    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100%; /* Evita que la imagen sea más grande que su contenedor */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+}
+
+/*///////////*/
+#services-carousel-heading h1{
+    width: 700px;
+}
+#servicios-cards-section {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-color: #fff;
+}
+#services-carousel-container{
+    width: 100%;
+    margin-bottom: 120px;
+}
+#services-carousel-heading {
+    font-size: 20px;
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0B2733;
+    margin-top: 30px;
+}
+
+/* Estilo para el carrusel */
+#services-carousel {
+    position: relative;
+    width: 90%; /* Ajusta según sea necesario */
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    height: 780px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+/* Contenedor interno del carrusel */
+#services-carousel .carousel-inner{
+    width: 100%;
+    padding-top: 20px;
+}
+
+/* Cada ítem del carrusel */
+#services-carousel .carousel-item{
+    width: 95%; 
+    height: 100%;
+    padding: 10px;
+    margin-left: 2%;
+}
+
+/* Contenedor de tarjetas en el carrusel */
+.services-carousel-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    gap: 10px; /* Espacio entre las tarjetas */
+    
+}
+/* Cada tarjeta en el carrusel */
+.card {
+    margin: 0;
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    background: linear-gradient(#015f01 30%, rgb(255, 255, 255) 30%);
+    box-shadow: 0 0 5px #015f01;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.5s ease, transform 0.5s ease;
+    height: 700px; /* Altura por defecto de la tarjeta */
+    min-height: 750px;
+    margin: 0 auto;/*centrar tarjeta*/
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+}
+.card:not(:last-child) {
+    margin-right: 10px;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 40px #022d5c;
+}
+/* Estilo para el cuerpo de la tarjeta */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(#015f01 30%, #fff 30%);
+    box-shadow: 0 0 5px #015f01;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    height: 400px; /* Altura por defecto de la tarjeta */
+    
+}
+.card-body h2{
+    text-align: center;
+    padding-bottom: 55px;
+    height: 10px; /* Ajusta la altura restante */
+    position: absolute;
+    bottom: 0;
+    top: 2%;
+    width: 95%;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    transition: top 0.5s ease;
+    color: #ec9d09;
+    font-size: 1.3rem;
+}
+/* Estilo para la imagen */
+.card_image {
+    width: 100%;
+    height: 300px; /* Ajusta según sea necesario */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.5s ease;
+    border-radius: 2px;
+}
+
+.card_image .picture {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.5s ease;
+}
+
+/* Estilo para el título dentro de la tarjeta */
+.card-title {
+    color: #ec9d09;
+    padding-top: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    transition: top 0.5s ease;
+}
+
+/* Estilo para el texto dentro de la tarjeta */
+.card-text {
+    color: #000;
+    text-align: justify;
+    font-size: 15px;
+    
+}
+
+/* Estilo para los controles del carrusel */
+#services-carousel .carousel-control-prev{
+    left: -5%;
+}
+#services-carousel .carousel-control-next{
+    right: -5%;
+}
+#services-carousel .carousel-control-prev,
+#services-carousel .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    display: block;
+    position: absolute;
+}
+/* Íconos de los controles de navegación */
+#services-carousel .carousel-control-prev-icon,
+#services-carousel .carousel-control-next-icon {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+/*/////////////////*/
+
+#nova {
+    background-color: #0B2733; /* Color de fondo */
+    padding: 0; /* Elimina el padding del contenedor principal */
+    width: 100vw; /* Ancho completo del contenedor */
+}
+
+#nova-section {
+    padding: 5rem 0; /* Espaciado vertical alrededor del contenido */
+    width: 60%;
+}
+
+#containerSeccionNova {
+    margin-top: 50px; /* Espacio superior para separar del contenido anterior */
+}
+
+.txtSeccion1, .txtSeccion2 {
+    color: #fff; /* Color del texto */
+    text-align: justify;
+    padding: 20px;
+}
+
+.txtSeccion1 p, .txtSeccion2 p {
+    font-size: 1rem; /* Tamaño de fuente */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+}
+
+.imgNova1, .imgNova2, .imgNova3, .imgNova4 {
+    padding: 20px;
+}
+
+.img-fluid {
+    max-width: 100%; /* Asegura que las imágenes sean responsivas */
+    height: auto; /* Mantiene la proporción de aspecto */
+}
+
+#titInteligencia {
+    text-align: center; /* Centra el texto del título */
+    padding: 2rem 0; /* Espaciado vertical alrededor del título */
+}
+
+#titInteligencia h1 {
+    font-size: 2rem; /* Tamaño de fuente del título */
+    color: #fff; /* Color del texto del título */
+    margin: 0; /* Elimina el margen por defecto del título */
+    line-height: 1.2; /* Altura de línea para el título */
+}
+
+/*/////////////////*/
+#contenedor2-cards, 
+#contenedor-cards-nova {
+    width: 100%;
+    max-width: 2560px;
+    height: auto;
+    background-color: #fffefe;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para que el título esté encima de las cards */
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+#titCards1 {
+    text-align: center;
+    margin-bottom: 2rem; /* Espaciado debajo del título */
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+#titCards2 h1,
+#titCards1 h1 {
+    color: #0B2733;
+    margin-bottom: 0.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#titCards2 h4,
+#titCards1 h4 {
+    color: #0B2733;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contCards2,
+.contCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 100%;
+    max-width: 80%;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#icon-nova-tit h3,
+.icon2-nova-title h3{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 100%;
+    background: linear-gradient(#015f01 30%, #ffffff 30%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.5s ease, transform 0.5s ease;
+    height: 550px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card2-nova:hover,
+.card-custom:hover {
+    transform: translateY(-10px);
+}
+.icon2-nova-title,
+.icon-nova-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icon2-nova-title img,
+.icon-nova-title img {
+    width: 30px;
+    height: 30px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card2-nova-body,
+.card-nova-body {
+    padding: 10px;
+    background-color: #ffffff;
+}
+.card2-nova-body p,
+.card-nova-text {
+    color: #0B2733;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #ec9d09;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+
+/*/////////////////*/
+
+#titCards2 {
+    text-align: center;
+    margin-bottom: 2rem; /* Espaciado debajo del título */
+    position: relative;
+    margin-top: 30px;
+}
+.card2-nova {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 100%;
+    background: linear-gradient(#015f01 30%, #ffffff 30%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.5s ease, transform 0.5s ease;
+    height: 630px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*/////////////////*/
+
+/* Estilos generales para el contenedor del carrusel en el pie de página */
+#container-carrusel-footer {
+    background-color: #0B2733;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    justify-items: center;
+    text-align: center;
+    display: flex; /* Añadido para usar flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente, si es necesario */
+}
+    
+#multiItemCarousel{
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+}
+#multiItemCarousel .carousel-inner .row {
+    display: flex;
+}
+
+#multiItemCarousel .carousel-item img {
+    height: 250px; /* Ajusta la altura como desees */
+    object-fit: cover;
+}
+
+.col {
+    padding: 0 !important; /* Elimina el padding entre las columnas */
+}
+
+#multiItemCarousel .carousel-footer-control-prev {
+    left: -2.5%; /* Ajusta la posición a la izquierda */
+}
+
+#multiItemCarousel .carousel-footer-control-next {
+    right: -2.5%; /* Ajusta la posición a la derecha */
+}
+
+/* Íconos de los controles de navegación */
+#multiItemCarousel .carousel-footer-control-prev-icon,
+#multiItemCarousel .carousel-footer-control-next-icon {
+    background-color: #0B2733;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+#multiItemCarousel .carousel-footer-control-prev,
+#multiItemCarousel .carousel-footer-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.74);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    color: #0B2733;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 12;
+}
+
+/*/////////////////*/
+#banner-agricola {
+    height: auto;
+}
+
+.banner-txt-agricola h5{
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+#banner-agricola img {
+    object-fit: cover;
+    height: 600px; /* Puedes ajustar la altura de la imagen */
+}
+
+
+/*/////////////*/ 
+
+/* Media Queries para responsividad */
+@media (max-width: 2560px) {
+    #bannerTitle {
+        margin-top: -150px;
+        margin-left: -600px;
+        font-size: 30px; /* Ajusta el tamaño del título */
+        width: 800px;
+    }
+
+    #bannerSubtitle {
+        margin-top: -80px;
+        margin-left: -560px;
+        font-size: 14px; /* Aumenta el tamaño del subtítulo */
+        width: 550px;
+    }
+
+    #bannerButton {
+        margin-top: -10px;
+        margin-left: -520px;
+        font-size: 14px; /* Ajusta el tamaño del botón */
+        width: 170px;
+        height: 40px; /* Ajusta la altura del botón */
+    }
+    #servicios-cards-section {
+        height: auto; /* Ajuste dinámico de altura */
+        padding: 0px;
+    }
+
+    #services-carousel-container {
+        width: 95vw; /* Ajusta el ancho del contenedor */
+        padding: 0px;
+        margin-top: 100px;
+        
+    }
+
+    #services-carousel {
+        width: 85%; /* Mantiene ancho del carrusel */
+        height: auto; /* Ajuste de altura */
+        padding-top: 20px;
+
+    }
+
+    #services-carousel .carousel-item {
+        width: 100%; /* Mantiene ancho completo */
+        margin-left: 0%; /* Sin margen a la izquierda */
+    }
+
+    .services-carousel-cards {
+        display: flex; /* Usar flexbox para las tarjetas */
+        justify-content: space-between; /* Espaciado uniforme */
+        width: 100%; /* Ancho completo */
+        flex-wrap: wrap; /* Permite que las tarjetas se envuelvan */
+    }
+
+    .card-nova {
+        height: 650px; /* Aumentar la altura de las tarjetas */
+    }
+
+    .card-nova h3 {
+        font-size: 28px; /* Aumentar el tamaño del título */
+    }
+
+    .card-nova-text {
+        font-size: 18px; /* Aumentar el tamaño del texto */
+    }
+}
+
+/* Pantallas de hasta 1400px */
+@media (max-width: 1440px) {
+    #bannerTitle {
+        margin-top: -90px;
+        margin-left: -600px;
+        font-size: 20px;
+        width: 800px;
+    }
+    #bannerSubtitle {
+        margin-top: -50px;
+        margin-left: -468px;
+        font-size: 12px;
+        width: 500px;
+    }
+    #bannerButton {
+        margin-top: -10px;
+        margin-left: -420px;
+        font-size: 12px;
+        width: 140px;
+        height: 35px;
+    }
+    #services-carousel-heading h1{
+        margin-top: 350px;
+    }
+    #servicios-cards-section {
+        padding: 0px;
+        margin-bottom: 150px;
+        width: 100vw;
+    }
+
+    #services-carousel-container {
+        width: 95vw; /* Ajusta el ancho del contenedor */
+        padding: 0px;
+        margin-top: 100px;
+    }
+
+    #services-carousel {
+        width: 90%; /* Mantiene ancho del carrusel */
+        height: 1000px; /* Ajuste de altura */
+        padding-top: 20px;
+    }
+    #services-carousel .carousel-item {
+        width: 100%; /* Mantiene ancho completo */
+        margin-left: 0%; /* Sin margen a la izquierda */
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .services-carousel-cards {
+        display: flex; /* Usar flexbox para las tarjetas */
+        justify-content: space-between; /* Espaciado uniforme */
+        width: 100%; /* Ancho completo */
+        flex-wrap: nowrap; /* Permite que las tarjetas se envuelvan */
+    }
+    .card{
+        height: 800px;
+    }
+    .card-body h2{
+        font-size: 18px;
+    }
+    .contCards2,
+    .contCards {
+        display: grid; /* Asegúrate de que sea un grid */
+        grid-template-columns: repeat(3, 1fr); /* Mantener 3 columnas */
+    }
+
+    .card-custom,
+    .card2-nova {
+        height: 600px; /* Ajustar altura si es necesario */
+    }
+    .icon2-nova-title h3,
+    .icon-nova-title h3{
+        font-size: 20px;
+    }
+    .card2-nova-body,
+    .card-nova-body{
+        font-size: 14px;
+    }
+    .card2-nova-body p,
+    .card-nova-text{
+        font-size: 15px;
+    }
+
+    #multiItemCarousel {
+        width: 80%; /* Reduce el ancho del carrusel */
+        margin-top: 20px; /* Espacio adicional en la parte superior */
+    }
+
+    #multiItemCarousel .carousel-item img {
+        height: 250px; /* Aumenta la altura de las imágenes */
+    }
+
+    #multiItemCarousel .carousel-footer-control-prev {
+        left: -4%; /* Ajusta la posición de los controles */
+    }
+
+    #multiItemCarousel .carousel-footer-control-next {
+        right: -4%; /* Ajusta la posición de los controles */
+    }
+
+    .banner-txt-agricola h5 {
+        font-size: 36px; /* Aumenta el tamaño de la fuente en pantallas grandes */
+    }
+
+    #banner-agricola img {
+        height: 700px; /* Aumenta la altura de la imagen para mejor visualización */
+    }
+}
+@media (max-width: 1280px) {
+    .card2-nova{
+        height: auto;
+    }
+    #services-carousel-heading h1 {
+        margin-top: 200px; /* Reducir el margen superior */
+        font-size: 24px; /* Ajustar el tamaño del texto */
+    }
+
+    #services-carousel-container {
+        width: 100vw;
+        height: auto; /* Altura automática para evitar overflow */
+        margin-top: 40px;
+    }
+
+    #services-carousel {
+        width: 90%;
+        height: auto;
+    }
+
+    .services-carousel-cards {
+        width: 100%;
+        justify-content: center; /* Centrar las tarjetas */
+    }
+
+    .card {
+        height: 650px; /* Ajustar la altura de las tarjetas */
+        width: 80%; /* Ancho de la tarjeta ajustado */
+        margin-bottom: 20px;
+    }
+
+    .card_image {
+        width: 100%;
+        height: 95%;
+    }
+
+    .card_image .picture {
+        width: 100%;
+        height: 250px;
+    }
+
+    .card-body h2 {
+        font-size: 15px; /* Ajustar tamaño del título */
+    }
+
+    .card-text p {
+        font-size: 11px;
+    }
+
+    .carousel-control-prev {
+        left: -5%; /* Ajustar la posición de los controles */
+    }
+
+    .carousel-control-next {
+        right: -5%; /* Ajustar la posición de los controles */
+    }
+}
+@media (max-width: 1118px) {
+    #video-section {
+        width: 100%; /* Aumenta el ancho a 100% para pantallas más pequeñas */
+        position: relative;
+    }
+
+    #video-section video {
+        width: 100%; /* Mantiene el ancho al 100% */
+        height: auto; /* Ajusta la altura automáticamente */
+        object-fit: cover;
+    }
+
+    /* Sección derecha: título y carrusel */
+    #right-section {
+        width: 100%; /* Aumenta el ancho a 100% para mejor adaptabilidad */
+        display: flex;
+        flex-direction: column;
+        padding: 20px; /* Añade relleno para mayor espaciado */
+    }
+
+    #clients-title {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #clients-title h1 {
+        font-size: 70px; /* Reduce el tamaño de la fuente */
+        line-height: 1.2;
+        margin-top: 150px; /* Reduce el margen superior */
+    }
+
+    /* Contenedor del carrusel */
+    #clients-carousel-container {
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Ancho completo */
+    }
+
+    /* Carrusel */
+    #clientsCarousel {
+        width: 90%; /* Aumenta el ancho del carrusel */
+    }
+
+    #clientsCarousel .carousel-inner {
+        width: 100%; /* Mantiene el ancho al 100% */
+    }
+
+    #clientsCarousel .carousel-item img {
+        width: 100%; /* Mantiene el ancho completo de las imágenes */
+        max-height: 250px; /* Ajusta la altura máxima para pantallas pequeñas */
+        object-fit: contain;
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+
+    /* Controles del carrusel */
+    .carousel-control-prev {
+        left: -35px; /* Ajusta la posición del control izquierdo */
+    }
+
+    .carousel-control-next {
+        right: -35px; /* Ajusta la posición del control derecho */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px; /* Reduce el tamaño de los controles */
+        height: 40px;
+        font-size: 20px; /* Ajusta el tamaño del icono */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+    #nova {
+        background-color: #0B2733; /* Color de fondo */
+        padding: 0; /* Mantiene el padding del contenedor principal */
+        width: 100vw; /* Ancho completo del contenedor */
+    }
+
+    #nova-section {
+        padding: 3rem 0; /* Reduce el espaciado vertical alrededor del contenido */
+        width: 90%; /* Aumenta el ancho a 90% para mejor adaptación */
+    }
+
+    #containerSeccionNova {
+        margin-top: 30px; /* Reduce el espacio superior para mayor proximidad */
+    }
+    .contCards2,
+    .contCards {
+        display: grid; /* Sigue utilizando grid */
+        grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas para pantallas más pequeñas */
+        gap: 15px; /* Añade espacio entre las columnas */
+    }
+
+    .card-custom,
+    .card2-nova {
+        height: auto; /* Reduce la altura de las tarjetas */
+    }
+
+    .icon2-nova-title h3,
+    .icon-nova-title h3 {
+        font-size: 18px; /* Reduce el tamaño de fuente */
+    }
+
+    .card2-nova-body,
+    .card-nova-body {
+        font-size: 12px; /* Ajusta el tamaño de fuente */
+    }
+
+    .card2-nova-body p,
+    .card-nova-text {
+        font-size: 13px; /* Ajusta el tamaño del texto */
+    }
+
+}
+@media (max-width: 1024px) {
+    #bannerTitle {
+        margin-top: -80px;
+        margin-left: -500px; /* Reduce el margen para pantallas más pequeñas */
+        font-size: 18px; /* Reduce el tamaño de fuente */
+        width: 700px;
+    }
+
+    #bannerSubtitle {
+        margin-top: -40px;
+        margin-left: -370px;
+        font-size: 12px;
+        width: 450px;
+    }
+
+    #bannerButton {
+        margin-top: 5px;
+        margin-left: -350px;
+        font-size: 12px;
+        width: 150px;
+        height: 35px;
+    }
+    #video-section {
+        width: 100%; /* Aumenta el ancho a 100% para pantallas más pequeñas */
+        position: relative;
+    }
+
+    #video-section video {
+        width: 100%; /* Mantiene el ancho al 100% */
+        height: auto; /* Ajusta la altura automáticamente */
+        object-fit: cover;
+    }
+
+    /* Sección derecha: título y carrusel */
+    #right-section {
+        width: 100%; /* Aumenta el ancho a 100% para mejor adaptabilidad */
+        display: flex;
+        flex-direction: column;
+        padding: 20px; /* Añade relleno para mayor espaciado */
+    }
+
+    #clients-title {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #clients-title h1 {
+        font-size: 70px; /* Reduce el tamaño de la fuente */
+        line-height: 1.2;
+        margin-top: 150px; /* Reduce el margen superior */
+    }
+
+    /* Contenedor del carrusel */
+    #clients-carousel-container {
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Ancho completo */
+    }
+
+    /* Carrusel */
+    #clientsCarousel {
+        width: 90%; /* Aumenta el ancho del carrusel */
+    }
+
+    #clientsCarousel .carousel-inner {
+        width: 100%; /* Mantiene el ancho al 100% */
+    }
+
+    #clientsCarousel .carousel-item img {
+        width: 100%; /* Mantiene el ancho completo de las imágenes */
+        max-height: 250px; /* Ajusta la altura máxima para pantallas pequeñas */
+        object-fit: contain;
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+
+    /* Controles del carrusel */
+    .carousel-control-prev {
+        left: -35px; /* Ajusta la posición del control izquierdo */
+    }
+
+    .carousel-control-next {
+        right: -35px; /* Ajusta la posición del control derecho */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px; /* Reduce el tamaño de los controles */
+        height: 40px;
+        font-size: 20px; /* Ajusta el tamaño del icono */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+    #services-carousel-heading h1 {
+        margin-top: 200px; /* Reducir el margen superior */
+        font-size: 24px; /* Ajustar el tamaño del texto */
+    }
+
+    #services-carousel-container {
+        width: 100vw;
+        height: auto; /* Altura automática para evitar overflow */
+        margin-top: 40px;
+    }
+
+    #services-carousel {
+        width: 90%;
+        height: auto;
+    }
+
+    .services-carousel-cards {
+        width: 100%;
+        justify-content: center; /* Centrar las tarjetas */
+    }
+
+    .card {
+        height: 650px; /* Ajustar la altura de las tarjetas */
+        width: 80%; /* Ancho de la tarjeta ajustado */
+        margin-bottom: 20px;
+    }
+
+    .card_image {
+        width: 100%;
+        height: 95%;
+    }
+
+    .card_image .picture {
+        width: 100%;
+        height: 250px;
+    }
+
+    .card-body h2 {
+        font-size: 15px; /* Ajustar tamaño del título */
+    }
+
+    .card-text p {
+        font-size: 11px;
+    }
+
+    .carousel-control-prev {
+        left: -5%; /* Ajustar la posición de los controles */
+    }
+
+    .carousel-control-next {
+        right: -5%; /* Ajustar la posición de los controles */
+    }
+    #nova {
+        background-color: #0B2733; /* Color de fondo */
+        padding: 0; /* Mantiene el padding del contenedor principal */
+        width: 100vw; /* Ancho completo del contenedor */
+    }
+
+    #nova-section {
+        padding: 3rem 0; /* Reduce el espaciado vertical alrededor del contenido */
+        width: 90%; /* Aumenta el ancho a 90% para mejor adaptación */
+    }
+
+    #containerSeccionNova {
+        margin-top: 30px; /* Reduce el espacio superior para mayor proximidad */
+    }
+
+    .txtSeccion1, .txtSeccion2 {
+        color: #fff; /* Color del texto */
+        text-align: justify;
+        padding: 10px; /* Reduce el padding para ahorrar espacio */
+    }
+
+    .txtSeccion1 p, .txtSeccion2 p {
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+        line-height: 1.4; /* Ajusta la altura de línea */
+    }
+
+    .imgNova1, .imgNova2, .imgNova3, .imgNova4 {
+        padding: 10px; /* Reduce el padding en las imágenes */
+    }
+
+    .img-fluid {
+        max-width: 100%; /* Asegura que las imágenes sean responsivas */
+        height: auto; /* Mantiene la proporción de aspecto */
+    }
+
+    #titInteligencia {
+        text-align: center; /* Centra el texto del título */
+        padding: 1rem 0; /* Reduce el espaciado vertical alrededor del título */
+    }
+
+    #titInteligencia h1 {
+        font-size: 1.5rem; /* Reduce el tamaño de la fuente del título */
+        color: #fff; /* Color del texto del título */
+        margin: 0; /* Elimina el margen por defecto del título */
+        line-height: 1.2; /* Altura de línea para el título */
+    }
+    .contCards2,
+    .contCards {
+        display: grid; /* Sigue utilizando grid */
+        grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas para pantallas más pequeñas */
+        gap: 15px; /* Añade espacio entre las columnas */
+    }
+
+    .card-custom,
+    .card2-nova {
+        height: 500px; /* Reduce la altura de las tarjetas */
+    }
+
+    .icon2-nova-title h3,
+    .icon-nova-title h3 {
+        font-size: 18px; /* Reduce el tamaño de fuente */
+    }
+
+    .card2-nova-body,
+    .card-nova-body {
+        font-size: 12px; /* Ajusta el tamaño de fuente */
+    }
+
+    .card2-nova-body p,
+    .card-nova-text {
+        font-size: 13px; /* Ajusta el tamaño del texto */
+    }
+
+    #multiItemCarousel {
+        width: 90%; /* Ajusta el ancho del carrusel */
+        margin-top: 15px; /* Ajusta el margen superior */
+    }
+
+    #multiItemCarousel .carousel-item img {
+        height: 200px; /* Reduce la altura de las imágenes */
+    }
+
+    #multiItemCarousel .carousel-footer-control-prev {
+        left: -3%; /* Ajusta la posición de los controles */
+    }
+
+    #multiItemCarousel .carousel-footer-control-next {
+        right: -3%; /* Ajusta la posición de los controles */
+    }
+
+    .banner-txt-agricola h5 {
+        font-size: 28px; /* Ajusta el tamaño de la fuente */
+    }
+
+    #banner-agricola img {
+        height: 500px; /* Reduce la altura de la imagen */
+    }
+}
+
+@media (max-width: 768px) {
+    #bannerTitle {
+        margin: -60px auto; /* Centra el título */
+        font-size: 16px; /* Reduce el tamaño de fuente */
+        width: 400px; /* Aumenta el ancho para mejor adaptación */
+        margin-left: -300px;
+    }
+
+    #bannerSubtitle {
+        margin: -30px auto; /* Centra el subtítulo */
+        font-size: 10px; /* Reduce el tamaño de fuente */
+        width: 400px; /* Aumenta el ancho para mejor adaptación */
+        margin-left: -305px;
+    }
+
+    #bannerButton {
+        margin: 5px auto; /* Centra el botón */
+        font-size: 10px;
+        width: 120px; /* Ajusta el ancho */
+        height: 30px; /* Ajusta la altura */
+        margin-left: -270px;
+    }
+
+    #main-container {
+        flex-direction: column; /* Apila las secciones verticalmente */
+    }
+
+    #video-section {
+        width: 100%; /* Mantiene el ancho al 100% */
+        margin-bottom: 10px; /* Añade un margen inferior */
+        height: 600px;
+    }
+
+    #video-section video {
+        width: 100%; /* Mantiene el ancho al 100% */
+        height: 600px; /* Ajusta la altura automáticamente */
+        object-fit: cover; /* Asegura que el video cubra el área */
+    }
+
+    #right-section {
+        width: 100%; /* Ancho completo */
+        display: flex;
+        flex-direction: column; /* Asegura que se apilen verticalmente */
+        padding: 10px; /* Reduce el padding */
+    }
+
+    #clients-title {
+        padding: 0.5rem; /* Reduce el padding */
+        text-align: center;
+    }
+
+    #clients-title h1 {
+        font-size: 30px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+        line-height: 1.2;
+        margin: 20px 0; /* Espacio alrededor del título */
+    }
+
+    /* Contenedor del carrusel */
+    #clients-carousel-container {
+        width: 100%; /* Ancho completo */
+        display: flex; /* Asegura que el carrusel se centre */
+        justify-content: center; /* Centra el carrusel */
+        flex-grow: 1; /* Permite que el contenedor crezca */
+    }
+
+    /* Carrusel */
+    #clientsCarousel {
+        width: 90%; /* Aumenta el ancho del carrusel */
+    }
+
+    #clientsCarousel .carousel-item img {
+        width: 100%; /* Mantiene el ancho completo de las imágenes */
+        max-height: 200px; /* Ajusta la altura máxima para pantallas pequeñas */
+        object-fit: contain; /* Mantiene la proporción de aspecto */
+    }
+
+    /* Controles del carrusel */
+    .carousel-control-prev {
+        left: -25px; /* Ajusta la posición del control izquierdo */
+    }
+
+    .carousel-control-next {
+        right: -25px; /* Ajusta la posición del control derecho */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 30px; /* Reduce el tamaño de los controles */
+        height: 30px;
+        font-size: 16px; /* Ajusta el tamaño del icono */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+    #services-carousel-heading h1 {
+        margin-top: 250px; /* Reducir el margen superior */
+        font-size: 20px; /* Ajustar el tamaño del texto */
+    }
+
+    #services-carousel-container {
+        width: 98vw;
+        height: auto; /* Altura automática para evitar overflow */
+        margin-top: 20px; /* Reducir el margen superior */
+    }
+
+    #services-carousel {
+        width: 95%; /* Aumentar el ancho del carrusel para adaptarse a pantallas más pequeñas */
+        height: auto;
+    }
+
+    .services-carousel-cards {
+        width: 100%;
+        justify-content: center; /* Centrar las tarjetas */
+    }
+
+    .card {
+        height: 700px; /* Ajustar la altura de las tarjetas */
+        width: 90%; /* Ancho de la tarjeta ajustado */
+        margin-bottom: 15px; /* Ajustar el margen inferior */
+    }
+
+    .card_image {
+        width: 100%;
+        height: 80%; /* Ajustar la altura de la imagen */
+    }
+
+    .card_image .picture {
+        width: 100%;
+        height: 200px; /* Ajustar la altura de la imagen */
+    }
+
+    .card-body h2 {
+        font-size: 12px; /* Ajustar tamaño del título */
+    }
+
+    .card-text p {
+        font-size: 10px; /* Ajustar el tamaño del texto */
+    }
+
+    .carousel-control-prev {
+        left: -3%; /* Ajustar la posición de los controles */
+    }
+
+    .carousel-control-next {
+        right: -3%; /* Ajustar la posición de los controles */
+    }
+    #nova {
+        background-color: #0B2733; /* Color de fondo */
+        padding: 0; /* Mantiene el padding del contenedor principal */
+        width: 100vw; /* Ancho completo del contenedor */
+    }
+
+    #nova-section {
+        padding: 2rem 0; /* Reduce el espaciado vertical alrededor del contenido */
+        width: 90%; /* Aumenta el ancho a 90% para mejor adaptación */
+    }
+
+    #containerSeccionNova {
+        margin-top: 20px; /* Reduce el espacio superior */
+    }
+
+    .txtSeccion1, .txtSeccion2 {
+        color: #fff; /* Color del texto */
+        text-align: justify;
+        padding: 10px; /* Reduce el padding para ahorrar espacio */
+    }
+
+    .txtSeccion1 p, .txtSeccion2 p {
+        font-size: 0.8rem; /* Reduce el tamaño de la fuente */
+        line-height: 1.4; /* Ajusta la altura de línea */
+    }
+
+    .imgNova1, .imgNova2, .imgNova3, .imgNova4 {
+        padding: 10px; /* Reduce el padding en las imágenes */
+    }
+
+    .img-fluid {
+        max-width: 100%; /* Asegura que las imágenes sean responsivas */
+        height: auto; /* Mantiene la proporción de aspecto */
+    }
+
+    #titInteligencia {
+        text-align: center; /* Centra el texto del título */
+        padding: 1rem 0; /* Reduce el espaciado vertical alrededor del título */
+    }
+
+    #titInteligencia h1 {
+        font-size: 1.2rem; /* Reduce el tamaño de la fuente del título */
+        color: #fff; /* Color del texto del título */
+        margin: 0; /* Elimina el margen por defecto del título */
+        line-height: 1.2; /* Altura de línea para el título */
+    }
+
+    .contCards2,
+    .contCards {
+        display: grid; /* Sigue utilizando grid */
+        grid-template-columns: repeat(1, 1fr); /* Cambia a 1 columna para pantallas más pequeñas */
+        gap: 10px; /* Reduce el espacio entre las columnas */
+    }
+
+    .card-custom,
+    .card2-nova {
+        height: auto; /* Ajusta la altura de las tarjetas */
+    }
+
+    .icon2-nova-title h3,
+    .icon-nova-title h3 {
+        font-size: 16px; /* Reduce el tamaño de fuente */
+    }
+
+    .card2-nova-body,
+    .card-nova-body {
+        font-size: 12px; /* Ajusta el tamaño de fuente */
+    }
+
+    .card2-nova-body p,
+    .card-nova-text {
+        font-size: 11px; /* Ajusta el tamaño del texto */
+    }
+
+    #multiItemCarousel {
+        width: 90%; /* Ajusta el ancho del carrusel */
+        margin-top: 10px; /* Ajusta el margen superior */
+    }
+
+    #multiItemCarousel .carousel-item img {
+        height: 150px; /* Reduce la altura de las imágenes */
+    }
+
+    #multiItemCarousel .carousel-footer-control-prev {
+        left: -3%; /* Ajusta la posición de los controles */
+    }
+
+    #multiItemCarousel .carousel-footer-control-next {
+        right: -3%; /* Ajusta la posición de los controles */
+    }
+
+    .banner-txt-agricola h5 {
+        font-size: 24px; /* Ajusta el tamaño de la fuente */
+    }
+
+    #banner-agricola img {
+        height: 400px; /* Reduce la altura de la imagen */
+    }
+
+    #banner-agricola {
+        height: auto; /* Ajusta la altura automáticamente */
+        display: flex;
+        flex-direction: column; /* Cambia a columna para mejor adaptación */
+    }
+
+    .nav-justified .nav-item {
+        width: 100%; /* Asegura que los elementos ocupen todo el ancho */
+        text-align: center; /* Centra el texto */
+    }
+
+    /* Ajustes para la sección del pie de página */
+    #footer {
+        padding: 1rem; /* Ajusta el espaciado */
+        text-align: center; /* Centra el contenido */
+    }
+
+    #footer .social-icons {
+        margin: 10px 0; /* Ajusta el margen de los íconos */
+    }
+
+    #footer .social-icons img {
+        width: 20px; /* Ajusta el tamaño de los íconos */
+        height: auto; /* Mantiene la proporción */
+        margin: 0 5px; /* Ajusta el margen entre íconos */
+    }
+}
+
+@media (max-width: 576px) {
+    #bannerTitle {
+        margin: -50px auto; /* Centra el título */
+        font-size: 10px; /* Reduce el tamaño de fuente */
+        width: 260px; /* Aumenta el ancho para mejor adaptación */
+        margin-left: -190px;
+        margin-top: -40px;
+    }
+
+    #bannerSubtitle {
+        margin: -20px auto; /* Centra el subtítulo */
+        font-size: 6px; /* Reduce el tamaño de fuente */
+        width: 350px; /* Aumenta el ancho para mejor adaptación */
+        margin-left: -245px;
+    }
+
+    #bannerButton {
+        margin: 5px auto; /* Centra el botón */
+        font-size: 9px;
+        width: 110px; /* Ajusta el ancho */
+        height: 20px; /* Ajusta la altura */
+        margin-left: -170px;
+    }
+
+    #video-section {
+        width: 100%; /* Mantiene el ancho al 100% */
+        position: relative;
+    }
+
+    #video-section video {
+        width: 100%; /* Mantiene el ancho al 100% */
+        height: auto; /* Ajusta la altura automáticamente */
+        object-fit: cover;
+    }
+
+    /* Sección derecha: título y carrusel */
+    #right-section {
+        width: 100%; /* Aumenta el ancho a 100% */
+        display: flex;
+        flex-direction: column;
+        padding: 5px; /* Reduce el padding */
+    }
+
+    #clients-title {
+        padding: 0.5rem; /* Reduce el padding */
+        text-align: center;
+        margin-top: -50px;
+    }
+
+    #clients-title h1 {
+        font-size: 40px; /* Reduce el tamaño de la fuente */
+        line-height: 1.2;
+        margin-top: 80px; /* Reduce el margen superior */
+    }
+
+    /* Contenedor del carrusel */
+    #clients-carousel-container {
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Ancho completo */
+    }
+
+    /* Carrusel */
+    #clientsCarousel {
+        width: 100%; /* Aumenta el ancho del carrusel */
+    }
+
+    #clientsCarousel .carousel-item img {
+        width: 100%; /* Mantiene el ancho completo de las imágenes */
+        max-height: 180px; /* Ajusta la altura máxima para pantallas pequeñas */
+        object-fit: contain;
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+
+    /* Controles del carrusel */
+    .carousel-control-prev {
+        left: -15px; /* Ajusta la posición del control izquierdo */
+    }
+
+    .carousel-control-next {
+        right: -15px; /* Ajusta la posición del control derecho */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 28px; /* Reduce el tamaño de los controles */
+        height: 28px;
+        font-size: 14px; /* Ajusta el tamaño del icono */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+
+    #servicios-cards-section {
+        padding: 0px;
+        margin-bottom: 60px;
+        width: 100vw;
+        height: auto;
+        margin-bottom: 600px;
+    }
+
+    #services-carousel-container {
+        width: 90vw;
+        padding: 0px;
+        margin-top: 40px;
+        height: auto;
+    }
+
+    #services-carousel-heading h1 {
+        margin-top: 650px;
+        font-size: 24px;
+        margin-left: -140px;
+    }
+
+    #services-carousel {
+        width: 100%;
+        height: auto;
+        padding-top: 12px;
+        margin-top: -10px;
+    }
+
+    #services-carousel .carousel-item {
+        width: 100%;
+        margin-left: 0%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .services-carousel-cards {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        height: 600px;
+        flex: 1 1 calc(33.33% - 20px); /* Asegura que las tarjetas ocupen el 33.33% del ancho */
+        margin: 10px; /* Añade espacio uniforme alrededor de las tarjetas */
+        box-sizing: border-box; /* Asegura que el padding y margen se cuenten dentro del ancho total */
+    }
+
+    .card-body h2 {
+        font-size: 16px;
+    }
+    #nova {
+        background-color: #0B2733; /* Color de fondo */
+        padding: 0; /* Mantiene el padding del contenedor principal */
+        width: 100vw; /* Ancho completo del contenedor */
+    }
+
+    #nova-section {
+        padding: 1rem 0; /* Reduce el espaciado vertical alrededor del contenido */
+        width: 90%; /* Aumenta el ancho a 90% para mejor adaptación */
+    }
+
+    #containerSeccionNova {
+        margin-top: 10px; /* Reduce el espacio superior */
+    }
+
+    .txtSeccion1, .txtSeccion2 {
+        color: #fff; /* Color del texto */
+        text-align: justify;
+        padding: 8px; /* Reduce el padding para ahorrar espacio */
+    }
+
+    .txtSeccion1 p, .txtSeccion2 p {
+        font-size: 0.7rem; /* Reduce el tamaño de la fuente */
+        line-height: 1.4; /* Ajusta la altura de línea */
+    }
+
+    .imgNova1, .imgNova2, .imgNova3, .imgNova4 {
+        padding: 8px; /* Reduce el padding en las imágenes */
+    }
+
+    .img-fluid {
+        max-width: 100%; /* Asegura que las imágenes sean responsivas */
+        height: auto; /* Mantiene la proporción de aspecto */
+    }
+
+    #titInteligencia {
+        text-align: center; /* Centra el texto del título */
+        padding: 0.5rem 0; /* Reduce el espaciado vertical alrededor del título */
+    }
+
+    #titInteligencia h1 {
+        font-size: 1rem; /* Reduce el tamaño de la fuente del título */
+        color: #fff; /* Color del texto del título */
+        margin: 0; /* Elimina el margen por defecto del título */
+        line-height: 1.2; /* Altura de línea para el título */
+    }
+
+    .contCards2,
+    .contCards {
+        display: grid; /* Sigue utilizando grid */
+        grid-template-columns: repeat(1, 1fr); /* Cambia a 1 columna para pantallas más pequeñas */
+        gap: 8px; /* Reduce el espacio entre las columnas */
+    }
+
+    .card-custom,
+    .card2-nova {
+        height: auto; /* Ajusta la altura de las tarjetas */
+    }
+
+    .icon2-nova-title h3,
+    .icon-nova-title h3 {
+        font-size: 14px !important; /* Reduce el tamaño de fuente */
+    }
+
+    .card2-nova-body,
+    .card-nova-body {
+        font-size: 11px; /* Ajusta el tamaño de fuente */
+    }
+
+    .card2-nova-body p,
+    .card-nova-text {
+        font-size: 10px; /* Ajusta el tamaño del texto */
+    }
+
+    #multiItemCarousel {
+        width: 90%; /* Ajusta el ancho del carrusel */
+        margin-top: 5px; /* Ajusta el margen superior */
+    }
+
+    #multiItemCarousel .carousel-item img {
+        height: 120px; /* Reduce la altura de las imágenes */
+    }
+    #multiItemCarousel .carousel-footer-control-prev,
+    #multiItemCarousel .carousel-footer-control-next {
+        width: 15px; /* Tamaño más pequeño para pantallas pequeñas */
+        height: 15px; /* Tamaño más pequeño para pantallas pequeñas */
+        font-size: 12px; /* Ajusta el tamaño del icono */
+    }
+    #multiItemCarousel .carousel-footer-control-prev {
+        left: -3%; /* Ajusta la posición de los controles */
+
+    }
+
+    #multiItemCarousel .carousel-footer-control-next {
+        right: -3%; /* Ajusta la posición de los controles */
+    }
+
+    .banner-txt-agricola h5 {
+        font-size: 20px; /* Ajusta el tamaño de la fuente */
+    }
+
+    #banner-agricola img {
+        height: 300px; /* Reduce la altura de la imagen */
+        object-fit: cover; /* Mantiene la proporción de aspecto */
+    }
+
+    #section-servicios {
+        height: auto; /* Ajusta la altura */
+    }
+
+    #section-agricola {
+        padding: 0.5rem; /* Reduce el padding */
+    }
+}
+
+@media (max-width: 425px) {
+    #bannerTitle {
+        margin: -50px auto; /* Centra el título */
+        font-size: 10px; /* Reduce el tamaño de fuente */
+        width: 260px; /* Aumenta el ancho para mejor adaptación */
+        margin-left: -190px;
+        margin-top: -40px;
+    }
+
+    #bannerSubtitle {
+        margin: -20px auto; /* Centra el subtítulo */
+        font-size: 6px; /* Reduce el tamaño de fuente */
+        width: 350px; /* Aumenta el ancho para mejor adaptación */
+        margin-left: -245px;
+    }
+
+    #bannerButton {
+        margin: 5px auto; /* Centra el botón */
+        font-size: 9px;
+        width: 110px; /* Ajusta el ancho */
+        height: 20px; /* Ajusta la altura */
+        margin-left: -170px;
+    }
+
+    #video-section {
+        width: 100%; /* Mantiene el ancho al 100% */
+        position: relative;
+    }
+
+    #video-section video {
+        width: 100%; /* Mantiene el ancho al 100% */
+        height: auto; /* Ajusta la altura automáticamente */
+        object-fit: cover;
+    }
+
+    /* Sección derecha: título y carrusel */
+    #right-section {
+        width: 100%; /* Aumenta el ancho a 100% */
+        display: flex;
+        flex-direction: column;
+        padding: 5px; /* Reduce el padding */
+    }
+
+    #clients-title {
+        padding: 0.5rem; /* Reduce el padding */
+        text-align: center;
+        margin-top: -50px;
+    }
+
+    #clients-title h1 {
+        font-size: 40px; /* Reduce el tamaño de la fuente */
+        line-height: 1.2;
+        margin-top: 80px; /* Reduce el margen superior */
+    }
+
+    /* Contenedor del carrusel */
+    #clients-carousel-container {
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Ancho completo */
+    }
+
+    /* Carrusel */
+    #clientsCarousel {
+        width: 100%; /* Aumenta el ancho del carrusel */
+    }
+
+    #clientsCarousel .carousel-item img {
+        width: 100%; /* Mantiene el ancho completo de las imágenes */
+        max-height: 180px; /* Ajusta la altura máxima para pantallas pequeñas */
+        object-fit: contain;
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+
+    /* Controles del carrusel */
+    .carousel-control-prev {
+        left: -15px; /* Ajusta la posición del control izquierdo */
+    }
+
+    .carousel-control-next {
+        right: -15px; /* Ajusta la posición del control derecho */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 28px; /* Reduce el tamaño de los controles */
+        height: 28px;
+        font-size: 14px; /* Ajusta el tamaño del icono */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+
+    #servicios-cards-section {
+        padding: 0px;
+        margin-bottom: 40px; /* Reduce el margen inferior */
+        width: 100vw;
+        height: auto; /* Ajusta la altura */
+        margin-bottom: 550px;
+    }
+
+    #services-carousel-container {
+        width: 90vw; /* Ajusta el ancho del contenedor */
+        padding: 0px;
+        margin-top: 30px; /* Reduce el margen superior */
+        height: auto; /* Ajusta la altura */
+    }
+    #services-carousel-heading h1 {
+        margin-top: 690px; /* Reducir el margen superior */
+        font-size: 20px; /* Ajustar el tamaño del texto */
+        margin-left: -160px;
+    }
+    #services-carousel {
+        width: 100%; /* Ancho completo */
+        height: auto; /* Ajusta la altura */
+        padding-top: 8px; /* Reduce el padding superior */
+        margin-top: -20px;
+    }
+
+    #services-carousel .carousel-item {
+        width: 100%; /* Ancho completo */
+        margin-left: 0%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .services-carousel-cards {
+        display: flex;
+        
+        justify-content: center;
+        width: 100%; /* Ancho completo */
+        flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan si es necesario */
+    }
+
+    .card {
+        height: 600px; /* Ajusta la altura de las tarjetas */
+        flex: 1 1 30%; /* Tarjetas ocupan el 100% del ancho */
+        margin: 10px 0; /* Espacio vertical entre tarjetas */
+    }
+
+    .card-body h2 {
+        font-size: 12px; /* Ajusta el tamaño del título */
+    }
+
+    #nova {
+        background-color: #0B2733; /* Color de fondo */
+        padding: 0; /* Mantiene el padding del contenedor principal */
+        width: 100vw; /* Ancho completo del contenedor */
+    }
+
+    #nova-section {
+        padding: 1rem 0; /* Reduce el espaciado vertical alrededor del contenido */
+        width: 90%; /* Aumenta el ancho a 90% para mejor adaptación */
+    }
+
+    #containerSeccionNova {
+        margin-top: 10px; /* Reduce el espacio superior */
+    }
+
+    .txtSeccion1, .txtSeccion2 {
+        color: #fff; /* Color del texto */
+        text-align: justify;
+        padding: 8px; /* Reduce el padding para ahorrar espacio */
+    }
+
+    .txtSeccion1 p, .txtSeccion2 p {
+        font-size: 0.7rem; /* Reduce el tamaño de la fuente */
+        line-height: 1.4; /* Ajusta la altura de línea */
+    }
+
+    .imgNova1, .imgNova2, .imgNova3, .imgNova4 {
+        padding: 8px; /* Reduce el padding en las imágenes */
+    }
+
+    .img-fluid {
+        max-width: 100%; /* Asegura que las imágenes sean responsivas */
+        height: auto; /* Mantiene la proporción de aspecto */
+    }
+
+    #titInteligencia {
+        text-align: center; /* Centra el texto del título */
+        padding: 0.5rem 0; /* Reduce el espaciado vertical alrededor del título */
+    }
+
+    #titInteligencia h1 {
+        font-size: 1rem; /* Reduce el tamaño de la fuente del título */
+        color: #fff; /* Color del texto del título */
+        margin: 0; /* Elimina el margen por defecto del título */
+        line-height: 1.2; /* Altura de línea para el título */
+    }
+
+    .contCards2,
+    .contCards {
+        display: grid; /* Sigue utilizando grid */
+        grid-template-columns: repeat(1, 1fr); /* Cambia a 1 columna para pantallas más pequeñas */
+        gap: 8px; /* Reduce el espacio entre las columnas */
+    }
+
+    .card-custom,
+    .card2-nova {
+        height: auto; /* Ajusta la altura de las tarjetas */
+    }
+
+    .icon2-nova-title h3,
+    .icon-nova-title h3 {
+        font-size: 14px !important; /* Reduce el tamaño de fuente */
+    }
+
+    .card2-nova-body,
+    .card-nova-body {
+        font-size: 11px; /* Ajusta el tamaño de fuente */
+    }
+
+    .card2-nova-body p,
+    .card-nova-text {
+        font-size: 10px; /* Ajusta el tamaño del texto */
+    }
+
+    #multiItemCarousel {
+        width: 90%; /* Ajusta el ancho del carrusel */
+        margin-top: 5px; /* Ajusta el margen superior */
+    }
+
+    #multiItemCarousel .carousel-item img {
+        height: 120px; /* Reduce la altura de las imágenes */
+    }
+    #multiItemCarousel .carousel-footer-control-prev,
+    #multiItemCarousel .carousel-footer-control-next {
+        width: 15px; /* Tamaño más pequeño para pantallas pequeñas */
+        height: 15px; /* Tamaño más pequeño para pantallas pequeñas */
+        font-size: 12px; /* Ajusta el tamaño del icono */
+    }
+    #multiItemCarousel .carousel-footer-control-prev {
+        left: -3%; /* Ajusta la posición de los controles */
+
+    }
+
+    #multiItemCarousel .carousel-footer-control-next {
+        right: -3%; /* Ajusta la posición de los controles */
+    }
+
+    .banner-txt-agricola h5 {
+        font-size: 20px; /* Ajusta el tamaño de la fuente */
+    }
+
+    #banner-agricola img {
+        height: 300px; /* Reduce la altura de la imagen */
+        object-fit: cover; /* Mantiene la proporción de aspecto */
+    }
+
+    #section-servicios {
+        height: auto; /* Ajusta la altura */
+    }
+
+    #section-agricola {
+        padding: 0.5rem; /* Reduce el padding */
+    }
+}
+
+@media (max-width: 375px) {
+    #bannerTitle {
+        margin: -40px auto; /* Centra el título */
+        font-size: 9px; /* Reduce el tamaño de fuente */
+        width: 240px; /* Aumenta el ancho para mejor adaptación */
+        margin-left: -180px; /* Ajusta la posición */
+        margin-top: -30px; /* Ajusta la posición */
+    }
+
+    #bannerSubtitle {
+        margin: -15px auto; /* Centra el subtítulo */
+        font-size: 5px; /* Reduce el tamaño de fuente */
+        width: 300px; /* Aumenta el ancho para mejor adaptación */
+        margin-left: -220px; /* Ajusta la posición */
+    }
+
+    #banner-button {
+        margin: 5px auto; /* Centra el botón */
+        font-size: 8px; /* Ajusta el tamaño de fuente */
+        width: 105px; /* Ajusta el ancho */
+        height: 20px; /* Ajusta la altura */
+        margin-left: -150px; /* Ajusta la posición */
+    }
+
+    #video-section {
+        width: 100%; /* Mantiene el ancho al 100% */
+        position: relative;
+    }
+
+    #video-section video {
+        width: 100%; /* Mantiene el ancho al 100% */
+        height: auto; /* Ajusta la altura automáticamente */
+        object-fit: cover;
+    }
+
+    /* Sección derecha: título y carrusel */
+    #right-section {
+        width: 100%; /* Aumenta el ancho a 100% */
+        display: flex;
+        flex-direction: column;
+        padding: 5px; /* Reduce el padding */
+    }
+
+    #clients-title {
+        padding: 0.5rem; /* Reduce el padding */
+        text-align: center;
+        margin-top: -40px; /* Ajusta la posición */
+    }
+
+    #clients-title h1 {
+        font-size: 35px; /* Reduce el tamaño de la fuente */
+        line-height: 1.2;
+        margin-top: 70px; /* Ajusta la posición */
+    }
+
+    /* Contenedor del carrusel */
+    #clients-carousel-container {
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Ancho completo */
+    }
+
+    /* Carrusel */
+    #clientsCarousel {
+        width: 100%; /* Aumenta el ancho del carrusel */
+    }
+
+    #clientsCarousel .carousel-item img {
+        width: 100%; /* Mantiene el ancho completo de las imágenes */
+        max-height: 150px; /* Ajusta la altura máxima para pantallas pequeñas */
+        object-fit: contain;
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+
+    /* Controles del carrusel */
+    .carousel-control-prev {
+        left: -10px; /* Ajusta la posición del control izquierdo */
+    }
+
+    .carousel-control-next {
+        right: -10px; /* Ajusta la posición del control derecho */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 24px; /* Reduce el tamaño de los controles */
+        height: 24px;
+        font-size: 12px; /* Ajusta el tamaño del icono */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+
+    #servicios-cards-section {
+        padding: 0px;
+        margin-bottom: 30px; /* Reduce el margen inferior */
+        width: 100vw;
+        height: auto; /* Ajusta la altura */
+        margin-bottom: 680px; /* Ajusta el margen inferior */
+    }
+
+    #services-carousel-container {
+        width: 90vw; /* Ajusta el ancho del contenedor */
+        padding: 0px;
+        margin-top: 20px; /* Ajusta el margen superior */
+        height: auto; /* Ajusta la altura */
+    }
+
+    #services-carousel-heading h1 {
+        margin-top: 800px; /* Ajusta el margen superior */
+        font-size: 18px; /* Ajusta el tamaño del texto */
+        margin-left: -180px; /* Ajusta la posición */
+    }
+
+    #services-carousel {
+        width: 100%; /* Ancho completo */
+        height: auto; /* Ajusta la altura */
+        padding-top: 8px; /* Reduce el padding superior */
+        margin-top: -30px;
+    }
+
+    #services-carousel .carousel-item {
+        width: 100%; /* Ancho completo */
+        margin-left: 0%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .services-carousel-cards {
+        display: flex;
+        justify-content: center;
+        width: 100%; /* Ancho completo */
+        flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan si es necesario */
+    }
+
+    .card {
+        height: 680px; /* Ajusta la altura de las tarjetas */
+        flex: 1 1 30%; /* Tarjetas ocupan el 100% del ancho */
+        margin: 8px 0; /* Espacio vertical entre tarjetas */
+    }
+
+    .card-body h2 {
+        font-size: 11px; /* Ajusta el tamaño del título */
+    }
+
+    #nova {
+        background-color: #0B2733; /* Color de fondo */
+        padding: 0; /* Mantiene el padding del contenedor principal */
+        width: 100vw; /* Ancho completo del contenedor */
+    }
+
+    #nova-section {
+        padding: 0.5rem 0; /* Reduce el espaciado vertical alrededor del contenido */
+        width: 90%; /* Aumenta el ancho a 90% para mejor adaptación */
+    }
+
+    #containerSeccionNova {
+        margin-top: 5px; /* Ajusta el espacio superior */
+    }
+
+    .txtSeccion1, .txtSeccion2 {
+        color: #fff; /* Color del texto */
+        text-align: justify;
+        padding: 5px; /* Reduce el padding para ahorrar espacio */
+    }
+
+    .txtSeccion1 p, .txtSeccion2 p {
+        font-size: 0.65rem; /* Reduce el tamaño de la fuente */
+        line-height: 1.4; /* Ajusta la altura de línea */
+    }
+
+    .imgNova1, .imgNova2, .imgNova3, .imgNova4 {
+        padding: 5px; /* Reduce el padding en las imágenes */
+    }
+
+    .img-fluid {
+        max-width: 100%; /* Asegura que las imágenes sean responsivas */
+        height: auto; /* Mantiene la proporción de aspecto */
+    }
+
+    #titInteligencia {
+        text-align: center; /* Centra el texto del título */
+        padding: 0.5rem 0; /* Reduce el espaciado vertical alrededor del título */
+    }
+
+    #titInteligencia h1 {
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente del título */
+        color: #fff; /* Color del texto del título */
+        margin: 0; /* Elimina el margen por defecto del título */
+        line-height: 1.2; /* Altura de línea para el título */
+    }
+
+    .contCards2,
+    .contCards {
+        display: grid; /* Sigue utilizando grid */
+        grid-template-columns: repeat(1, 1fr); /* Cambia a 1 columna para pantallas más pequeñas */
+        gap: 6px; /* Reduce el espacio entre las columnas */
+    }
+
+    .card-custom,
+    .card2-nova {
+        height: auto; /* Permite que las tarjetas ajusten su altura automáticamente */
+        background-color: #022d5c; /* Color de fondo */
+        border: 1px solid #bfbfbf; /* Borde gris */
+        border-radius: 8px; /* Bordes redondeados */
+        padding: 1rem; /* Espaciado interno */
+    }
+
+    .card-custom h5, .card2-nova h5 {
+        font-size: 0.9rem; /* Ajusta el tamaño de la fuente del título */
+        color: #fff; /* Color del texto del título */
+    }
+
+    /* Opcional: Ajustes adicionales para pantallas más pequeñas */
+    #footer {
+        padding: 1rem; /* Reduce el padding en el pie de página */
+        font-size: 0.7rem; /* Ajusta el tamaño de la fuente en el pie de página */
+        text-align: center; /* Centra el texto del pie de página */
+    }
+}
+
+@media (max-width: 320px) {
+    #bannerTitle {
+        margin: -40px auto; /* Centra el título */
+        font-size: 8px; /* Reduce el tamaño de fuente */
+        width: 220px; /* Aumenta el ancho para mejor adaptación */
+        margin-left: -160px; /* Ajusta la posición */
+        margin-top: -30px; /* Ajusta la posición */
+    }
+
+    #bannerSubtitle {
+        margin: -15px auto; /* Centra el subtítulo */
+        font-size: 4px; /* Reduce el tamaño de fuente */
+        width: 280px; /* Aumenta el ancho para mejor adaptación */
+        margin-left: -200px; /* Ajusta la posición */
+    }
+
+    #bannerButton {
+        margin: 5px auto; /* Centra el botón */
+        font-size: 7px; /* Ajusta el tamaño de fuente */
+        width: 95px; /* Ajusta el ancho */
+        height: 18px; /* Ajusta la altura */
+        margin-left: -130px; /* Ajusta la posición */
+    }
+
+    #video-section {
+        width: 100%; /* Mantiene el ancho al 100% */
+        position: relative;
+    }
+
+    #video-section video {
+        width: 100%; /* Mantiene el ancho al 100% */
+        height: auto; /* Ajusta la altura automáticamente */
+        object-fit: cover;
+    }
+
+    /* Sección derecha: título y carrusel */
+    #right-section {
+        width: 100%; /* Aumenta el ancho a 100% */
+        display: flex;
+        flex-direction: column;
+        padding: 5px; /* Reduce el padding */
+    }
+
+    #clients-title {
+        padding: 0.5rem; /* Reduce el padding */
+        text-align: center;
+        margin-top: -40px; /* Ajusta la posición */
+    }
+
+    #clients-title h1 {
+        font-size: 30px; /* Reduce el tamaño de la fuente */
+        line-height: 1.2;
+        margin-top: 60px; /* Ajusta la posición */
+    }
+
+    /* Contenedor del carrusel */
+    #clients-carousel-container {
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Ancho completo */
+    }
+
+    /* Carrusel */
+    #clientsCarousel {
+        width: 100%; /* Aumenta el ancho del carrusel */
+    }
+
+    #clientsCarousel .carousel-item img {
+        width: 100%; /* Mantiene el ancho completo de las imágenes */
+        max-height: 130px; /* Ajusta la altura máxima para pantallas pequeñas */
+        object-fit: contain;
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+
+    /* Controles del carrusel */
+    .carousel-control-prev {
+        left: -10px; /* Ajusta la posición del control izquierdo */
+    }
+
+    .carousel-control-next {
+        right: -10px; /* Ajusta la posición del control derecho */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 24px; /* Reduce el tamaño de los controles */
+        height: 24px;
+        font-size: 12px; /* Ajusta el tamaño del icono */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+
+    #servicios-cards-section {
+        padding: 0px;
+        margin-bottom: 30px; /* Reduce el margen inferior */
+        width: 100vw;
+        height: auto; /* Ajusta la altura */
+        margin-bottom: 600px; /* Ajusta el margen inferior */
+    }
+
+    #services-carousel-container {
+        width: 90vw; /* Ajusta el ancho del contenedor */
+        padding: 0px;
+        margin-top: 20px; /* Ajusta el margen superior */
+        height: auto; /* Ajusta la altura */
+    }
+
+    #services-carousel-heading h1 {
+        margin-top: 700px; /* Ajusta el margen superior */
+        font-size: 16px; /* Ajusta el tamaño del texto */
+        margin-left: -210px; /* Ajusta la posición */
+    }
+
+    #services-carousel {
+        width: 100%; /* Ancho completo */
+        height: auto; /* Ajusta la altura */
+        padding-top: 6px; /* Reduce el padding superior */
+        margin-top: -30px;
+    }
+
+    #services-carousel .carousel-item {
+        width: 100%; /* Ancho completo */
+        margin-left: 0%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .services-carousel-cards {
+        display: flex;
+        justify-content: center;
+        width: 100%; /* Ancho completo */
+        flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan si es necesario */
+    }
+
+    .card {
+        height: 650px; /* Ajusta la altura de las tarjetas */
+        flex: 1 1 30%; /* Tarjetas ocupan el 100% del ancho */
+        margin: 8px 0; /* Espacio vertical entre tarjetas */
+    }
+
+    .card-body h2 {
+        font-size: 10px; /* Ajusta el tamaño del título */
+    }
+    .card-text p{
+        font-size: 8px;
+    }
+
+    #nova {
+        background-color: #0B2733; /* Color de fondo */
+        padding: 0; /* Mantiene el padding del contenedor principal */
+        width: 100vw; /* Ancho completo del contenedor */
+    }
+
+    #nova-section {
+        padding: 0.5rem 0; /* Reduce el espaciado vertical alrededor del contenido */
+        width: 90%; /* Aumenta el ancho a 90% para mejor adaptación */
+    }
+
+    #containerSeccionNova {
+        margin-top: 5px; /* Ajusta el espacio superior */
+    }
+
+    .txtSeccion1, .txtSeccion2 {
+        color: #fff; /* Color del texto */
+        text-align: justify;
+        padding: 5px; /* Reduce el padding para ahorrar espacio */
+    }
+
+    .txtSeccion1 p, .txtSeccion2 p {
+        font-size: 0.6rem; /* Reduce el tamaño de la fuente */
+        line-height: 1.4; /* Ajusta la altura de línea */
+    }
+
+    .imgNova1, .imgNova2, .imgNova3, .imgNova4 {
+        padding: 5px; /* Reduce el padding en las imágenes */
+    }
+
+    .img-fluid {
+        max-width: 100%; /* Asegura que las imágenes sean responsivas */
+        height: auto; /* Mantiene la proporción de aspecto */
+    }
+
+    #titInteligencia {
+        text-align: center; /* Centra el texto del título */
+        padding: 0.5rem 0; /* Reduce el espaciado vertical alrededor del título */
+    }
+
+    #titInteligencia h1 {
+        font-size: 0.8rem; /* Reduce el tamaño de la fuente del título */
+        color: #fff; /* Color del texto del título */
+        margin: 0; /* Elimina el margen por defecto del título */
+        line-height: 1.2; /* Altura de línea para el título */
+    }
+
+    .contCards2,
+    .contCards {
+        display: grid; /* Sigue utilizando grid */
+        grid-template-columns: repeat(1, 1fr); /* Cambia a 1 columna para pantallas más pequeñas */
+        gap: 6px; /* Reduce el espacio entre las columnas */
+    }
+
+    .card-custom,
+    .card2-nova {
+        height: auto; /* Permite que las tarjetas se ajusten a su contenido */
+    }
+
+    .card-body h3 {
+        font-size: 10px; /* Ajusta el tamaño de la fuente del encabezado */
+    }
+}
